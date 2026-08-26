@@ -139,7 +139,7 @@ if ( ! class_exists( 'WC_Email_Customer_Quote_Sending', false ) ) {
 		 * @return string
 		 */
 		public function get_default_additional_content() {
-			return __( `Please feel free to contact us if you have any questions regarding this quote`, 'woocommerce' );
+			return __( 'Please feel free to contact us if you have any questions regarding this quote', 'woocommerce' );
 		}
 	}
 
