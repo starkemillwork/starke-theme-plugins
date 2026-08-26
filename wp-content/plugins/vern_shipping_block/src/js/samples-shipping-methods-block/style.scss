@@ -1,0 +1,47 @@
+.wp-block-vern_shipping_block-samples-shipping-methods-block {
+	.block-editor-rich-text__editable {
+		vertical-align: middle;
+		line-height: 24px;
+	}
+
+	.wc-block-components-notices {
+		margin-bottom: 0;
+	}
+
+	.wc-block-components-notice-banner {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	.wc-block-components-shipping-rates-control__package {
+		width: 100%;
+	}
+}
+
+.editor-styles-wrapper {
+	.wp-block-vern_shipping_block-samples-shipping-methods-block {
+		.wc-block-components-checkbox {
+			margin-right: 0;
+			margin-top: 0;
+		}
+	}
+}
+
+.wc-block-components-shipping-rates-control {
+  .wc-block-components-shipping-rates-control__package:last-child:not(:first-child) {
+    display: none !important;
+  }
+}
+
+.wc-block-components-shipping-rates-control__package-title {
+    display: none !important;
+}
+
+.wc-block-components-shipping-rates-control__package-items {
+    display: none !important;
+}
+
+/* Select the direct child (*) that is the first one */
+//.wc-block-components-local-pickup-select > *:first-child {
+//    display: none !important;
+//}

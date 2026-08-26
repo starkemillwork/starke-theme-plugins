@@ -1,0 +1,6617 @@
+/**
+ * Theme Name: Starke 3D
+ * Author: Vern
+ * Description: 
+ * Requires at least: 6.1
+ * Version: 8.4.2
+ * Template: spectra-one
+*/
+.br_compare_button {
+    display: none;
+}
+.heading-text-shadow {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.media-image-shadow .wp-block-media-text__media img {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; /* Optional: adds slightly rounded corners */
+}
+
+.our-story-final-text {
+   text-shadow: 0px 0px 6px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.page-title-extra {
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
+.wp-block-uagb-container.contact-us-form-container.uagb-block-0dc0950c {
+    min-width: 400px;
+    max-width: 650px;
+}
+
+.starke-google-maps {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px; /* Adds the rounded corners */
+    overflow: hidden;   /* CRITICAL: Clips the rectangular map to fit the rounded corners */
+}
+
+.molding-details-images {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.wp-block-uagb-container.starke-google-maps-container.uagb-block-8d6e5bfc {
+    min-width: 350px;
+    max-width: 500px
+}
+
+.fluentform_wrapper_4 {
+    width: 100%;
+}
+
+.contact-us-title-paragraph {
+    width: fit-content;
+}
+
+.wp-block-uagb-container.contact-info-container.uagb-block-a8347b83 {
+    width: fit-content;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.custom-profile-quote-text a {
+    text-decoration: underline;
+}
+
+/* --- WP Grid Builder Custom Styles - START--- */
+.wpgb-facet.wpgb-facet-7 {
+    flex-flow: nowrap;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.wpgb-facet.wpgb-facet-7 .wpgb-facet-title {
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+    font-size: 1em;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.wpgb-facet.molding-checkbox-facet .wpgb-facet-title {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+}
+
+.wpgb-facet.wpgb-facet-8 .wpgb-result-count {
+    white-space: nowrap;
+}
+
+.wpgb-facet.wpgb-facet-15 fieldset {
+    margin-bottom: 0 !important;
+}
+
+.wpgb-facet.molding-checkbox-facet {
+    border-radius: 5px;
+    padding: 5px;
+}
+.molding-checkbox-facet fieldset {
+    margin-bottom: 0 !important;
+}
+
+.molding-facet-title {
+    width: fit-content !important;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
+}
+
+.molding-checkbox-facet .wpgb-checkbox-facet {
+    /*border: 2px solid var(--wpgb-grey-500);*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-right: 0;
+}
+
+.molding-checkbox-facet .wpgb-checkbox-facet .wpgb-hierarchical-list {
+    overflow: auto;
+    max-height: 215px;
+    margin-bottom: 12px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.molding-filters-container {
+    min-width: 293px;
+}
+
+@media only screen and (max-width: 865px) {
+    .wp-block-uagb-container.uagb-is-root-container.molding-shop-container {
+        flex-wrap: wrap;
+    }
+}
+/*.wpgb-checkbox-label span {
+    display: none !important;
+}*/
+
+.wpgb-facet .wpgb-checkbox-facet .wpgb-hierarchical-list > li {
+    margin-top: 0;
+}
+
+.shop-molding-subtext {
+    width: fit-content !important;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+/* B. The "Follower" Rule: 
+    "If I am a visible list item (~), and I come after another visible list item,
+    give me a top margin."
+    
+    The selector [style*="display: none"] allows CSS to recognize the 
+    items our JavaScript has hidden. 
+*/
+.wpgb-facet .wpgb-checkbox-facet .wpgb-hierarchical-list > li:not([style*="display: none"]) ~ li:not([style*="display: none"]) {
+    margin-top: 12px; /* <--- Set your desired gap here */
+}
+
+/* =========================================================
+   Force Scrollbars to ALWAYS show on Apple/Safari Devices
+   for WP Grid Builder Facets (Darker Chrome Style)
+   ========================================================= */
+
+/* 1. Define the width of the scrollbar */
+.wpgb-hierarchical-list::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px; 
+}
+
+/* 2. Style the "Track" (the background path of the scrollbar) */
+.wpgb-hierarchical-list::-webkit-scrollbar-track {
+    background: #ffffff; /* Pure white track */
+    border-radius: 4px;
+}
+
+/* 3. Style the "Thumb" (the part you actually click and drag) */
+.wpgb-hierarchical-list::-webkit-scrollbar-thumb {
+    background: #a7a7a7; /* Standard darker grey */
+    border-radius: 4px;
+}
+
+/* 4. Hover state for the thumb */
+.wpgb-hierarchical-list::-webkit-scrollbar-thumb:hover {
+    background: #777777; /* Even darker, highly visible grey on hover */
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   Ultra-Lightweight Custom Visual Scrollbar (No-Blink)
+   ========================================================= */
+
+.molding-checkbox-facet .wpgb-checkbox-facet {
+    position: relative !important;
+}
+
+.molding-checkbox-facet .wpgb-checkbox-facet .wpgb-hierarchical-list::-webkit-scrollbar {
+    display: none; 
+}
+.molding-checkbox-facet .wpgb-checkbox-facet .wpgb-hierarchical-list {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+/* The Fake Scrollbar - Hidden by default */
+.starke-visual-scrollbar {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    width: 8px;
+    background-color: rgba(136, 136, 136, 0.8); 
+    border-radius: 4px;
+    pointer-events: auto; 
+    z-index: 10;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+/* Make it slightly darker when hovering/dragging for premium UX */
+.starke-visual-scrollbar:hover {
+    background-color: rgba(100, 100, 100, 0.9);
+}
+.starke-visual-scrollbar:active {
+    background-color: rgba(80, 80, 80, 1);
+}
+
+
+
+
+
+
+
+
+.molding-search-facet fieldset {
+    margin-bottom: 0 !important;
+}
+
+.molding-search-facet-spacer {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.wpgb-facet.molding-reset-filters {
+    width: fit-content !important;
+    margin-bottom: -2.6rem;
+    margin-top: -1.1rem;
+    align-self: flex-end;
+    margin-right: 13px;
+}
+
+@keyframes loadMoreEaseIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================================================
+   STARKE SHOP: PERFORMANCE ENDLESS SCROLL BUTTON STANDARD FLOW
+   ========================================================================== */
+.wpgb-button.wpgb-load-more {
+    display: table !important;
+    margin: 40px auto !important; /* Centers the button with spacing below the columns */
+    position: relative !important;
+    pointer-events: auto !important; 
+    
+    /* --- Premium Theme Styling --- */
+    padding: .75rem 2rem !important;
+    border-radius: 5px !important;
+    border: none !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    background-color: var(--wp--preset--color--primary, #6431F6) !important; 
+    color: var(--wp--preset--color--white, #ffffff) !important;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2) !important;
+    cursor: pointer !important;
+    transition: background-color .25s ease !important;
+}
+
+.wpgb-button.wpgb-load-more:hover {
+    background-color: var(--wp--preset--color--secondary, #7345F7) !important;
+}
+
+/* Completely nuke the absolute pseudo-element engine that was creating the white gap */
+.wpgb-button.wpgb-load-more::after {
+    display: none !important;
+    content: "" !important;
+}
+
+/* Ensure wrapper classes pass clicks through cleanly */
+.wpgb-facet.wpgb-facet-14 {
+    pointer-events: auto !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.molding-size {
+    white-space: normal;
+    line-height: 1 !important;
+}
+
+/* --- Molding Card Button Styles --- */
+.wp-grid-builder .wpgb-card .wpgb-card-wrapper .wpgb-card-body .molding-card-button-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wp-grid-builder .wpgb-card-1 .wpgb-block-1:hover {
+    color: #fff !important;
+}
+
+/* Fix Vertical Alignment: Stop HTML line breaks from creating ghost space */
+.molding-card-button-container > div {
+    white-space: normal !important;
+}
+
+.wpgb-card-body {
+    container-type: inline-size;
+    container-name: actions-wrapper;
+}
+@container actions-wrapper (max-width: 315px) {
+    .wp-grid-builder .wpgb-card .wpgb-card-wrapper .wpgb-card-body .molding-card-button-container {
+        flex-flow: column wrap;
+    }
+}
+
+/* Sample Button Base Style */
+.starke-sample-btn {
+    /* Your New Visual Styles */
+    color: #fff;
+    background: #6431f6;
+    padding: .75rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: .9em;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+    text-align: center;
+    min-width: 124px;
+
+    /* Essential Structural Styles (Kept) */
+    border: none;
+    cursor: pointer;
+    width: fit-content; /* Ensures it fills the card width */
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    white-space: normal;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2);
+}
+
+/* Override fixed height for the 3D Configurator Sample Button */
+#addSampleToCart_button {
+    height: auto !important;        /* Allow button to grow taller than 27px */
+    min-height: 27px !important;    /* Maintain structure */
+    padding-top: 6px !important;    /* Add space above text */
+    padding-bottom: 6px !important; /* Add space below text */
+    line-height: 1.2 !important;    /* Ensure lines are spaced correctly */
+    
+    /* Ensure flex alignment keeps text centered */
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Subtext for "Out of Stock" inside the Sample Button */
+.starke-sample-btn.request-mode .starke-oos-subtext, #addSampleToCart_button .starke-oos-subtext {
+    display: block;          /* Forces it to the next line */
+    font-size: 0.8em;        /* Smaller font size */
+    font-weight: 500;        /* Slightly lighter weight */
+    text-transform: none;    /* Prevents it from being UPPERCASE */
+    line-height: 1.2;        /* Tighter line height */
+    margin-top: 2px;         /* Small gap between text */
+    opacity: 0.9;            /* Slight transparency */
+}
+
+/* Updated Hover State (Darker Purple) */
+.starke-sample-btn:hover {
+    background-color: #4f26c9; 
+    color: #fff;
+}
+
+/* 1. Out of Stock / Request Mode (Clickable) */
+/* We make this Standard Purple now, instead of Grey */
+.starke-sample-btn.request-mode {
+    background-color: #6431f6; 
+    color: #fff;
+}
+
+/* 2. Disabled States (Sample Added / Requested) */
+/* Keep Purple, but lower opacity to look "inactive" */
+.starke-sample-btn.disabled,
+.starke-sample-btn.requested,
+.starke-sample-btn.added {
+    background-color: #6431f6 !important; /* Force Purple */
+    color: #fff !important;
+    cursor: default;
+    pointer-events: none;
+    opacity: 1; /* This creates the "faded" disabled look */
+}
+
+/* --- Compare Button Wrapper --- */
+.starke-compare-wrapper {
+    width: 100%;
+    margin-top: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* --- The Compare Button --- */
+.starke-compare-btn {
+    /* Visuals */
+    background-color: #667;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    
+    /* CHANGE 1: Match the Sample Button's padding exactly */
+    padding: .75rem; 
+    
+    /* CHANGE 2: Remove fixed 'height: 42px' so it can grow */
+    height: auto; 
+    
+    /* CHANGE 3: Match the Sample Button's line-height */
+    line-height: 1.4;
+
+    /* Sizing */
+    width: fit-content;
+
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* Checkbox on Left */
+    gap: 10px; 
+
+    /* Text Styles */
+    font-size: .9em;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2);
+}
+
+.starke-compare-btn:hover {
+    background-color: #555555;
+}
+
+.starke-compare-btn.active {
+    background-color: #667;
+}
+
+/* --- Checkbox Wrapper (Layout Only) --- */
+.starke-compare-btn .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* Removed all visual styling from the wrapper */
+    border: none;
+    background: transparent;
+    width: auto;
+    height: auto;
+}
+
+/* --- The Real Input (Styled Directly) --- */
+.starke-compare-btn .compare-checkbox {
+    /* 1. Remove Default Browser Styles */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    /* 2. Define Box Dimensions */
+    width: 20px;
+    height: 20px;
+    
+    /* 3. Visual Style (Unchecked) */
+    background-color: #ffffff; 
+    border: 2px solid #000;
+    border-radius: 4px;
+    
+    /* 4. Layout */
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+}
+
+/* --- The Checkmark (Inside the Input) --- */
+.starke-compare-btn .compare-checkbox::after {
+    content: '';
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px; /* Center vertically */
+    display: none; /* Hidden by default */
+}
+
+/* --- Checked State --- */
+/* When the input is checked OR the button has .active class */
+.starke-compare-btn.active .compare-checkbox,
+.starke-compare-btn .compare-checkbox:checked {
+    background-color: #fff; /* Fills with Purple */
+    border-color: #000;
+}
+
+.starke-compare-btn.active .compare-checkbox::after,
+.starke-compare-btn .compare-checkbox:checked::after {
+    display: block; /* Show Checkmark */
+}
+
+/* --- 1. Container for Dimensions & Label (Apply this class in WP Grid Builder) --- */
+.starke-dimension-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; /* Vertically centers items */
+    justify-content: center; /* Horizontally centers items */
+    gap: 8px; /* Creates space between the dimensions and the label */
+    margin-top: 5px; /* Spacing between image and dimensions */
+    margin-bottom: 10px; /* Spacing between label and buttons */
+}
+
+/* --- 2. The Gold Pill Label Styling --- */
+.wpgb-card-body .starke-dimension-wrapper .starke-custom-label,
+.starke-compare-actions-col .starke-custom-label { /* <--- Added this selector */
+    /* The Gold color background */
+    background-color: #fab83e; 
+    
+    /* Text styling */
+    color: #000000; 
+    font-size: 10px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    
+    /* Pill Shape & Spacing */
+    padding: 4px 8px; 
+    border-radius: 20px; 
+    line-height: 1; 
+    white-space: nowrap; 
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    
+    /* Ensure it behaves like a block in the popup */
+    display: inline-block;
+}
+
+/* =========================================================
+   Force WP Grid Builder (Shop) to Match Starke Pagination
+   ========================================================= */
+
+/* 1. Container Centering */
+.wpgb-pagination-facet {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 5px !important;
+    margin-bottom: 20px !important;
+}
+
+/* 2. Reset the List */
+ul.wpgb-pagination {
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important; /* Space between numbers */
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important; /* Override any plugin styling */
+}
+
+/* 3. List Item Reset */
+li.wpgb-page {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    list-style-type: none !important;
+}
+
+/* 4. The Buttons (Links & Spans) */
+/* We target both 'a' (links) and 'span' (current page or dots) */
+li.wpgb-page a,
+li.wpgb-page span {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* Dimensions */
+    min-width: 40px !important;
+    height: 40px !important;
+    padding: 0 12px !important;
+    
+    /* Typography */
+    font-family: var(--wp--preset--font-family--inter, sans-serif) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+    color: #333 !important;
+    
+    /* Visuals */
+    background-color: #fff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 4px !important;
+    transition: all 0.2s ease-in-out !important;
+    cursor: pointer !important;
+    box-shadow: none !important; /* Remove any default plugin shadows */
+}
+
+/* 5. Hover State */
+li.wpgb-page a:hover {
+    background-color: #f5f5f5 !important;
+    border-color: #ccc !important;
+    color: #000 !important;
+}
+
+/* 6. Active State (Current Page) */
+/* WPGB adds 'aria-current="true"' to the active link */
+li.wpgb-page a[aria-current="true"],
+li.wpgb-page span[aria-current="page"] {
+    background-color: var(--wp--preset--color--primary, #6431F6) !important;
+    border-color: var(--wp--preset--color--primary, #6431F6) !important;
+    color: #ffffff !important;
+    cursor: default !important;
+    pointer-events: none !important;
+}
+
+/* 7. Previous / Next Spacing */
+/* Add the extra gap you requested */
+li.wpgb-page-prev {
+    margin-right: 15px !important;
+}
+
+li.wpgb-page-next {
+    margin-left: 15px !important;
+}
+
+/* 8. Previous / Next Button Text Weight */
+li.wpgb-page-prev a,
+li.wpgb-page-next a {
+    font-weight: 700 !important;
+    padding: 0 18px !important;
+}
+
+/* Target the LAST occurrence of the pagination facet (Facet 6) on the page */
+.wpgb-facet.wpgb-facet-6:last-of-type {
+    margin-top: 45px !important; /* Adjust this value to get the gap you want */
+}
+/* --- WP Grid Builder Custom Styles - END --- */
+
+/* --- WS Form Custom Contact Us Form Styles --- */
+/* 1. Set the form itself as the container */
+#ws-form-1 {
+    container-type: inline-size;
+    container-name: contact-form-container;
+}
+
+/* --- Fix for Cloudflare Turnstile Widget --- */
+
+/* --- Universal Fix for Cloudflare Turnstile --- */
+
+/* 1. Nuke the white background and border on the Turnstile wrapper for ALL forms */
+#ws-form-1 .wsf-field-wrapper[data-type="turnstile"] .wsf-field,
+#ws-form-2 .wsf-field-wrapper[data-type="turnstile"] .wsf-field,
+#ws-form-3 .wsf-field-wrapper[data-type="turnstile"] .wsf-field {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    height: auto !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+}
+
+/* 2. Center the widget in the row */
+#ws-form-1 .wsf-field-wrapper[data-type="turnstile"],
+#ws-form-2 .wsf-field-wrapper[data-type="turnstile"],
+#ws-form-3 .wsf-field-wrapper[data-type="turnstile"] {
+    display: flex !important;
+    flex-direction: column !important; /* <-- THIS IS THE NEW LINE */
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+/* 3. Force rounded corners on the Turnstile wrapper */
+#ws-form-1 .wsf-field-wrapper[data-type="turnstile"] .wsf-field > div,
+#ws-form-2 .wsf-field-wrapper[data-type="turnstile"] .wsf-field > div,
+#ws-form-3 .wsf-field-wrapper[data-type="turnstile"] .wsf-field > div {
+    /* Shrink-wrap exactly to Cloudflare's dimensions */
+    width: 300px !important; 
+    height: 65px !important; 
+    margin: 0 auto !important; 
+    
+    /* Apply the radius directly to the wrapper */
+    border-radius: 8px !important; 
+    overflow: hidden !important; 
+}
+
+/* 2. The Rule: When the form is narrower than 550px */
+@container contact-form-container (max-width: 500px) {
+    
+    /* Target the field wrappers directly */
+    #ws-form-1 .wsf-field-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important; /* Overrides the flex-basis */
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+.page-title-extra {
+   text-shadow: 0px 0px 6px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 1);
+ }
+
+@media (max-width: 1600px) {
+  .our-story-cover {
+    min-height: 500px !important;
+  }
+  .heading-text-small {
+    font-size: 4em !important;
+  }
+
+  .sub-heading-text-small {
+    font-size: 2em !important;
+  }
+
+ .our-story-stack {
+    padding-left: 2.5em !important;
+    padding-right: 2.5em !important;
+  }
+
+ .our-story-text {
+   font-size: 1.1em !important;
+  }
+
+  .our-story-final-text {
+   font-size: 1.7em !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .our-story-text {
+   font-size: .9em !important;
+  }
+
+  .our-story-final-text {
+   font-size: 1.5em !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .our-story-cover {
+    min-height: 400px !important;
+  }
+  .heading-text-small {
+    font-size: 2.5em !important;
+  }
+
+  .sub-heading-text-small {
+    font-size: 1.4em !important;
+  }
+
+ .our-story-stack {
+    padding-left: 2.5em !important;
+    padding-right: 2.5em !important;
+  }
+
+ .our-story-text {
+   font-size: .85em !important;
+  }
+
+  .our-story-final-text {
+   font-size: 1.5em !important;
+  }
+
+ .page-title-extra {
+   font-size: 3em !important;
+ }
+}
+
+/* --- Starke Custom Gallery Tabs & Styles (V17 - Definitive Masonry/Column Fix) --- */
+
+/* Main tab system container - HIDDEN BY DEFAULT */
+.gallery-tabs-container ~ .wp-block-uagb-container {
+    display: none;
+}
+
+.gallery-tabs-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+    /* NEW: Hide the container initially and prepare for a smooth fade-in */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* NEW: This rule makes the container visible only after the JS has run */
+.gallery-tabs-container.js-loaded {
+    opacity: 1;
+}
+
+/* Tab Navigation bar */
+.photo-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* border-bottom: 2px solid #eee;*/
+    margin-bottom: 0; /* CHANGED: Removed margin so content tucks correctly */
+    flex-wrap: wrap;
+    
+    /* --- NEW: Sticky Positioning --- */
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 64px; /* Matches your stuck header height */
+    z-index: 990; /* Sits just underneath your header (which is usually z-index 999) */
+    background-color: #ffffff; /* White background so content doesn't show through */
+    padding: 25px 0;
+    box-shadow: 0 9px 10px -5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* --- NEW: Disable Sticky Tabs on Short Screens --- */
+@media (max-height: 500px), (max-width: 500px) {
+    .photo-tabs {
+        position: static !important; /* Turns off sticky behavior */
+    }
+}
+
+/* --- NEW: Add padding to content to compensate for the removed margin --- */
+#galleryTabContents {
+    padding-top: 2rem;
+    margin-left:  30px;
+    margin-right: 30px;
+}
+
+/* Individual Tab Button */
+.photo-tab {
+    padding: clamp(0.4rem, 1.25vmin, 0.75rem) clamp(0.8rem, 2.5vmin, 1.5rem);
+    cursor: pointer;
+    font-size: clamp(1rem, 2.5vmin, 1.5rem);
+    font-weight: 500;
+    color: #667;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.photo-tab:hover {
+    color: #000;
+}
+
+.photo-tab.active {
+    color: #000;
+    border-bottom-color: #333;
+}
+
+/* Tab Content Panes */
+.photo-tab-content {
+    display: none;
+}
+
+.photo-tab-content.active {
+    display: block;
+}
+
+/* Style for the description content */
+.photo-tab-content.active .wp-block-uagb-container h3,
+.photo-tab-content.active .wp-block-uagb-container p {
+    text-align: left;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-tab-content.active .wp-block-uagb-container h3 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 4vmin, 2rem) !important;
+}
+
+.photo-tab-content.active .wp-block-uagb-container p {
+    margin-bottom: 2.5rem; /* Space between description and gallery */
+    font-size: clamp(1.1rem, 4vmin, 1.4rem) !important;
+    color: #555;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* --- Final Gallery Grid Layout --- */
+
+/* This rule now defines a CSS variable for our column count and prepares the container */
+body .photo-tab-content.active .wp-block-gallery.columns-3 {
+    --masonry-cols: 3; /* 4 columns on desktop */
+    position: relative; /* This is crucial for positioning the items inside */
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Style for each individual image item in the gallery */
+body .photo-tab-content.active .wp-block-gallery.columns-3 .blocks-gallery-item {
+    position: absolute;
+    margin: 0 !important;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
+    /* Set the initial position from the JS variables and add transform to the transition */
+    transform: translate(var(--x, 0), var(--y, 0));
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* The hover effect now works perfectly */
+body .photo-tab-content.active .wp-block-gallery.columns-3 .blocks-gallery-item:hover {
+    /* Use calc() to add your 5px/-5px offset to the existing position */
+    transform: translate(calc(var(--x, 0) + 5px), calc(var(--y, 0) - 5px));
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.35);
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* Ensure images have their natural height */
+body .photo-tab-content.active .wp-block-gallery.columns-3 .blocks-gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* --- Responsive Adjustments for Masonry --- */
+
+/* We now use the CSS variable to control columns on different screen sizes */
+@media (max-width: 1250px) {
+    body .photo-tab-content.active .wp-block-gallery.columns-3 {
+        --masonry-cols: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    body .photo-tab-content.active .wp-block-gallery.columns-3 {
+        --masonry-cols: 1;
+    }
+}
+
+/* --- NEW: Lightbox Styles --- */
+.starke-lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 0; /* Location of the box */
+    margin-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9);
+    /* Use flex to easily center the image */
+    align-items: center;
+    justify-content: center;
+}
+
+.starke-lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 85%;
+    max-height: 85vh;
+    animation-name: zoom;
+    animation-duration: 0.4s;
+    border-radius: 8px;
+}
+
+/* Add Animation */
+@keyframes zoom {
+    from {transform: scale(0.8)}
+    to {transform: scale(1)}
+}
+
+.starke-lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.starke-lightbox-close:hover,
+.starke-lightbox-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --- NEW: Lightbox Navigation Arrow Styles --- */
+.starke-lightbox-prev,
+.starke-lightbox-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px; /* Center vertically */
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none;
+}
+
+.starke-lightbox-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.starke-lightbox-prev {
+    left: 0;
+}
+
+.starke-lightbox-prev:hover,
+.starke-lightbox-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* --- Style WS Form Contact Us form to Match Checkout --- */
+
+/* 1. Define base variables from your "Target" look */
+#ws-form-1 {
+  --target-height: 56px;
+  --target-font-size: 18px;
+  --target-padding-top: 22px; /* Makes room for the label */
+  --target-padding-bottom: 8px;
+  --target-padding-sides: 12px;
+  --target-label-color: rgba(18, 18, 18, 0.7);
+  --target-border-color: #000;
+  --target-border-radius: 4px;
+}
+
+/* 2. Style the parent wrapper */
+#ws-form-1 .wsf-label-position-inside {
+  position: relative;
+}
+
+/* 3. Style all input, textarea, and select fields */
+#ws-form-1 .wsf-field {
+  min-height: var(--target-height);
+  height: var(--target-height); /* Force height */
+  font-size: var(--target-font-size) !important;
+  padding: var(--target-padding-top) var(--target-padding-sides) var(--target-padding-bottom) var(--target-padding-sides);
+  border: 1px solid var(--target-border-color) !important;
+  border-radius: var(--target-border-radius) !important;
+  background-color: #ffffff; /* Ensure background is opaque */
+  color: #000; /* Set text color */
+}
+
+/* 4. Style the label (initial "placeholder" state) */
+#ws-form-1 .wsf-label-position-inside .wsf-label {
+  position: absolute;
+  left: var(--target-padding-sides);
+  top: 19px; /* <-- THIS IS THE FIX */
+  transform: translateY(0); /* <-- THIS IS THE FIX */
+  font-size: var(--target-font-size);
+  font-weight: 400; 
+  color: var(--target-label-color);
+  transition: all 0.2s ease;
+  pointer-events: none; 
+  margin: 0;
+  padding: 0;
+  line-height: 1; 
+}
+
+/* 5. Style the "floated" label state */
+/* This works because we removed the placeholder in Step 1 */
+#ws-form-1 .wsf-field:focus + .wsf-label,
+#ws-form-1 .wsf-field:not(:placeholder-shown) + .wsf-label {
+  top: 6px; 
+  transform: translateY(0) scale(0.75);
+  transform-origin: left top;
+}
+
+/* 6. Specific tweaks for Textarea */
+#ws-form-1 textarea.wsf-field {
+  min-height: 120px;
+  height: auto; /* Allow textarea to be tall */
+  padding-top: var(--target-padding-top);
+}
+
+/* --- 7. Restyle Select (Dropdown) Icon (FINAL) --- */
+
+/* A. Hide the default WS Form arrow span (with !important) */
+#ws-form-1 .wsf-field-wrapper[data-type="select"] .wsf-select-arrow {
+  display: none !important;
+}
+
+/* B. Style the <select> element itself */
+#ws-form-1 .wsf-field-wrapper[data-type="select"] select.wsf-field {
+  
+  /* 1. Hide the default system (browser) arrow */
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  cursor: pointer;
+
+  /* 2. Add the new BLACK SVG icon */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='%23000000'%3E%3Cpath d='M17.5 11.6L12 16l-5.5-4.4.9-1.2L12 14l4.5-3.6 1 1.2z'%3E%3C/path%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+
+  /* 3. Position the new icon (centered vertically) */
+  background-position: right var(--target-padding-sides) center !important;
+  background-size: 1.3em !important; 
+
+  /* 4. Fix padding so text doesn't overlap icon */
+  padding-right: calc(var(--target-padding-sides) * 3) !important;
+}
+/* --- 7. Force Select (Dropdown) Labels to Float --- */
+
+/* This targets the label inside any 'select' field wrapper 
+   and permanently sets it to the floated state. */
+#ws-form-1 .wsf-field-wrapper[data-type="select"] .wsf-label {
+  top: 6px; 
+  transform: translateY(0) scale(0.75);
+  transform-origin: left top;
+}
+
+/* 8. Style the File Upload field */
+#ws-form-1 .dropzone {
+  min-height: 130px;
+  border: 1px dashed var(--target-border-color) !important; 
+  border-radius: var(--target-border-radius) !important;
+  background-color: #ffffff;
+  
+  /* --- ADD THESE 3 LINES TO FIX CENTERING --- */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 9. Style the Submit Button */
+#ws-form-1 .wsf-button {
+  min-height: var(--target-height);
+  font-size: var(--target-font-size);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--target-border-radius);
+  background-color: #6431F6; /* Your current purple, or change as needed */
+  text-transform: none; /* Stop it from being all-caps */
+}
+
+/* =========================================================
+   WooCommerce My Account - (Horizontal Tabs)
+   ========================================================= */
+
+/* 1. Force Layout Reset (Stack navigation on top of content) */
+body.woocommerce-account .woocommerce {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+/* 2. Navigation Container (The Full-Width Gray Line) */
+body.woocommerce-account .woocommerce-MyAccount-navigation {
+    width: 100% !important;
+    max-width: 100% !important;
+    
+    /* MATCHED: Removed margin so content tucks correctly */
+    margin-bottom: 0 !important; 
+    float: none !important;
+    border-right: none !important; 
+    background: #fff !important;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 64px; 
+    z-index: 990;
+    gap: 1rem !important; 
+    
+    /* MATCHED: Exact padding from .photo-tabs */
+    padding: 25px 0 !important; 
+    box-shadow: 0 9px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- NEW: Disable Sticky Tabs on Short OR Narrow Screens --- */
+@media (max-height: 500px), (max-width: 500px) {
+    body.woocommerce-account .woocommerce-MyAccount-navigation {
+        position: static !important; /* Turns off sticky behavior */
+        box-shadow: none !important; /* Removes the floating shadow */
+    }
+}
+
+/* 3. The List (Centering & Spacing) */
+body.woocommerce-account .woocommerce-MyAccount-navigation ul {
+    display: flex !important;
+    justify-content: center !important; /* CENTERS the tabs */
+    flex-wrap: wrap !important;
+    gap: 1rem !important; /* Wide gap like Door Details */
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* 4. Reset Individual List Items */
+body.woocommerce-account .woocommerce-MyAccount-navigation ul li {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    width: auto !important;
+    background: transparent !important;
+    float: none !important;
+}
+
+/* 5. Link Styling (Typography & Tab Shape) */
+body.woocommerce-account .woocommerce-MyAccount-navigation ul li a {
+    display: inline-block !important;
+    text-decoration: none !important;
+    
+    font-family: var(--wp--preset--font-family--inter, "Inter", sans-serif) !important;
+    
+    /* MATCHED: Dynamic font sizing from .photo-tab */
+    font-size: clamp(1rem, 2.5vmin, 1.5rem) !important; 
+    font-weight: 500 !important;
+    color: #555 !important; 
+    
+    /* MATCHED: Dynamic padding from .photo-tab */
+    padding: clamp(0.4rem, 1.25vmin, 0.75rem) clamp(0.8rem, 2.5vmin, 1.5rem) !important;
+    
+    border-bottom: 3px solid transparent !important;
+    margin-bottom: -2px !important;
+    transition: color 0.2s ease;
+}
+
+/* 6. Hover State */
+body.woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover {
+    color: var(--wp--preset--color--primary, #6431F6) !important;
+    background-color: transparent !important;
+}
+
+/* 7. Active State (The Overlapping Underline) */
+body.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a {
+    /* Active Text Color (Black/Heading Color based on your photo) */
+    color: var(--wp--preset--color--heading, #000) !important;
+    
+    /* Active Underline */
+    border-bottom: 3px solid var(--wp--preset--color--heading, #000) !important;
+    
+    background-color: transparent !important;
+    opacity: 1 !important;
+}
+
+/* 8. Ensure Content Area is Full Width */
+body.woocommerce-account .woocommerce-MyAccount-content {
+    width: 100% !important;
+    
+    /* MATCHED: Added top padding to compensate for the removed margin */
+    padding: 2rem 0 0 0 !important; 
+    float: none !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    body.woocommerce-account .woocommerce-MyAccount-navigation ul {
+        gap: 20px !important;
+        padding-bottom: 0 !important;
+    }
+    
+    /* The old fixed font-size and padding overrides were removed here 
+       because the new clamp() sizing handles it perfectly on all screens */
+}
+
+/* =========================================================
+   Starke Custom Dashboard Cards (My Account page)
+   ========================================================= */
+
+/* 1. Greeting Text Styling */
+.starke-dashboard-greeting {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem !important;
+    font-family: var(--wp--preset--font-family--inter, sans-serif);
+    color: #333;
+}
+
+.starke-dashboard-subtitle {
+    margin-bottom: 3rem !important;
+    color: #667;
+    font-family: var(--wp--preset--font-family--inter, sans-serif);
+}
+
+/* 2. Grid Container */
+.starke-dashboard-grid {
+    display: grid;
+    /* Creates a responsive grid: 2 columns on desktop, 1 on mobile */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* 3. The Card Styling */
+.starke-dash-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none !important;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 8px; /* Slightly rounded corners */
+    
+    /* Matches your site's shadow style */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #eee;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* 4. Hover Effects */
+.starke-dash-card:hover {
+    transform: translateY(-5px); /* Lifts up slightly */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.12);
+    border-color: var(--wp--preset--color--primary, #6431F6);
+}
+
+/* 5. Icon Styling */
+.starke-dash-card .dash-card-icon {
+    font-size: 2.5rem;
+    color: var(--wp--preset--color--primary, #6431F6); /* Your Brand Purple */
+    margin-bottom: 20px;
+}
+
+/* 6. Card Typography */
+.starke-dash-card h3 {
+    font-family: var(--wp--preset--font-family--inter, sans-serif);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #222;
+}
+
+.starke-dash-card p {
+    font-family: var(--wp--preset--font-family--inter, sans-serif);
+    font-size: 0.95rem;
+    color: #667;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Mobile Tweak */
+@media (max-width: 768px) {
+    .starke-dashboard-grid {
+        gap: 20px;
+    }
+    .starke-dash-card {
+        padding: 30px 20px;
+    }
+}
+
+/* =========================================================
+   Widen the "Order / Quote" Column
+   ========================================================= */
+
+body.woocommerce-account .woocommerce-orders-table__header-order-number,
+body.woocommerce-account .woocommerce-orders-table__cell-order-number {
+    /* Sets a minimum width to accommodate longer custom numbers like "45-000001" */
+    min-width: 130px !important; 
+    
+    /* Optional: Ensure text doesn't wrap */
+    white-space: nowrap !important;
+}
+
+/* =========================================================
+   My Account - Modern "Zebra" Table Style
+   ========================================================= */
+
+/* 1. The Container (Shadow & Shape) */
+body.woocommerce-account .woocommerce-orders-table {
+    /* Matches the 'shadow' from your Door Details table */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3) !important;
+    
+    /* Rounded corners */
+    border-radius: 8px !important;
+    
+    /* Remove the default outer border */
+    border: none !important;
+    
+    /* Ensures the background colors don't bleed outside the rounded corners */
+    overflow: hidden !important; 
+    
+    /* Necessary to make border-radius work on tables */
+    border-collapse: separate !important; 
+    border-spacing: 0 !important;
+    
+    margin-bottom: 2rem !important;
+}
+
+/* 2. Remove ALL Internal Gray Lines */
+body.woocommerce-account .woocommerce-orders-table th, 
+body.woocommerce-account .woocommerce-orders-table td {
+    border: none !important;
+    padding: 20px 15px !important; /* Add more padding for a modern, airy feel */
+}
+
+/* 3. Header Styling */
+/* The Professional "Clean" Header Look */
+body.woocommerce-account .woocommerce-orders-table thead th {
+    /* 1. Change background back to white (or very light gray like #f8f9fa) */
+    background-color: #ffffff !important; 
+    
+    /* 2. Use your brand purple for the TEXT instead */
+    color: var(--wp--preset--color--primary, #6431F6) !important;
+    
+    /* Keep existing nice styling */
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 1rem !important;
+    letter-spacing: 0.05em;
+    /* Add a subtle bottom border to separate it from the data */
+    border-bottom: 2px solid #eee !important; 
+}
+
+/* 4. Zebra Striping (Alternating Rows) */
+
+/* 1. LEFT SIDE (Attributes) 
+   Row 1 is the hidden corner. Row 2 is "Thickness".
+   We want Thickness to be GRAY. 
+   So: EVENS = Gray, ODDS = White. 
+*/
+.br_new_compare .br_left_table tr:nth-child(even) th {
+    background-color: #fcfcfc !important; /* Gray */
+}
+.br_new_compare .br_left_table tr:nth-child(odd) th {
+    background-color: #ffffff !important; /* White */
+}
+
+/* 2. RIGHT SIDE (The Data)
+   Row 1 is "Thickness" data (starts immediately).
+   We want Thickness to be GRAY to match the left.
+   So: ODDS = Gray, EVENS = White.
+*/
+.br_new_compare .br_right_table tr:nth-child(odd) td {
+    background-color: #fcfcfc !important; /* Gray */
+}
+.br_new_compare .br_right_table tr:nth-child(even) td {
+    background-color: #ffffff !important; /* White */
+}
+
+/* =========================================================
+   My Account - "Profiles" Column Grid (CLICKABLE & RESIZED)
+   ========================================================= */
+
+/* 1. The Container for the visuals */
+.starke-order-profiles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px !important; /* Increased Gap */
+    justify-content: flex-start; 
+    max-width: 450px; 
+}
+
+/* 2. Individual Profile Item Wrapper (Now an Anchor) */
+a.starke-profile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90px !important; /* Wrapper Width */
+    text-decoration: none !important; /* Remove underline */
+    border-bottom: none !important;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* 3. The Image Styling */
+a.starke-profile-item img.starke-profile-thumb {
+    width: 85px !important; /* Larger Image */
+    height: 85px !important;
+    object-fit: contain;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    border-radius: 6px;
+    margin-bottom: 8px !important;
+    background-color: #fff;
+    padding: 4px;
+    transition: all 0.2s ease;
+}
+
+/* 4. The Profile Number Text */
+a.starke-profile-item .starke-profile-name {
+    font-size: 0.9rem !important; /* Larger Text */
+    line-height: 1.2;
+    font-weight: 500;
+    color: #444; /* Default dark grey text */
+    word-break: break-word;
+    transition: color 0.2s ease;
+}
+
+/* --- HOVER EFFECTS --- */
+a.starke-profile-item:hover {
+    transform: translateY(-3px); /* Subtle lift */
+}
+
+a.starke-profile-item:hover .starke-profile-name {
+    color: #6431F6 !important; /* Text turns Brand Purple */
+    text-decoration: underline;
+}
+
+a.starke-profile-item:hover img.starke-profile-thumb {
+    border-color: #6431F6; /* Border turns Brand Purple */
+    box-shadow: 0 6px 12px rgba(100, 49, 246, 0.15);
+}
+
+/* 5. Table Cell Adjustment */
+/* Ensure the "Profiles" cell aligns to the top so images don't float in the middle of a tall row */
+body.woocommerce-account .woocommerce-orders-table__cell-order-profiles {
+    vertical-align: top !important;
+}
+
+.woocommerce-account .woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-actions .order-actions a {
+    margin-bottom: 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2);
+}
+
+.woocommerce-account .woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-actions .quote-actions a {
+    margin-bottom: 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2);
+}
+
+/* 1. Make the Pay Button Gold with Black Text */
+.woocommerce-account .woocommerce-orders-table__cell .button.pay {
+    background-color: #FFC107 !important; /* Adjust this hex code to match your exact gold */
+    color: #000000 !important;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.7) !important
+}
+
+/* Optional: Hover effect for the Pay button */
+.woocommerce-account .woocommerce-orders-table__cell .button.pay:hover {
+    background-color: #e0a800 !important; /* Slightly darker gold */
+    color: #000000 !important;
+}
+
+/* =========================================================
+   Force "Stacked Card Layout" at 1550px
+   ========================================================= */
+
+/* 1. Hide the Main Header Row */
+body.woocommerce-account .woocommerce-orders-table thead {
+    display: none !important;
+}
+
+/* 2. Reset the Container */
+body.woocommerce-account .woocommerce-orders-table {
+    box-shadow: none !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* 3. Turn Rows into "Cards" */
+body.woocommerce-account .woocommerce-orders-table tbody tr {
+    display: block !important;
+    margin-bottom: 50px !important;
+    border-radius: 8px !important;
+    background-color: #fff !important;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.2) !important;
+    overflow: hidden !important;
+    max-width: 825px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 10px !important;
+}
+
+/* Odd Rows inside the card (Order, Date, Total...) - White */
+body.woocommerce-account .woocommerce-orders-table tbody td:nth-child(odd),
+body.woocommerce-account .woocommerce-orders-table tbody th:nth-child(odd) {
+    background-color: #f9f9f9 !important;
+}
+
+/* Even Rows inside the card (PO Number, Status, Profiles...) - Very Light Gray */
+body.woocommerce-account .woocommerce-orders-table tbody td:nth-child(even),
+body.woocommerce-account .woocommerce-orders-table tbody th:nth-child(even) {
+    background-color: #ffffff !important; /* Very subtle gray */
+}
+
+/* 4. Style the Cells (TD and TH) */
+/* UPDATED: Now targets 'th' too so the Order label appears */
+body.woocommerce-account .woocommerce-orders-table tbody td,
+body.woocommerce-account .woocommerce-orders-table tbody th {
+    display: flex !important;
+    justify-content: space-between !important; /* Label Left, Data Right */
+    align-items: center !important;
+    text-align: right !important;
+    width: 100% !important;
+    padding: 12px 20px !important;
+    border-bottom: 1px solid #f5f5f5 !important;
+    min-width: unset !important;
+    
+    /* UPDATED: Adds space between "$100" and "for 5 items" */
+    gap: 5px !important; 
+    
+    /* Ensure normal font weight for data */
+    font-weight: normal !important;
+
+}
+
+/* Remove border from the last item */
+body.woocommerce-account .woocommerce-orders-table tbody td:last-child {
+    border-bottom: none !important;
+}
+
+/* 5. Inject the Column Label on the Left */
+/* UPDATED: Now targets 'th' too */
+body.woocommerce-account .woocommerce-orders-table tbody td::before,
+body.woocommerce-account .woocommerce-orders-table tbody th::before {
+    content: attr(data-title) !important;
+    font-weight: 700 !important;
+    color: var(--wp--preset--color--primary, #6431F6) !important;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    float: left !important;
+    margin-right: auto !important; /* Pushes value to far right */
+    
+    /* Stop the label from shrinking if data is long */
+    flex-shrink: 0 !important; 
+}
+
+/* 6. Special Fix for "Profiles" Column (Right Aligned Images) */
+body.woocommerce-account .woocommerce-orders-table tbody td .woocommerce-orders-table__cell-order-profiles {
+    flex-direction: column !important;
+    /* This pushes the CONTENT (The Grid) to the Right */
+    align-items: flex-end !important; 
+    justify-content: flex-end;;
+    gap: 10px !important;
+}
+
+/* Force the Label back to the Left */
+/* Since the parent is set to 'flex-end', we must override it for the label */
+body.woocommerce-account .woocommerce-orders-table__cell-order-profiles::before {
+    align-self: flex-start !important;
+}
+
+/* Align the images inside the grid to the right */
+.starke-order-profiles-grid {
+    max-width: 100% !important;
+    /* Ensures the images start populating from the right side */
+    justify-content: flex-end !important;
+    align-self: flex-end;
+}
+
+/* 7. Special Fix for "Actions" Column - Robust Version */
+body.woocommerce-account .woocommerce-orders-table__cell-order-actions {
+    display: flex !important;
+    justify-content: space-between !important; /* Pushes Label to Left, Buttons to Right */
+    align-items: center !important;
+    width: 100% !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+/* The "ACTIONS" Label */
+body.woocommerce-account .woocommerce-orders-table__cell-order-actions::before {
+    content: "ACTIONS" !important;
+    display: block !important; /* Ensures the element has dimension */
+    visibility: visible !important;
+    
+    font-weight: 700 !important;
+    color: var(--wp--preset--color--primary, #6431F6) !important;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    
+    /* Remove 'float' - it doesn't work in flexbox */
+    float: none !important; 
+    margin-right: auto !important; /* This pushes everything else to the far right */
+}
+
+/* The Button Container */
+body.woocommerce-account .order-actions {
+    display: flex !important;
+    gap: 10px !important;
+    /* No extra margins needed because 'space-between' handles the gap */
+    margin-left: 0 !important; 
+}
+
+/* --- Fix 1: Bold the Order Number Data (INCREASED SPECIFICITY) --- */
+/* We added '.woocommerce-orders-table tbody' to make this rule stronger than the generic one */
+body.woocommerce-account .woocommerce-orders-table tbody .woocommerce-orders-table__cell-order-number {
+    font-weight: 700 !important;
+}
+
+/* --- Fix 2: Remove Zebra Striping & Restore Hover --- */
+
+/* Step A: Force ALL rows to be white (overriding the gray stripes) */
+body.woocommerce-account .woocommerce-orders-table tbody tr:nth-child(even) {
+    background-color: #fff !important;
+}
+
+/* =========================================================
+   My Account - Pagination Styling (Matched to Shop)
+   ========================================================= */
+
+/* 1. Container Centering */
+.starke-pagination-container {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+}
+
+/* 2. Reset the List */
+ul.starke-pagination-list {
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important; /* Space between numbers */
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 3. List Item Reset */
+li.starke-page-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    list-style-type: none !important;
+}
+
+/* 4. The Buttons (Links & Spans) */
+/* UPDATED: Added 'ul.starke-pagination-list li a' to catch Next/Prev buttons */
+.starke-page-link,
+ul.starke-pagination-list li a,
+ul.starke-pagination-list li span {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* Dimensions */
+    min-width: 40px !important;
+    height: 40px !important;
+    padding: 0 12px !important;
+    
+    /* Typography */
+    font-family: var(--wp--preset--font-family--inter, sans-serif) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+    color: #333 !important; /* Default Text Color */
+    
+    /* Visuals - Matches Shop "Box" Look */
+    background-color: #fff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 4px !important;
+    transition: all 0.2s ease-in-out !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+}
+
+/* 5. Hover State */
+/* UPDATED: Added generic anchor selector */
+a.starke-page-link:hover,
+ul.starke-pagination-list li a:hover {
+    background-color: #f5f5f5 !important;
+    border-color: #ccc !important;
+    color: #000 !important;
+}
+
+/* 6. Active State (Current Page) */
+li.starke-page-item.active .starke-page-link,
+li.starke-page-item.active span {
+    background-color: var(--wp--preset--color--primary, #6431F6) !important;
+    border-color: var(--wp--preset--color--primary, #6431F6) !important;
+    color: #ffffff !important;
+    cursor: default !important;
+    pointer-events: none !important;
+}
+
+/* 7. Previous / Next Button Specifics */
+/* Target the anchors inside the specific list items */
+li.starke-page-prev a, 
+li.starke-page-next a {
+    font-weight: 700 !important; /* Bold text like Shop */
+    padding: 0 18px !important; /* Wider for text */
+}
+
+/* Add extra space after the "Previous" button */
+li.starke-page-item.starke-page-prev {
+    margin-right: 15px !important; /* Increased to 15px to match Shop */
+}
+
+/* Add extra space before the "Next" button */
+li.starke-page-item.starke-page-next {
+    margin-left: 15px !important; /* Increased to 15px to match Shop */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Starke Custom Address Book Styles --- */
+
+/* 1. Address Header */
+.starke-address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+.starke-address-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: var(--wp--preset--font-family--inter, sans-serif);
+}
+
+/* 2. Fix the Billing Address Layout (Since shipping col is gone) */
+body.woocommerce-account .u-column1.col-1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    margin-bottom: 0 !important;
+}
+/* Style the native Billing Address to look like a card */
+body.woocommerce-account .woocommerce-Address {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+}
+body.woocommerce-account .woocommerce-Address header.woocommerce-Address-title h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* 3. Address Grid & Cards */
+.starke-dashboard-grid.address-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.starke-dash-card.address-card {
+    text-align: left;
+    align-items: flex-start;
+    padding: 25px;
+    position: relative;
+    min-height: 220px;
+    justify-content: space-between;
+}
+
+.address-badges {
+    margin-bottom: 15px;
+}
+
+.address-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.address-actions {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.starke-text-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--wp--preset--color--primary, #6431F6);
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.starke-text-link:hover {
+    text-decoration: underline;
+}
+.starke-text-link.delete-link {
+    color: #cc1818;
+    margin-left: auto; /* Push delete to right */
+}
+.address-actions .sep {
+    color: #ccc;
+}
+
+/* 4. Modal Form Styles */
+.starke-form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 0px;
+}
+.starke-form-row .field-half {
+    flex: 1;
+}
+.starke-form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.starke-form-row input, 
+.starke-form-row select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Mobile Tweak for Form */
+@media (max-width: 600px) {
+    .starke-form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* --- HOME PAGE STYLES --- START */
+/* --- Starke Hero Slider Styles (Wider & Fixed Buttons) --- */
+
+.starke-hero-slider {
+    width: 100%;
+    min-height: 525px;
+    position: relative;
+    background-color: #000;
+    margin-top: 0;
+    box-shadow: var(--wp--preset--shadow--natural);
+}
+
+.starke-hero-slider .swiper-slide {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Background Image Layer */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 6s linear;
+}
+
+/* Zoom effect when slide is active */
+.swiper-slide-active .hero-bg {
+    transform: scale(1.05);
+}
+
+/* Overlay Layer */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    background: radial-gradient(circle, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+    z-index: 2;
+}
+
+/* Content Layer - WIDENED */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 1400px; 
+    width: 90%; 
+    padding: 20px;
+    
+    /* --- NEW ADDITION: Nudge everything down --- */
+    padding-top: 85px; /* Adjust this number until the gold text hits the light wood */
+    
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.swiper-slide-active .hero-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+/* --- STARTUP MODE: Only active for the first 2 seconds of page load --- */
+/* When the slider has this class, the text appears INSTANTLY (0s delay) */
+.starke-hero-slider.starke-startup .swiper-slide-active .hero-content {
+    transition-delay: 0s !important;
+}
+
+/* --- TYPOGRAPHY (Lora + Uppercase) --- */
+
+.hero-eyebrow {
+    display: inline-block;
+    font-family: 'Lora', serif; 
+    font-size: 1.1rem;
+    font-weight: 700; 
+    font-style: italic; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFC107; 
+    margin-bottom: 15px;
+}
+
+.starke-hero-slider h1 {
+    font-family: 'Lora', serif;
+    font-size: 4rem; 
+    font-weight: 500; 
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtext {
+    font-family: 'Lora', serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #f0f0f0;
+    margin-bottom: 45px;
+    
+    /* UPDATED: Allows text to span wider to match the container */
+    max-width: 900px; 
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    text-transform: none; 
+}
+
+/* --- BUTTONS (Fixed Sizing) --- */
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* This allows them to wrap naturally only when they run out of space */
+    flex-wrap: wrap; 
+}
+
+.starke-hero-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    
+    /* UPDATED: Crucial fix for button width */
+    width: fit-content !important; /* Forces button to hug text */
+    min-width: 0; /* Prevents flexbox weirdness */
+}
+
+/* --- Hero Buttons Size & Style Fix (FINAL) --- */
+
+/* 1. Shared Layout for ALL Large Buttons */
+.starke-hero-btn.large-hero-cta {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. SOLID Buttons (Purple & Gold) - Standard Padding */
+/* We group Primary and Gold together because they are both solid fills */
+.starke-hero-btn.primary.large-hero-cta,
+.starke-hero-btn.gold.large-hero-cta {
+    padding: 18px 42px;
+}
+
+/* 3. GHOST Buttons (Bordered) - Adjusted Padding */
+/* Less padding to compensate for the 2px border */
+.starke-hero-btn.secondary.large-hero-cta {
+    padding: 16px 40px; 
+    
+    /* Force the White Ghost Look */
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    background-color: transparent !important;
+}
+
+/* 4. Ghost Button Hover State */
+.starke-hero-btn.secondary.large-hero-cta:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+}
+
+/* Primary Purple */
+.starke-hero-btn.primary {
+    background-color: #6431F6;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.starke-hero-btn.primary:hover {
+    background-color: #5329cc;
+    transform: translateY(-2px);
+}
+
+/* Ghost / Outline */
+.starke-hero-btn.ghost {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+.starke-hero-btn.ghost:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Gold (Urgent) */
+.starke-hero-btn.gold {
+    background-color: #FFC107;
+    color: #000;
+    box-shadow: 0 4px 15px rgba(0,0,0, 1);
+}
+.starke-hero-btn.gold:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+/* Swiper Dots */
+.starke-hero-slider .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    opacity: 0.5;
+}
+.starke-hero-slider .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #6431F6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .starke-hero-slider h1 {
+        font-size: 2.5rem; 
+    }
+    .hero-subtext {
+        font-size: 1.1rem;
+    }
+    /* Note: We REMOVED the rule that forced buttons to stack and be 100% width. */
+    /* They will now stay side-by-side (fit-content) until they physically can't fit. */
+}
+
+/* --- Hero Slider: Short & Medium-Width Screen Fix --- */
+@media screen and (max-height: 700px) and (max-width: 1600px) {
+    /* Reduce the top padding that pushes everything down */
+    .hero-content {
+        padding-top: 45px; 
+    }
+
+    /* Shrink the Eyebrow text and its bottom margin */
+    .hero-eyebrow {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    /* Shrink the massive H1 heading */
+    .starke-hero-slider h1 {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+    }
+
+    /* Shrink the subtext and the big gap below it */
+    .hero-subtext {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+
+    /* Scale down the large buttons */
+    .starke-hero-btn.large-hero-cta {
+        font-size: 0.95rem;
+    }
+
+    /* Tighter padding for the solid buttons */
+    .starke-hero-btn.primary.large-hero-cta,
+    .starke-hero-btn.gold.large-hero-cta {
+        padding: 14px 32px;
+    }
+
+    /* Tighter padding for the ghost button (accounting for the 2px border) */
+    .starke-hero-btn.secondary.large-hero-cta {
+        padding: 12px 30px;
+    }
+}
+
+/* --- SECTION 2: 3D SHOWSTOPPER (FIXED FLOW) --- */
+
+.starke-3d-section {
+    background-color: #fff;
+    /* Added huge padding bottom to allow room for the floating elements to bob down without clipping */
+    padding: 100px 40px 120px 25px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.starke-3d-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Left Side: Text --- */
+.starke-3d-content {
+    flex: 1; /* Takes 1 part space */
+    max-width: 500px;
+    z-index: 5; /* Text always on top */
+}
+
+.starke-label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #6431F6; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.starke-3d-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.starke-3d-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.starke-3d-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 36px;
+    background-color: #6431F6;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(100, 49, 246, 0.3);
+}
+
+.starke-3d-btn:hover {
+    background-color: #4b22b8;
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+/* --- Right Side: Visual Wrapper (The Anchor) --- */
+.starke-3d-visual {
+    flex: 1.2; /* Takes slightly more space than text */
+    position: relative;
+    /* Removed fixed height! This allows it to grow with the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 1. Main Anchor Image */
+.main-anchor-wrapper {
+    position: relative; /* Stays in flow */
+    width: 100%;
+    z-index: 2;
+    animation: float-slow 7s ease-in-out infinite;
+}
+
+.main-anchor-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0px 50px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.05);
+    background: #fff;
+    display: block; /* Removes bottom spacing gap */
+}
+
+/* 2. Teaser Cards (Absolute Positioned relative to Wrapper) */
+.teaser-card {
+    position: absolute;
+    z-index: 3;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0px 35px rgba(0,0,0,0.3);
+    border: 2px solid #fff; /* Crisp white border */
+    width: auto;
+    max-width: 180px; /* Cap size so they don't dominate */
+}
+
+.teaser-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Position Teaser 1 (Top Right) */
+.layer-mid {
+    top: -3%; 
+    right: -3%;
+    animation: float-mid 6s ease-in-out infinite;
+}
+
+/* Position Teaser 2 (Bottom Left) */
+.layer-front {
+    bottom: -3%;
+    left: -3%;
+    animation: float-fast 5s ease-in-out infinite;
+}
+
+/* Background Blob */
+.bg-blob {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%; /* Wider blob */
+    height: 140%;
+    background: radial-gradient(circle, rgba(100,49,246,0.05) 0%, rgba(255,255,255,0) 70%);
+    z-index: 1;
+}
+
+/* --- Floating Animations --- */
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes float-mid {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes float-fast {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* --- RESPONSIVENESS --- */
+
+/* Tablet & Below */
+@media (max-width: 960px) {
+    .starke-3d-container {
+        flex-direction: column; /* Stack Text on top of Image */
+        gap: 60px;
+    }
+    
+    .starke-3d-content {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .starke-3d-visual {
+        width: 90%; /* constrain width */
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    .starke-3d-section {
+        padding-bottom: 80px;
+    }
+
+    .starke-3d-content h2 {
+        font-size: 2rem;
+    }
+    
+    /* Make Main Image take full width */
+    .starke-3d-visual {
+        width: 100%;
+    }
+    
+    /* Shrink Teasers significantly on mobile so they don't cover the main product */
+    .teaser-card {
+        max-width: 100px;
+    }
+    
+    /* Adjust positions to tuck them in closer */
+    .layer-mid {
+        top: -5%;
+        right: 0;
+    }
+    
+    .layer-front {
+        bottom: -5%;
+        left: 0;
+    }
+}
+
+/* --- SECTION 3: MOLDING SHOP (HIGH IMPACT) --- */
+
+.starke-section-container.shop-molding-section {
+    /* CHANGE 1: Slightly deeper gray for better separation from Section 2 */
+    background-color: #E8EAEF; 
+    padding: 110px 20px; /* Added a bit more breathing room */
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+/* Header Styling */
+.starke-section-header {
+    text-align: center; 
+    margin-bottom: 70px;
+}
+
+.starke-section-header h2 {
+    font-family: 'Lora', serif;
+    /* CHANGE 2: Increased from 2.5rem to 3.2rem (Matches Section 2 Impact) */
+    font-size: 3.2rem; 
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.starke-header-line {
+    width: 150px; /* Made line slightly wider to match bigger text */
+    height: 3px;
+    background: #FFC107;
+    margin: 0 auto 30px auto;
+}
+
+/* Subtext Styling */
+.starke-section-subtext {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.15rem; /* Slightly larger for readability */
+    color: #333;        /* Slightly darker for contrast */
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Grid Layout */
+.starke-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.starke-shop-card {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden; 
+    border: 1px solid transparent; 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.2); 
+}
+
+/* Hover Effect */
+.starke-shop-card:hover {
+    transform: translateY(-12px);
+    /* Big lift on hover */
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    border-color: rgba(100, 49, 246, 0.3); 
+}
+
+/* Image Area */
+.card-image-wrapper {
+    width: 100%;
+    height: 260px; 
+    overflow: hidden;
+    background: #fff; 
+    position: relative;
+    /* border-bottom: 1px solid #f0f0f0; */
+    padding: 25px; /* Increased padding slightly to frame the profile */
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: transform 0.5s ease;
+}
+
+/* Zoom Hover */
+.starke-shop-card:hover .card-image-wrapper img {
+    transform: scale(1.18);
+}
+
+/* Text Area */
+.card-details {
+    padding: 30px 20px; /* More vertical padding */
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 2px 14px 0 rgba(0,0,0,.2);
+    z-index: 1;
+}
+
+.card-details h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem; /* Slightly larger card titles */
+    color: #000;
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.card-details p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #667;
+    margin: 0 0 25px 0;
+    line-height: 1.4;
+}
+
+/* Link Styling */
+.shop-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6431F6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.starke-shop-card:hover .shop-link {
+    color: #4b22b8;
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .starke-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .starke-grid-4 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .starke-section-header h2 {
+        font-size: 2.2rem; /* Adjusted for mobile */
+    }
+}
+
+/* --- SECTION 4: NEWEST ARRIVALS STYLING --- */
+
+.starke-section-container.new-arrivals-section {
+    background-color: #ffffff; /* Pure White to contrast with the Gray above */
+    padding: 100px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Wrapper to constrain the grid width */
+.starke-wpgb-wrapper {
+    max-width: 1400px;
+    margin: 0 auto 50px auto; 
+}
+
+/* Label Styling (FRESH OFF THE SAW) */
+.starke-label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFC107; /* Gold */
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* "View All" Text Link Styling */
+.starke-center-btn {
+    text-align: center;
+}
+
+.starke-text-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #FFC107;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.starke-text-link:hover {
+    color: #6431F6; 
+    border-bottom-color: #6431F6;
+}
+
+/* We DO NOT touch width/left/top here. We let JS handle position. */
+.starke-section-container.new-arrivals-section .wpgb-card {
+    /* Use Flexbox to force the inner content to the center of this slot */
+    display: flex !important;
+    justify-content: center !important;
+    
+    /* Ensure the "empty space" around the centered card is invisible */
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* This is where we apply the limit. */
+.starke-section-container.new-arrivals-section .wpgb-card .wpgb-card-wrapper {
+    width: 100% !important;     /* Fill the slot... */
+    max-width: 350px !important; /* ...but STOP at 400px */
+    
+    /* Ensure the visual card style stays intact */
+    margin: 0 auto !important; /* Extra safety for centering */
+    position: relative !important;
+}
+
+/* --- SECTION 5: CUSTOM DOORS (Midnight Theme) --- */
+
+.starke-section-container.doors-section {
+    /* Deep Midnight Gradient (Rich, Dark Purple) */
+    background: linear-gradient(135deg, #1c1235 0%, #2a1a5e 100%);
+    
+    color: #ffffff;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    
+    /* Subtle top border to separate from the white section above */
+    border-top: 1px solid #6431F6;
+    margin-top: 0;
+}
+
+/* Layout Container */
+.starke-split-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 80px;
+}
+
+/* --- Left Column: Visuals --- */
+.doors-visual-col {
+    flex: 1;
+    position: relative;
+}
+
+.door-hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* Deep shadow to make the door pop off the dark background */
+    box-shadow: 0 15px 50px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Right Column: Content --- */
+.doors-content-col {
+    flex: 1;
+}
+
+/* Adjust Header for Left Alignment & Dark Mode */
+.starke-section-header.align-left {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.doors-section h2 {
+    color: #ffffff; 
+    font-family: 'Lora', serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.starke-header-line.left {
+    margin: 0; /* Align line to left */
+}
+
+/* Description Text */
+.door-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.15rem;
+    /* Light gray (#E0E0E0) reads best against dark purple */
+    color: #E0E0E0; 
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+/* Feature Icons Grid */
+.door-features-grid {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Ensure they wrap on smaller screens */
+}
+
+.door-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.door-feature i {
+    color: #FFC107; /* Gold Icons */
+    font-size: 1.2rem;
+}
+
+.door-feature span {
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Buttons Area */
+.door-actions {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* --- SECTION 6: CUSTOM MILLWORK (Light Theme) --- */
+
+.starke-section-container.millwork-section {
+    background-color: #ffffff; /* Clean White to contrast the Dark Door section */
+    color: #000000;
+    padding: 100px 20px;
+}
+
+/* Dark Mode Text Fixes for the White Background */
+.door-description.dark-text {
+    color: #555555; /* Dark Grey for readability on white */
+}
+
+/* Force Feature Text & Icons to look right on white */
+.door-features-grid.dark-mode-fix .door-feature span {
+    color: #333333; 
+}
+
+.door-features-grid.dark-mode-fix .door-feature i {
+    color: #6431F6; /* Purple icons pop against white */
+}
+
+.starke-section-container.millwork-section .door-description {
+    max-width: 100%;
+}
+
+/* Constrain the text column slightly so it doesn't claim too much empty space */
+.starke-section-container.millwork-section .doors-content-col {
+    /* Previously flex: 1; */
+    flex: 0.8; 
+}
+
+/* Give the visual column more "weight" so the image gets wider */
+.starke-section-container.millwork-section .doors-visual-col {
+    /* Previously flex: 1; */
+    flex: 1.2; 
+}
+
+/* --- SECTION 7: PHOTO GALLERY (Midnight Theme) --- */
+
+.starke-section-container.gallery-section {
+    /* Reuse the rich midnight gradient */
+    background: linear-gradient(135deg, #1c1235 0%, #2a1a5e 100%);
+    color: #ffffff;
+    padding: 100px 20px;
+}
+
+/* Text color for dark background */
+.door-description.light-text {
+    color: #E0E0E0;
+}
+
+/* --- The Collage Grid Setup (UPDATED: Bigger & Wider) --- */
+.starke-collage-grid {
+    display: grid;
+    /* 2 columns, equally sized */
+    grid-template-columns: 1fr 1fr;
+    
+    /* INCREASED HEIGHT: Changed from 250px to 350px per row. 
+       This makes the main image (spanning 2 rows) approx 720px tall. */
+    grid-template-rows: 350px 350px; 
+    
+    gap: 20px;
+    
+    /* REMOVED MAX-WIDTH: Let it fill the entire container */
+    width: 100%; 
+}
+
+/* Image Styling */
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4); 
+    border: 1px solid rgba(255,255,255,0.1); 
+    transition: transform 0.3s ease;
+}
+
+/* Image Styling */
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the boxes without stretching */
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4); /* Deep premium shadow */
+    border: 1px solid rgba(255,255,255,0.1); /* Subtle edge lighting */
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Subtle hover effect for interactivity */
+.collage-item:hover img {
+    transform: scale(1.02);
+}
+
+/* --- Grid Placement Logic --- */
+
+/* The Main image takes up the entire left column (2 rows tall) */
+.collage-item.main {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; /* Span 2 rows */
+}
+
+/* Sub image 1 takes top right slot */
+.collage-item.sub1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+/* Sub image 2 takes bottom right slot */
+.collage-item.sub2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* FIX: Force Header to be White in the Gallery Section */
+.starke-section-container.gallery-section h2 {
+    color: #ffffff !important;
+}
+
+/* FIX: Give the images more room than the text in this section */
+.starke-section-container.gallery-section .gallery-visual-col {
+    flex: 1.3; /* 60% Width for Images */
+}
+
+.starke-section-container.gallery-section .gallery-content-col {
+    flex: 0.8; /* 40% Width for Text */
+}
+
+/* Responsive Reset (Already handled by your main 1400px rule, but good to ensure) */
+@media (max-width: 1400px) {
+    .starke-section-container.gallery-section .gallery-visual-col,
+    .starke-section-container.gallery-section .gallery-content-col {
+        flex: auto;
+        width: 100%;
+    }
+}
+
+/* --- UPDATED RESPONSIVE BREAKPOINT (Stack at 1400px) --- */
+@media (max-width: 1400px) {
+    
+    /* 1. Base Stack Rule (Works for Millwork: Text First -> Image Second) */
+    .starke-split-layout {
+        flex-direction: column; 
+        gap: 60px; 
+        align-items: stretch; 
+    }
+
+    /* 2. DOORS SECTION FIX (Image -> Text HTML):
+       Use 'column-reverse' to put Text on Top. */
+    .starke-section-container.doors-section .starke-split-layout {
+        flex-direction: column-reverse;
+    }
+
+    /* --- GALLERY FIX: Layout Flip --- */
+    /* 3. GALLERY SECTION FIX (Image -> Text HTML):
+       Just like Doors, use 'column-reverse' to put Text on Top, Grid on Bottom. */
+    .starke-section-container.gallery-section .starke-split-layout {
+        flex-direction: column-reverse;
+    }
+
+    /* 4. RESET WIDTHS
+       Force columns to be full width, canceling the flex ratios. */
+    .doors-visual-col, 
+    .doors-content-col,
+    .starke-section-container.millwork-section .doors-content-col, 
+    .starke-section-container.millwork-section .doors-visual-col,
+    /* Add Gallery columns to reset list */
+    .starke-section-container.gallery-section .gallery-visual-col,
+    .starke-section-container.gallery-section .gallery-content-col {
+        flex: auto; 
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* 5. Center Alignment & Text Width Cap */
+    .starke-section-header.align-left {
+        text-align: center;
+    }
+    .starke-header-line.left {
+        margin: 0 auto; 
+    }
+
+    /* Target ALL descriptions in these sections for centering/capping */
+    .door-description,
+    .starke-section-container.millwork-section .door-description,
+    .starke-section-container.gallery-section .door-description {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 650px; 
+    }
+
+    .door-features-grid {
+        justify-content: center; 
+    }
+    .door-actions {
+        justify-content: center; 
+    }
+    
+    /* 6. Adjust Font Sizes */
+    .doors-section h2,
+    .gallery-section h2 {
+        font-size: 2.8rem;
+    }
+    .door-features-grid {
+        gap: 20px;
+    }
+
+    /* 7. SINGLE IMAGE FIX (Doors & Millwork) */
+    .door-hero-image {
+        max-width: 800px; 
+        /* 100% width minus 40px total (20px Left + 20px Right) */
+        width: calc(100% - 40px);
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    /* --- GALLERY FIX: Container Sizing & Grid Preservation --- */
+    .starke-collage-grid {
+        /* Keep the 2-column grid layout! Do not reset to 1fr. */
+        
+        /* Apply the same sizing rules to this container as single images */
+        max-width: 800px;
+        /* 20px margin each side */
+        width: calc(100% - 40px); 
+        margin: 0 auto; /* Center horizontally */
+        
+        /* Reduced row height for tablet so it's not too tall vertically (500px total height) */
+        grid-template-rows: 250px 250px; 
+    }
+}
+
+/* --- SECTION 8: OUR STORY (Legacy of Excellence) --- */
+
+.starke-section-container.story-section {
+    background-color: #ffffff;
+    padding: 100px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 1. TEXT WIDTH FIX: Matches the 'Millwork' section width */
+/* This prevents the paragraph from stretching too wide on large screens */
+.starke-section-container.story-section .door-description {
+    color: #555;
+    max-width: 650px; /* Limits width for better readability */
+    margin-bottom: 35px;
+}
+
+/* 2. DESKTOP LAYOUT (Text Left, Image Right) */
+/* We align it to the start so the text block doesn't float in the middle */
+.starke-section-container.story-section .doors-content-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns text to the left */
+    justify-content: center;
+}
+
+/* --- RESPONSIVE BEHAVIOR (Matches Custom Millwork) --- */
+@media (max-width: 1400px) {
+    
+    /* 3. MOBILE STACKING ORDER FIX */
+    /* forces Text (Header/Button) to stay ABOVE the Image */
+    .starke-section-container.story-section .starke-split-layout {
+        flex-direction: column !important; /* Text Top, Image Bottom */
+        gap: 50px;
+    }
+
+    /* 4. MOBILE ALIGNMENT FIX */
+    /* Centers the text and button on smaller screens */
+    .starke-section-container.story-section .doors-content-col {
+        align-items: center; /* Centers the Button */
+        text-align: center;  /* Centers the Text */
+    }
+
+    .starke-section-container.story-section .starke-section-header.align-left {
+        text-align: center;
+    }
+
+    .starke-section-container.story-section .starke-header-line.left {
+        margin: 0 auto 30px auto; /* Centers the Gold Line */
+    }
+    
+    .starke-section-container.story-section .door-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* --- HOME PAGE STYLES --- END */
+
+
+/* --- Starke Catalog Section (Theme Match) --- */
+
+/* 1. Container & Spacing (Matches Molding Shop) */
+.starke-section-container.catalog-section {
+    padding: 110px 20px;
+    background-color: #ffffff;
+}
+
+.starke-catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px; /* Generous gap like 3D section */
+}
+
+/* 2. Left Column: Image */
+.catalog-image-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers image in its column */
+}
+
+.catalog-cover-img {
+    width: 100%;
+    max-width: 500px; /* Prevents it from getting absurdly large */
+    height: auto;
+    display: block;
+    /* Deep premium shadow matching your theme */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Slight lift on hover to make it feel tactile */
+.catalog-cover-img:hover {
+    transform: translateY(-5px);
+}
+
+/* 3. Right Column: Content */
+.catalog-content-wrapper {
+    flex: 1.2;
+    text-align: left;
+}
+
+/* 4. Typography - STRICT INHERITANCE */
+
+/* Eyebrow: Uses your existing .starke-label style but ensures Gold color */
+.catalog-content-wrapper .starke-label {
+    color: #FFC107; /* The Starke Gold */
+    margin-bottom: 20px;
+}
+
+/* Header: Matches Molding Shop H2 (Lora, 3.2rem) */
+.starke-catalog-heading {
+    font-family: 'Lora', serif;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Paragraph: Matches .starke-section-subtext (Inter, 1.15rem) */
+.catalog-text-fix {
+    margin: 0 0 40px 0 !important; /* Override centering margins */
+    max-width: 100% !important; /* Allow text to fill the column */
+}
+
+.catalog-text-fix p {
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* 5. Mobile Responsiveness */
+@media (max-width: 992px) {
+    .starke-catalog-container {
+        flex-direction: column; /* Stack them */
+        gap: 50px;
+        text-align: center;
+    }
+
+    .catalog-content-wrapper {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .starke-catalog-heading {
+        font-size: 2.2rem; /* Mobile header size */
+    }
+
+    /* Ensure button is centered on mobile */
+    .starke-3d-btn {
+        margin: 0 auto;
+    }
+}
+
+/* --- SINGLE PRODUCT PAGE STYLES --- START */
+
+/* Wrapper spacing */
+.related-moldings-wrapper {
+    margin-top: 0;
+    width: 100%; /* Ensure the wrapper fills the new full-width parent */
+}
+
+/* Row Styling - CLEAN VERSION */
+.related-molding-row {
+    /* 1. Just fill the available space (which is now full screen) */
+    width: 100%; 
+    margin-left: 0;
+    margin-right: 0;
+    
+    /* 2. Vertical Spacing */
+    padding: 60px 0; 
+    
+    /* 3. Backgrounds (Keep your Alternating Logic) */
+    position: relative;
+    box-sizing: border-box; 
+}
+
+/* Increase top padding specifically for the first related section */
+.related-molding-row:first-of-type {
+    padding-top: 140px;
+}
+
+.related-molding-row:last-of-type {
+    padding-bottom: 100px;
+}
+
+/* Inner content constraint (to match your site width) */
+/* You might need to adjust '.container' to match your theme's class name */
+.related-molding-row .wpgb-grid, 
+.related-molding-row .related-header {
+    max-width: 1200px; /* Or your site max-width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- 1. New Header Styling (Matches Homepage Exactly) --- */
+.related-header h3 {
+    text-align: center;
+    /* Typography from Homepage */
+    font-family: 'Lora', serif;
+    font-size: 3.2rem; 
+    line-height: 1.1;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500; /* Lora standard weight */
+    
+    /* Spacing & Positioning for the Gold Line */
+    margin-bottom: 50px; 
+    position: relative;
+    padding-bottom: 30px; 
+}
+
+/* Create the Gold Line automatically */
+.related-header h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the line */
+    width: 150px;
+    height: 3px;
+    background-color: #FFC107; /* Starke Gold */
+}
+
+/* Responsive adjustment for Mobile */
+@media (max-width: 600px) {
+    .related-header h3 {
+        font-size: 2.2rem;
+    }
+}
+
+/* --- 2. Row Background Color Swap --- */
+
+/* First visible row (Odd) = Light Gray (#f9f9f9) */
+/* This ensures the very first section the user sees is always Gray */
+.related-molding-row:nth-of-type(odd) {
+    background-color: #f9f9f9 !important;
+    border-top: 1px solid #eee; /* Subtle separation from content above */
+    border-bottom: 1px solid #eee;
+}
+
+/* Second visible row (Even) = Pure White (#ffffff) */
+.related-molding-row:nth-of-type(even) {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #eee;
+}
+
+/* --- 1. Fix Layout: The "Display Contents" Magic Bullet --- */
+
+/* CRITICAL FIX: "display: contents" effectively removes the <p> tag from the layout.
+   The browser renders the children (buttons/links) as if the <p> tag didn't exist.
+   This fixes the Flexbox alignment and removes all ghost spacing instantly.
+*/
+.wpgb-card-body p,
+.molding-card-button-container p,
+.starke-compare-wrapper p {
+    display: contents !important;
+}
+
+/* Stop code indentation from creating huge gaps.
+   This handles the "white space" issue where newlines become gaps. 
+*/
+.wp-grid-builder .wpgb-card [class*=wpgb-block-] {
+    white-space: normal !important;
+}
+
+/* Hide the "Ghost Link" Paragraph 
+   (The empty link artifact that sometimes appears at the bottom)
+*/
+.wpgb-card-body p:has(> a.wpgb-block-3),
+.wpgb-card-body p:has(> a[class*="wpgb-block-"]:empty) {
+    display: none !important;
+}
+
+/* Fallback for browsers that don't support :has (Optional safety) */
+.wpgb-card-body p > a.wpgb-block-3 {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Kill specific <br> tags causing double spacing */
+.starke-dimension-wrapper br,
+.starke-sample-btn br,
+.starke-compare-btn br,
+.wpgb-block-7 br {
+    display: none !important;
+}
+
+/* Cleanup: Hide truly empty paragraphs */
+.wpgb-card-body p:empty,
+.wpgb-card-media p:empty {
+    display: none !important;
+}
+
+/* --- Fix: Prevent Grid from Touching Window Edges --- */
+.starke-inner-container {
+    width: 100%;
+    max-width: 1400px; /* Limits width on huge screens */
+    margin: 0 auto;    /* Centers the container */
+    padding-left: 20px !important;  /* Adds the safety gap on the left */
+    padding-right: 20px !important; /* Adds the safety gap on the right */
+    box-sizing: border-box; /* Ensures padding doesn't break the width */
+}
+
+/* --- SINGLE PRODUCT PAGE STYLES --- END */
+
+/* --- BEROCKET PRODUCT COMPARE POPUP STYLES --- START */
+
+/* =========================================================
+   STARKE CUSTOM COMPARE TABLE (The Final CSS)
+   ========================================================= */
+
+/* 1. Main Wrapper & Scroll */
+/* Ensures the whole table area scrolls nicely on small screens */
+.starke-compare-wrapper-custom {
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background: #fff;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch; /* Smooth iOS scrolling */
+}
+
+/* 2. Table Structure */
+table.starke-compare-table {
+    border-collapse: separate; /* REQUIRED for sticky positioning to work */
+    border-spacing: 0;
+    
+    /* UPDATED: Stop table from stretching to fill the window */
+    width: max-content !important; 
+    min-width: 0 !important; /* Override any 100% defaults */
+    
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    table-layout: fixed;
+}
+
+/* --- STICKY COLUMNS & HEADERS --- */
+
+/* 3. Top-Left Corner (Empty/Buttons Cell) */
+th.starke-corner-cell {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 50; /* Highest priority: stays on top of everything */
+    background: #fff;
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    border-right: 1px solid #eee;
+    border-bottom: 2px solid #eee;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+/* 4. Product Headers (Sticky Top Row) */
+th.starke-product-col {
+    position: sticky;
+    top: 0;
+    z-index: 40; /* Sits below corner, but above data rows */
+    background: #fff;
+    width: 230px; 
+    min-width: 230px;
+    max-width: 230px;
+    border-bottom: 2px solid #eee;
+    border-right: 1px solid #f9f9f9;
+    padding: 15px 10px 10px 10px;
+    vertical-align: bottom;
+}
+
+/* 5. Attribute Labels (Sticky Left Column) */
+th.starke-attr-label {
+    position: sticky;
+    left: 0;
+    z-index: 30; /* Sits above standard data cells */
+    background: #fff;
+    width: 200px;
+    min-width: 200px;
+    
+    /* Typography (Your Theme Specifics) */
+    color: #6431F6; /* Brand Purple */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: left;
+    padding: 15px 20px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    
+    /* Subtle shadow to show depth when scrolling */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.02);
+}
+
+/* --- STANDARD CONTENT --- */
+
+/* 6. Data Cells */
+td.starke-attr-val {
+    padding: 15px 10px;
+    text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+    border-right: 1px solid #f9f9f9;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background: #fff;
+    vertical-align: middle;
+}
+
+/* 7. Zebra Striping (Updated for Visibility) */
+/* We use a class so JS can apply this to visible rows only */
+.starke-compare-table tr.starke-alt-row th.starke-attr-label,
+.starke-compare-table tr.starke-alt-row td.starke-attr-val {
+    background-color: #f9f9f9 !important; /* Darker gray so you can actually see it */
+}
+
+/* --- PRODUCT HEADER ELEMENTS --- */
+
+.starke-header-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    /* UPDATED: Changed from 250px to auto to save height space */
+    min-height: auto !important; 
+    padding-bottom: 10px; /* Small buffer at bottom */
+}
+
+/* UPDATED: Reset margins on the H3 container itself */
+.starke-header-content h3.starke-product-title {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    text-align: center;
+}
+
+.starke-product-title a {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.9rem;
+    color: #6431F6;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.starke-product-img img {
+    width: 205px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 0px auto;
+    display: block;
+}
+
+/* --- BUTTONS & ACTIONS --- */
+
+/* 8. Corner Buttons (Hide/Clear) */
+.starke-corner-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.starke-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 88%;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #555;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+    line-height: 1.2;
+}
+
+.starke-action-btn:hover, .starke-action-btn.active {
+    border-color: #6431F6;
+    color: #6431F6;
+    background: #f4f0ff;
+}
+
+/* 9. "X" Remove Button */
+.starke-remove-icon {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    color: #ccc;
+    font-size: 1.2rem;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+    z-index: 2;
+}
+.starke-remove-icon:hover {
+    color: #6431F6;
+}
+
+/* 10. Sample Buttons & Pills Container */
+.starke-compare-actions-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* More space between Pill and Button */
+    width: 100%;
+    margin-top: auto; 
+    padding-top: 15px;
+}
+
+/* Targeting your existing elements within the new container */
+.starke-compare-actions-col .starke-sample-btn {
+    /* Reset font size to match Shop Theme */
+    font-size: 0.8em !important;
+}
+
+/* Ensure the pill is visible */
+.starke-compare-actions-col .starke-custom-label,
+.starke-compare-actions-col .starke-compare-pill {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* --- FIX: Prevent Layout Shift when Sample is Added --- */
+.starke-compare-actions-col a.added_to_cart {
+    display: none !important;
+}
+
+/* --- FIX: Ensure Placeholder Pill is Invisible but Keeps Spacing --- */
+/* We use a specific class to override the global visibility rule */
+.starke-compare-actions-col .starke-custom-label.starke-pill-placeholder {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    pointer-events: none;
+}
+
+/* --- THEME MATCHING: BORDER RADIUS --- */
+
+/* 1. Round the main Popup Window */
+#br_popup .br_popup_wrapper .popup_animation {
+    border-radius: 12px !important; /* Matches your theme's soft corners */
+    overflow: hidden !important;    /* Ensures content doesn't bleed out */
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.4) !important; /* Enhanced depth */
+}
+
+/* 2. Round the Inner Compare Wrapper */
+.starke-compare-wrapper-custom {
+    border-radius: 12px !important;
+    /* Optional: Add a subtle border if you want it defined */
+    /* border: 1px solid #eee; */
+}
+
+/* Fix: Ensure the top-left sticky corner respects the rounding */
+th.starke-corner-cell {
+    border-top-left-radius: 12px !important;
+}
+
+/* --- ENHANCED POPUP OVERLAY (Darker + Blur) --- */
+#br_popup .br_popup_overlay {
+    /* 1. Make it Darker */
+    /* We use RGBA with 0.85 alpha for a deep dark overlay */
+    background: rgba(0, 0, 0, 0.85) !important; 
+    
+    /* 2. Reset Opacity */
+    /* The plugin sets this to 0.5 by default. We must force it to 1 
+       so our specific RGBA color controls the darkness. */
+    opacity: 1 !important; 
+    
+    /* 3. Add the Blur (Frosted Glass) */
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important; /* Safari support */
+}
+
+#br_popup .br_popup_inner {
+    padding: 0 !important;
+}
+
+body #br_popup .br_popup_wrapper .popup_animation {
+    padding: 30px;
+}
+
+/* --- FIX: Stop Layout Shift & Hide Scrollbar Track (Final) --- */
+body.hide_scroll, 
+body.br_popup_open,
+html.hide_scroll,
+html.br_popup_open {
+    overflow: hidden !important; /* 1. Kill the scrollbar visual */
+    
+    /* 2. Add invisible padding to fill the void */
+    /* We use a variable calculated by JS so it works on Mac (0px) & Windows (17px) */
+    padding-right: var(--starke-sb-width) !important; 
+    
+    box-sizing: border-box !important; /* Ensures padding doesn't break layout */
+    width: 100% !important;
+}
+
+/* --- RESPONSIVE TWEAKS --- */
+@media (max-width: 768px) {
+    /* Slightly shrink columns on mobile to fit more data */
+    th.starke-corner-cell,
+    th.starke-attr-label {
+        width: 150px;
+        min-width: 150px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    th.starke-product-col {
+        width: 215px;
+        min-width: 215px;
+        max-width: 215px;
+        padding: 10px 5px;
+    }
+}
+
+@media (max-width: 460px) {
+    body #br_popup .br_popup_wrapper .popup_animation {
+        padding: 20px;
+    }
+
+    th.starke-corner-cell,
+    th.starke-attr-label {
+        width: 104px;
+        min-width: 100px;
+        padding: 10px;
+        font-size: .8rem;
+    }
+
+    td.starke-attr-val {
+        font-size: .9rem;
+    }
+    
+    .starke-action-btn {
+        font-size: .6rem;
+        padding: 4px 4px;
+    }
+}
+
+/* --- BEROCKET PRODUCT COMPARE POPUP STYLES --- END */
+
+/* --- STARKE CUSTOM MIDNIGHT FOOTER (V8 - Vertically Centered Layout) --- START */
+
+.starke-footer-section {
+    background: linear-gradient(135deg, #1c1235 0%, #2a1a5e 100%);
+    color: #ffffff;
+    padding: 60px 0 30px 0;
+    
+    /* Gold Top Border */
+    border-top: 3px solid #FFC107;
+    
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    z-index: 10;
+}
+
+.starke-footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- BRAND ROW (Logo on Top Left) --- */
+.footer-brand-header {
+    margin-bottom: 35px; 
+    display: flex;
+    justify-content: flex-start; /* Left Aligned */
+    width: 100%;
+}
+
+.footer-logo {
+    max-width: 260px; 
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* --- MAIN GRID LAYOUT --- */
+.starke-footer-grid {
+    display: grid;
+    
+    /* CHANGED: Text gets space (1fr) | Map gets fixed width (300px) */
+    /* This removes the "empty ghost space" around the map */
+    grid-template-columns: 1fr 300px; 
+    
+    /* Gap between Text and Map */
+    gap: 40px; 
+    
+    margin-bottom: 60px;
+    align-items: center; 
+    
+    width: 100%;
+}
+
+/* --- NEW: TEXT GROUP WRAPPER --- */
+/* This holds the 3 text columns side-by-side */
+.footer-text-group {
+    display: grid;
+    /* Explore | Support | Contact */
+    grid-template-columns: 0.8fr 0.8fr 1fr;
+    gap: 40px;
+    align-items: start; /* Internal items align to top of their container */
+}
+
+/* --- HEADINGS --- */
+.footer-heading {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: #FFC107;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 0; 
+}
+
+/* --- LINKS --- */
+.footer-links, 
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, padding 0.2s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #FFC107;
+    padding-left: 5px;
+}
+
+/* --- CONTACT LIST --- */
+.footer-contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer-contact-list i {
+    color: #FFC107;
+    margin-top: 4px;
+    font-size: 1.1rem;
+}
+
+.footer-contact-list a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-contact-list a:hover {
+    color: #FFC107;
+}
+
+/* --- SQUARE MAP --- */
+.footer-map-wrapper {
+    width: 100%;
+    aspect-ratio: 1.2 / 1; 
+    max-width: 300px; 
+    
+    /* CHANGED: Set to 'auto' to push map to the far right edge */
+    margin-left: auto; 
+}
+
+.footer-map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6); 
+    border: 1px solid rgba(255, 193, 7, 0.3) !important;
+    background: #2a1a5e; 
+    display: block;
+}
+
+/* --- SOCKET (Bottom Bar) --- */
+.starke-footer-socket {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #888;
+    column-gap: 60px;
+}
+
+.socket-right a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+.socket-right a:hover {
+    color: #FFC107;
+}
+
+.socket-right .sep {
+    margin: 0 8px;
+    opacity: 0.5;
+}
+
+/* Adds horizontal space between the socket items */
+.socket-item-spacing {
+    margin-right: 9px; /* Adjust this number (e.g., 40px or 50px) to get the exact width you want */
+}
+
+/* Keeps the phrase together, but allows the whole block to wrap if needed */
+.rights-reserved-text {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Update your existing .footer-logo rule */
+.footer-logo {
+    /* 1. INCREASE SIZE (Was 260px) */
+    max-width: 300px !important; 
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    /* 2. ADD GOLD BORDER FRAME */
+    border: 1px solid #FFC107; /* Starke Gold */
+    
+    /* Optional: Adds a tiny gap between the image and the gold border */
+    /* This creates a 'double frame' look if your logo has a black edge */
+    padding: 4px; 
+    
+    /* Keeps the rounded corners matching the map/theme */
+    border-radius: 4px; 
+    
+    /* Optional: Adds a subtle lift/shadow */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* --- RESPONSIVE --- */
+
+/* Tablet: Stack Layout */
+@media (max-width: 992px) {
+    .starke-footer-grid {
+        grid-template-columns: 1fr; /* Stack Text Group on top of Map */
+        gap: 40px;
+    }
+    
+    .footer-text-group {
+        /* Keep columns side-by-side but give them more space */
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 20px;
+    }
+
+    .footer-map-wrapper {
+        margin: 0 auto; /* Center Map */
+        min-width: 300px;
+        max-width: 50%;
+        aspect-ratio: auto;
+        height: 250px;
+    }
+}
+
+/* Mobile: Full Stack */
+@media (max-width: 600px) {
+    .starke-footer-section {
+        padding-top: 50px;
+    }
+
+    .footer-brand-header {
+        justify-content: center;
+    }
+    
+    .footer-text-group {
+        grid-template-columns: 1fr; /* Stack text columns vertically */
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-contact-list li {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .starke-footer-socket {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* --- STARKE CUSTOM MIDNIGHT FOOTER (V8 - Vertically Centered Layout) --- END */
+
+/* --- Starke Live Search Styles --- START */
+
+/* ==========================================================================
+   1. THE FRAME (Outer Container)
+   UPDATED: Scoped Styles. Prevents "Ghost Element" at bottom of page.
+   ========================================================================== */
+
+/* 1. DEFAULT STATE: Hide globally to prevent it appearing in the footer/body */
+.searchwp-live-search-results {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important; /* Keep it out of flow until moved */
+    z-index: -1;
+}
+
+/* 2. DRAWER STATE: Only show when moved INSIDE the drawer results area */
+.starke-drawer-results-area .searchwp-live-search-results {
+    box-sizing: border-box;
+    
+    /* RESET: Now we apply the layout styles because it's in the right place */
+    position: static !important; 
+    display: flex !important;
+    flex-direction: column !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 999999;
+    
+    /* DIMENSIONS */
+    width: 100% !important; 
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    flex: 1 !important; 
+    
+    /* VISUALS */
+    background: #fff !important;
+    border: none !important;
+    border-radius: 0px !important; 
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.25) !important; 
+    
+    /* SPACING */
+    margin: 10px 0 162px 0 !important; 
+    padding: 10px 0 10px 0 !important; 
+    
+    overflow: hidden !important; 
+}
+
+/* ==========================================================================
+   2. THE VIEWPORT (Inner Container)
+   This handles the scrolling.
+   ========================================================================== */
+.starke-search-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    flex: 1; 
+    scroll-behavior: smooth;
+    
+    /* SCROLLBAR RESET: 
+       We do NOT use custom ::-webkit-scrollbar styling here. 
+       This ensures the browser renders the native, standard scrollbar 
+       with working arrows, just like your Width filter. 
+    */
+    scrollbar-color: auto; /* Firefox Default */
+    scrollbar-width: auto; /* Firefox Default */
+}
+
+/* 3. Section Headers - STICKY WHITE BAR WITH ROUNDED LABEL */
+.starke-search-header {
+    /* THE TRACK: Full width white bar */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: #ffffff; 
+    width: 100%;
+    
+    /* Taller height */
+    padding: 0px 25px 0px 0px; 
+    
+    /* Layout */
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 20px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+/* THE LABEL: Purple Background with smaller radius */
+.starke-search-header span {
+    background-color: #6431F6; 
+    color: #ffffff; 
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    /* SMALLER RADIUS (Not a pill) */
+    border-radius: 8px; 
+    
+    width: fit-content;
+    padding: 8px 18px;
+    
+    /* Ensure icon aligns */
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.35), 0 0px 3px 0px rgba(0, 0, 0, 0.35);
+}
+
+.starke-search-header i {
+    color: #ffffff;
+    margin-right: 6px;
+}
+
+/* --- DEBUGGING: Sticky Shadow Utility --- */
+/* If this class is applied, the shadow MUST disappear */
+.starke-search-header.starke-shadow-hidden span {
+    box-shadow: none !important;
+    border-bottom: none !important; /* Optional visual helper */
+}
+
+/* --- SEARCH ICON HOVER EFFECT --- */
+.starke-search-trigger:hover svg {
+    stroke: #6431F6 !important;
+    transition: stroke 0.2s ease;
+}
+
+/* 4. Result Rows - ANIMATED LIST */
+.starke-group {
+    padding: 0;
+}
+
+.searchwp-live-search-result {
+    display: flex;
+    align-items: center;
+    
+    /* SEAMLESS LAYOUT */
+    width: 100% !important;
+    margin: 0 !important; 
+    padding: 15px 25px !important; 
+    
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff; 
+    
+    cursor: pointer;
+    overflow: hidden; 
+    position: relative;
+    height: auto !important;
+    min-height: 0 !important;
+    
+    /* Prepare children for animation */
+    transition: background-color 0.2s ease;
+}
+
+/* RESTORED: Slide Animation on Hover (DESKTOP ONLY) */
+/* This media query ensures the slide animation ONLY happens on devices 
+   with a cursor (mouse), preventing it from triggering on touch/scroll. */
+@media (hover: hover) and (pointer: fine) {
+    .searchwp-live-search-result:hover .starke-result-img,
+    .searchwp-live-search-result:hover .starke-result-info {
+        transform: translateX(15px); 
+    }
+}
+
+.searchwp-live-search-result:hover {
+    background-color: #fafafa; 
+}
+
+.searchwp-live-search-result:last-child {
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 10px !important;
+}
+
+/* 6. Images & Titles */
+.starke-result-img {
+    flex: 0 0 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 6px;
+    background: #f7f7f7;
+    overflow: hidden;
+    padding: 0;
+    
+    /* RESTORED: Box Shadow on Image */
+    box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.25); 
+    
+    /* Animation Support */
+    transition: transform 0.2s ease-in-out; 
+}
+
+.starke-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 6px;
+}
+
+.starke-thumb-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23e0e0e0"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" opacity="0.5"/></svg>');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.starke-result-info {
+    flex: 1;
+    min-width: 0; 
+    transition: transform 0.2s ease-in-out;
+    white-space: normal; 
+    overflow: visible;
+}
+
+.starke-result-title {
+    margin: 0;
+    color: #6431F6; 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; 
+    font-weight: 600; 
+    line-height: 1.4; 
+    white-space: normal; 
+}
+
+/* 7. No Results Message */
+.searchwp-live-search-no-results {
+    padding: 40px 25px;
+    text-align: center;
+    background: #fff;
+}
+
+.searchwp-live-search-no-results p {
+    color: #6431F6;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   SKELETON LOADER & SPINNER FIX
+   ========================================================================== */
+
+/* 1. AGGRESSIVE SPINNER HIDING */
+/* The plugin creates a generic 'div.spinner'. We must target it precisely. */
+.starke-drawer-input-wrapper .spinner,
+.starke-shop-input-style .spinner,
+.searchwp-live-search-spinner,
+div.spinner[role="progressbar"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* 2. Skeleton Container */
+.starke-skeleton-wrapper {
+    width: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+}
+
+/* 3. Skeleton Header */
+.starke-skeleton-header {
+    width: 120px;
+    height: 32px;
+    border-radius: 8px;
+    margin: 15px 0 10px 25px;
+    
+    background: #f0f0f0;
+    background: linear-gradient(90deg, #f0f0f0 25%, #f9f9f9 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: starke-shimmer 1.5s infinite;
+}
+
+/* 4. Skeleton Row */
+.starke-skeleton-row {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    margin: 0;
+    padding: 15px 25px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+}
+
+.starke-skeleton-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    
+    background: #f0f0f0;
+    background: linear-gradient(90deg, #f0f0f0 25%, #f9f9f9 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: starke-shimmer 1.5s infinite;
+}
+
+.starke-skeleton-text {
+    flex: 1;
+    height: 16px;
+    border-radius: 4px;
+    
+    background: #f0f0f0;
+    background: linear-gradient(90deg, #f0f0f0 25%, #f9f9f9 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: starke-shimmer 1.5s infinite;
+}
+
+@keyframes starke-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ==========================================================================
+   SKELETON UTILITY: Force Hide Results
+   Overrides the !important visibility rules when loading
+   ========================================================================== */
+.starke-drawer-results-area .searchwp-live-search-results.starke-force-hidden {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+@media (max-height: 900px) {
+    .starke-side-drawer .starke-drawer-results-area .searchwp-live-search-results {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* --- Starke Live Search Styles --- END */
+
+/* --- STARKE SEARCH DRAWER --- START */
+
+/* 1. OVERLAY */
+.starke-search-overlay-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(4px); 
+    z-index: 999990; 
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    margin-top: 0;
+}
+
+/* 2. DRAWER CONTAINER */
+.starke-search-drawer-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px; 
+    max-width: 100%; 
+    height: 100vh;
+    height: 100dvh; 
+    background: #fff;
+    z-index: 999999;
+    box-shadow: -5px 0 30px rgba(0,0,0,0.15);
+    
+    transform: translateX(100%);
+    will-change: transform; 
+    backface-visibility: hidden;
+    
+    visibility: hidden;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s;
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+/* 3. ACTIVE STATE */
+body.starke-search-open #starke-search-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.starke-search-open .starke-search-drawer-panel {
+    transform: translateX(0); 
+    visibility: visible;
+}
+
+body.starke-search-open {
+    overflow: hidden !important;
+    padding-right: var(--starke-sb-width, 0px) !important;
+}
+
+/* 4. HEADER */
+.starke-search-drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0; 
+}
+
+.starke-search-drawer-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.starke-search-drawer-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #333;
+    transition: color 0.2s;
+}
+.starke-search-drawer-close:hover {
+    color: #6431F6;
+}
+
+/* 5. INPUT WRAPPER */
+.starke-search-input-wrapper {
+    padding: 25px;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.starke-shop-input-style {
+    position: relative;
+    width: 100%;
+}
+
+.starke-shop-input-style input[type="search"] {
+    width: 100%;
+    appearance: none;
+    background: #fff;
+    border: 2px solid #6431F6; 
+    border-radius: 4px; 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 12px 12px 12px 40px; 
+    height: 46px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    color: #333;
+}
+
+.starke-shop-input-style .wpgb-input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: #6431F6; 
+    pointer-events: none;
+}
+
+/* 6. RESULTS AREA (SCROLL CONTAINER) */
+.starke-search-results-area {
+    display: flex !important;       
+    flex-direction: column !important;
+    flex: 1; 
+    position: relative;
+    background: transparent; 
+    padding: 0 !important; 
+    overflow: hidden !important; 
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.starke-search-drawer-panel.starke-animation-complete .starke-search-results-area {
+    opacity: 1;
+}
+
+/* 7. SKELETON UTILITY */
+.starke-search-results-area .searchwp-live-search-results {
+    box-sizing: border-box;
+    position: static !important; 
+    display: flex !important;
+    flex-direction: column !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 999999;
+    width: 100% !important; 
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    flex: 1 !important; 
+    background: #fff !important;
+    border: none !important;
+    border-radius: 0px !important; 
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.25) !important; 
+    margin: 10px 0 162px 0 !important; 
+    padding: 10px 0 10px 0 !important; 
+    overflow: hidden !important; 
+}
+
+.starke-search-results-area .searchwp-live-search-results.starke-force-hidden {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+@media (max-height: 900px) {
+    .starke-search-drawer-panel .starke-search-results-area .searchwp-live-search-results {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* 8. MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    .starke-search-drawer-panel {
+        width: 100%; 
+    }
+}
+
+/* --- STARKE SEARCH DRAWER --- START */
+
+
+/* --- STARKE LOGIN/REGISTER DRAWER --- START */
+
+/* --- STARKE LOGIN/REGISTER DRAWER (ISOLATED) --- */
+
+/* 1. VISIBILITY STATES */
+/* We share the styles, but use unique classes to keep triggers separate */
+.starke-login-overlay-backdrop,
+.starke-hamburger-overlay-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(4px); 
+    z-index: 1000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    margin-top: 0;
+}
+
+/* 2. DRAWER CONTAINER (Shared Styles for Login AND Hamburger) */
+.starke-login-drawer-panel,
+.starke-hamburger-drawer-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px; /* Base width */
+    max-width: 100%; 
+    height: 100vh;
+    height: 100dvh; 
+    background: #fff;
+    z-index: 1000001;
+    box-shadow: -5px 0 30px rgba(0,0,0,0.15);
+    
+    transform: translateX(100%);
+    will-change: transform; 
+    backface-visibility: hidden;
+    
+    visibility: hidden;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s;
+    
+    /* PANEL LAYOUT: Flex Column */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+/* 3. ACTIVE STATE - LOGIN (Only targets .starke-login-drawer-panel) */
+body.starke-login-open #starke-login-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.starke-login-open .starke-login-drawer-panel {
+    transform: translateX(0); 
+    visibility: visible;
+}
+
+/* 4. ACTIVE STATE - HAMBURGER (Only targets .starke-hamburger-drawer-panel) */
+/* We add this here to ensure the new class works with the open state */
+body.starke-hamburger-open .starke-hamburger-drawer-panel {
+    transform: translateX(0); 
+    visibility: visible;
+}
+
+body.starke-login-open {
+    overflow: hidden !important;
+    padding-right: var(--starke-sb-width, 0px) !important;
+}
+
+/* 4. HEADER */
+.starke-login-drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0; /* Never shrink the header */
+}
+
+.starke-login-drawer-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #333;
+    transition: color 0.2s;
+}
+.starke-login-drawer-close:hover {
+    color: #6431F6;
+}
+
+/* 5. CONTENT AREA WRAPPER */
+.starke-login-content-area {
+    padding: 0 !important; 
+    opacity: 1;
+    
+    /* CHANGE: Make this a Flex Container to hold the form */
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1;
+    
+    overflow: hidden !important; /* Hide overflow here, the child handles it */
+    position: relative;
+    background: transparent;
+}
+
+/* 3. TABS STYLING */
+.starke-login-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0; /* Keep tabs visible */
+}
+
+.starke-tab-btn {
+    background: none;
+    border: none;
+    padding: 15px 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.starke-tab-btn:hover {
+    color: #6431F6;
+}
+
+.starke-tab-btn.active {
+    color: #000;
+    font-weight: 600;
+}
+
+.starke-tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+}
+
+/* 4. CONTENT PANES (Tabs) */
+.starke-auth-tab-content {
+    display: none;
+    
+    /* CHANGE: Make tab content occupy full height */
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden; 
+    
+    animation: fadeIn 0.3s ease;
+}
+.starke-auth-tab-content.active {
+    display: flex; /* Changed from block to flex */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 5. FORM CONTAINER (The "Box" with Shadow) */
+.starke-drawer-form {
+    /* Visuals matching Search Results */
+    background-color: #ffffff;
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.25);
+    
+    /* CHANGE 1: Remove the fixed 40px bottom margin. */
+    /* We only keep the 10px top margin. */
+    margin: 10px 0 0 0 !important; 
+    
+    position: relative;
+    z-index: 2;
+    border: none !important;
+    border-radius: 0px !important;
+    
+    /* Flex Layout for Internal Scrolling */
+    display: flex !important;
+    flex-direction: column !important;
+    
+    /* Auto Height to Fit Content */
+    flex: 0 1 auto !important; 
+    
+    /* CHANGE 2: Update max-height to use the reclaimed space. */
+    /* calc(100% - 20px) accounts for 10px top margin + 10px safety buffer at bottom */
+    max-height: calc(100% - 10px) !important; 
+    
+    overflow: hidden !important; /* The box stays rigid */
+    min-height: 0 !important; /* Prevent flex overflow bugs */
+    
+    /* Padding inside the box */
+    padding: 10px 0 10px 0 !important; 
+}
+
+/* 6. NEW: SCROLL WRAPPER (Inner Content) */
+/* This is the element that actually scrolls */
+.starke-form-scroll-wrapper {
+    flex: 1; 
+    overflow-y: auto; 
+    
+    /* Padding creates the "breathing room" so content scrolls "underneath" the edges */
+    padding: 15px 25px 15px 25px !important; 
+    
+    /* Smooth Scroll */
+    scroll-behavior: smooth;
+    
+    /* RESTORED: Standard Scrollbar Width */
+    scrollbar-width: auto !important; /* Was thin */
+    scrollbar-color: auto;            /* Firefox Default */
+}
+
+/* 7. FLOATING INPUT STYLES (White Background) */
+#starke-login-drawer .starke-float-wrapper {
+    --target-height: 56px;
+    --target-font-size: 16px; 
+    --target-padding-top: 22px; 
+    --target-padding-bottom: 8px;
+    --target-padding-sides: 12px;
+    --target-label-color: rgba(18, 18, 18, 0.7);
+    --target-border-color: #000000;
+    --target-border-radius: 4px;
+    
+    position: relative;
+    margin-bottom: 20px; 
+    width: 100%;
+}
+
+/* Force WHITE background on inputs */
+#starke-login-drawer .starke-input {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-height: var(--target-height) !important;
+    height: var(--target-height) !important;
+    font-size: var(--target-font-size) !important;
+    font-family: "Inter", sans-serif !important;
+    
+    padding-top: var(--target-padding-top) !important;
+    padding-bottom: var(--target-padding-bottom) !important;
+    padding-left: var(--target-padding-sides) !important;
+    padding-right: var(--target-padding-sides) !important;
+    
+    border: 1px solid #000000 !important; 
+    border-radius: var(--target-border-radius) !important;
+    
+    background-color: #ffffff !important; 
+    
+    color: #000000 !important;
+    outline: none !important;
+}
+
+#starke-login-drawer .starke-input:focus {
+    background-color: #ffffff !important;
+}
+
+/* Label Positioning */
+#starke-login-drawer .starke-float-wrapper label {
+    position: absolute;
+    left: var(--target-padding-sides);
+    top: 19px;
+    font-size: var(--target-font-size);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: var(--target-label-color);
+    pointer-events: none; 
+    transition: all 0.2s ease;
+    margin: 0;
+    line-height: 1;
+    z-index: 10;
+}
+
+/* Float State */
+#starke-login-drawer .starke-input:focus + label,
+#starke-login-drawer .starke-input:not(:placeholder-shown) + label {
+    top: 6px; 
+    transform: scale(0.75); 
+    transform-origin: left top;
+}
+
+/* 8. RED ASTERISKS */
+#starke-login-drawer label .required {
+    color: #cc1818 !important; /* Red */
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+/* 9. BUTTON STYLES (Login & Register) */
+#starke-manual-login-btn,
+#starke-manual-register-btn {
+    width: fit-content !important; /* Shrink to fit text */
+    display: block !important;
+    margin-left: auto !important; /* Center Horizontally */
+    margin-right: auto !important;
+    
+    /* Always Purple */
+    background-color: #6431F6 !important; 
+    color: #fff !important;
+    
+    border: none !important;
+    border-radius: 5px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2) !important;
+}
+
+/* Login Specifics: Extra Padding + Top Margin */
+#starke-manual-login-btn {
+    padding: 14px 60px !important; /* Wide padding */
+    margin-top: 30px !important;
+}
+
+/* Register Specifics */
+#starke-manual-register-btn {
+    padding: 14px 40px !important;
+    margin-top: 10px !important;
+}
+
+/* 10. DISABLED STATE (Purple but Faded) */
+#starke-manual-register-btn:disabled,
+#starke-manual-login-btn:disabled {
+    background-color: #6431F6 !important; /* Keep Purple */
+    color: #fff !important;
+    opacity: 0.5 !important; /* Fade it out */
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+}
+
+/* Hover State (Only when NOT disabled) */
+#starke-manual-login-btn:not(:disabled):hover,
+#starke-manual-register-btn:not(:disabled):hover {
+    background-color: #4f26c9 !important; /* Darker Purple */
+    transform: translateY(-2px);
+}
+
+/* 11. OTHER ELEMENTS */
+.starke-login-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    color: #667;
+}
+
+.starke-remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* --- Custom Purple Checkbox for Remember Me --- */
+#starke_rememberme {
+    /* 1. Remove Default Browser Styling */
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    /* 2. Define Box Dimensions */
+    width: 18px;  /* Slightly larger for easier clicking */
+    height: 18px;
+
+    /* 3. Visual Style (Unchecked) */
+    background-color: #ffffff; 
+    border: 1px solid #000000; /* Match your input borders */
+    
+    /* 4. The Radius Change */
+    border-radius: 4px; /* Matches your input fields (Soft Square) */
+    
+    /* 5. Layout */
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+/* Checked State (Background & Border become Purple) */
+#starke_rememberme:checked {
+    background-color: #6431F6; 
+    border-color: #6431F6;
+}
+
+/* The White Checkmark (Hidden by default, shown when checked) */
+#starke_rememberme:checked::after {
+    content: '';
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px; /* Visual centering adjustment */
+}
+
+.starke-lost-pw {
+    color: #6431F6;
+    text-decoration: none;
+    font-weight: 500;
+}
+.starke-lost-pw:hover {
+    text-decoration: underline;
+}
+
+#starke-login-drawer .woocommerce-password-hint {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #777;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* This class will be added via JS when the text is "Register" */
+#starke-manual-register-btn.register-ready {
+    padding: 14px 60px !important; /* Matches Login Button width */
+}
+
+/* 12. RESPONSIVE UPDATES */
+@media (max-width: 480px) {
+    .starke-login-content-area {
+        padding: 0 !important;
+    }
+    /* Padding is now handled by the scroll wrapper */
+    .starke-form-scroll-wrapper {
+        padding: 20px !important; 
+    }
+    
+    /* CHANGE: Target BOTH drawers (Login & Hamburger) to force full width */
+    .starke-login-drawer-panel,
+    .starke-hamburger-drawer-panel {
+        width: 100% !important;
+    }
+}
+
+/* --- NEW: LOGGED IN MENU STYLES --- */
+
+/* Title "My Account" */
+.starke-login-header-title {
+    text-align: center;
+    /* CHANGE: Font updated to Inter, sans-serif */
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* --- THE CARD (Stationary Frame) --- */
+.starke-account-menu-card {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.25);
+    
+    /* Margin from header */
+    margin: 10px 0 0 0 !important;
+    
+    position: relative;
+    z-index: 2;
+    border: none !important;
+    
+    /* 1. FLEX LAYOUT (Auto Height Fix) */
+    display: flex;
+    flex-direction: column;
+    
+    /* CHANGE: Don't force full height. Let it shrink to content. */
+    flex: 0 1 auto !important; 
+    
+    /* CHANGE: Cap the height so it scrolls if content is too long.
+       The -20px ensures the bottom shadow isn't cut off. */
+    max-height: calc(100% - 10px) !important;
+    min-height: 0; 
+
+    /* 2. THE WHITESPACE BUFFER (Stationary) */
+    /* This padding sits outside the scroll area */
+    padding: 15px 0 !important; 
+    
+    /* 3. NO SCROLL ON PARENT */
+    overflow: hidden !important; 
+}
+
+/* --- THE SCROLL WRAPPER (Moving Content) --- */
+.starke-drawer-scroll-content {
+    /* 1. This part moves */
+    overflow-y: auto;
+    
+    /* 2. Fill available space */
+    flex: 1 1 auto;
+    width: 100%;
+    
+    /* CHANGE: Restored normal scrollbar width */
+    scrollbar-width: auto !important;
+    scrollbar-color: auto;
+}
+
+/* Individual Link Rows */
+.starke-drawer-link {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px; /* Spacious click area */
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0; /* Subtle separator */
+    transition: background-color 0.2s ease;
+    color: #333; /* Default Black Text */
+}
+
+/* Remove border from last item */
+.starke-drawer-link:last-child {
+    border-bottom: none;
+}
+
+.starke-drawer-link:hover {
+    background-color: #fafafa;
+    color: #6431F6; /* Text turns Purple on hover */
+}
+
+/* Icons - ALWAYS PURPLE */
+.starke-link-icon {
+    width: 24px;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    color: #6431F6 !important; /* Theme Purple by default */
+    text-align: center;
+    transition: color 0.2s ease;
+}
+
+/* Text */
+.starke-link-text {
+    flex: 1; /* Pushes arrow to the right */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Arrow (Right Side) - Enhanced Click Target */
+.starke-link-arrow {
+    /* DEFAULT: Premium Dark Grey (Crisp & Professional) */
+    color: #888; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Layout */
+    cursor: pointer; 
+    padding: 10px; 
+    margin-right: -10px; 
+    z-index: 10; 
+    
+    /* Smooth Transition for color AND size */
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                color 0.3s ease;
+}
+
+/* HOVER STATE (The Fix) */
+/* When hovering ANY PART of the row, the arrow turns purple AND grows. */
+.starke-drawer-link:hover .starke-link-arrow {
+    color: #6431F6 !important; /* Brand Purple */
+    transform: scale(1.2);      /* subtle pop to signal activity */
+}
+
+/* OPEN STATE */
+/* When the menu is expanded, the Plus icon rotates */
+.starke-menu-group.starke-menu-open .plus-icon {
+    transform: rotate(45deg); 
+    transition: transform 0.3s ease;
+    color: #6431F6; 
+}
+
+/* --- STARKE LOGIN/REGISTER DRAWER --- END */
+
+/* --- PAGE HEADER --- START */
+
+/* --- HEADER ICON REPLACEMENT (FINAL V5 - Fixed Account Selector) --- */
+
+.wp-block-woocommerce-customer-account {
+    margin: 0 !important;
+}
+
+/* 1. FORCE PURE BLACK COLOR & HOVER BEHAVIOR */
+/* Target the generic 'a' inside the account block */
+.wp-block-woocommerce-customer-account a,
+.wc-block-mini-cart__button {
+    color: #000000 !important;
+    transition: color 0.2s ease;
+    text-decoration: none !important;
+    padding: 0;
+}
+
+/* Inherit theme hover color (Purple) */
+.wp-block-woocommerce-customer-account a:hover,
+.wc-block-mini-cart__button:hover {
+    color: #6431F6 !important;
+}
+
+/* 2. HIDE ORIGINAL SVGs */
+/* We target the icon inside the wrapper to be specific */
+.wp-block-woocommerce-customer-account .wc-block-customer-account__account-icon,
+.wc-block-mini-cart__icon {
+    display: none !important;
+}
+
+/* 3. INJECT NEW BOLD ICONS (Common Styles) */
+/* Account: Inject into the <a> tag */
+/* Cart: Inject into the badge wrapper */
+.wp-block-woocommerce-customer-account a::before,
+.wc-block-mini-cart__quantity-badge::before {
+    content: "";
+    display: inline-block !important;
+    
+    /* VISUAL SIZE: 20px visually matches the search icon */
+    width: 20px !important;
+    height: 20px !important;
+    
+    /* COLOR: Uses the parent's color (Black normally, Purple on hover) */
+    background-color: currentColor;
+    
+    /* MASK SETUP */
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    
+    /* SPACING */
+    flex-shrink: 0; 
+}
+
+/* 4. DEFINE SPECIFIC MASKS (3px Stroke SVGs) */
+
+/* Account Icon - Applied to the <a> tag's ::before */
+.wp-block-woocommerce-customer-account a::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E");
+    
+    /* Vertical alignment tweak */
+    vertical-align: middle; 
+}
+
+/* Mini Cart Icon */
+.wc-block-mini-cart__quantity-badge::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='21' r='1'%3E%3C/circle%3E%3Ccircle cx='20' cy='21' r='1'%3E%3C/circle%3E%3Cpath d='M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6'%3E%3C/path%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='21' r='1'%3E%3C/circle%3E%3Ccircle cx='20' cy='21' r='1'%3E%3C/circle%3E%3Cpath d='M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6'%3E%3C/path%3E%3C/svg%3E");
+    margin-right: 8px; 
+}
+
+/* 5. FIX MINI CART LAYOUT & ALIGNMENT */
+/* Force the container holding the icon and badge to use Flexbox */
+.wc-block-mini-cart__quantity-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    height: auto !important;
+}
+
+/* Reset WooCommerce's default absolute positioning on the badge number */
+/* Preserving your specific 87% left adjustment */
+.wc-block-mini-cart__badge {
+    left: 87%;
+}
+
+/* Ensure hover state affects badge background too */
+.wc-block-mini-cart__button:hover .wc-block-mini-cart__badge {
+    background-color: #6431F6 !important;
+}
+
+/* --- Prevent Navigation Link Text Wrapping --- */
+.wp-block-navigation-item__content {
+    white-space: nowrap !important;
+}
+
+.wp-block-template-part .wp-block-site-logo img {
+    min-width: 160px;
+}
+
+/* Optional: Hover Effect (Matches your other icons) */
+.wp-block-navigation__responsive-container-open:hover::before {
+    background-color: #6431F6; /* Your Brand Purple */
+}
+
+/* --- NAVIGATION LINKS HOVER EFFECT --- */
+/* Targets the text inside the navigation items */
+.wp-block-navigation-item__content:hover {
+    color: #6431F6 !important; /* Your Brand Purple */
+    transition: color 0.2s ease; /* Smooth fade like the icons */
+}
+
+/* --- HAMBURGER ICON REPLACEMENT (Bold 3-Line Style) --- */
+
+/* 1. Hide the Default Thin SVG */
+.wp-block-navigation__responsive-container-open svg {
+    display: none !important;
+}
+
+/* 2. Inject the New BOLD Icon */
+/* This uses the same CSS Mask method as your other icons for perfect color matching */
+.wp-block-navigation__responsive-container-open::before {
+    content: "";
+    display: block;
+    
+    /* SIZE: 24px (Standard touch target size) */
+    width: 24px !important;
+    height: 24px !important;
+    
+    /* COLOR: Inherits black (and turns purple on hover) */
+    background-color: currentColor;
+    
+    /* MASK: Bold 3-Line (Stroke Width: 3px, Round Caps) */
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='4' y1='12' x2='20' y2='12'/%3E%3Cline x1='4' y1='6' x2='20' y2='6'/%3E%3Cline x1='4' y1='18' x2='20' y2='18'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='4' y1='12' x2='20' y2='12'/%3E%3Cline x1='4' y1='6' x2='20' y2='6'/%3E%3Cline x1='4' y1='18' x2='20' y2='18'/%3E%3C/svg%3E");
+    
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* --- SUBMENU STYLING (Centered Block, Left-Aligned Text, Dynamic Flush, Smart Sizing) --- */
+
+/* 1. THE CONTAINER STYLE */
+.wp-block-navigation .wp-block-navigation__submenu-container {
+    /* Visuals: White box with your specific radius & shadow */
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(0,0,0,0.03) !important;
+    
+    /* Shadow */
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.25) !important;
+    
+    /* 2. LAYOUT: CSS GRID */
+    display: grid !important;
+    justify-content: center !important;
+    align-content: center !important;
+    
+    /* 3. CENTERING LOGIC */
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    
+    /* 4. DYNAMIC FLUSH POSITIONING */
+    margin-top: var(--starke-menu-offset, 32px) !important;
+    
+    /* Padding */
+    padding: 12px 0 !important;
+    
+    /* 5. SMART SIZING (User Requested Update) */
+    width: fit-content !important;  /* Shrinks to hug the text */
+    min-width: 140px !important;    /* Prevents it from being too skinny (was 220px) */
+    max-width: 300px !important;    /* Prevents it from being too wide */
+    white-space: normal !important; /* Allows text to wrap if it hits max-width */
+}
+
+/* 6. THE "INVISIBLE BRIDGE" */
+.wp-block-navigation .wp-block-navigation__submenu-container::before {
+    content: "";
+    position: absolute;
+    top: calc(var(--starke-menu-offset, 32px) * -1) !important;
+    left: 0;
+    width: 100%;
+    height: var(--starke-menu-offset, 32px) !important;
+    display: block;
+    background: transparent;
+}
+
+/* 7. SUBMENU ITEMS (Structure) */
+.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item {
+    width: 100% !important; 
+    display: block !important;
+}
+
+/* 8. SUBMENU LINKS TYPOGRAPHY */
+.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+    /* Text stays Left Justified inside the centered stack */
+    text-align: left !important;
+    
+    padding: 10px 25px !important;
+    font-size: 0.95em !important;
+    font-weight: 600 !important; 
+    color: #000000;
+    display: block !important;
+    width: 100% !important;
+}
+
+/* 9. HOVER EFFECT (Text Turns Purple) */
+.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
+    color: #6431F6 !important;
+    background-color: rgba(0,0,0,0.02) !important;
+}
+
+/* 10. CUSTOM DROPDOWN ARROW */
+.wp-block-navigation__submenu-icon svg {
+    display: none !important;
+}
+
+.wp-block-navigation__submenu-icon::before {
+    content: "";
+    display: inline-block;
+    width: 15px; 
+    height: 15px;
+    background-color: currentColor; 
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    vertical-align: middle;
+}
+
+.wp-block-navigation__submenu-icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    margin-left: .2em !important;
+}
+
+/* =========================================
+   STARKE HEADER ICON ROW FIX TO STOP ICONS FROM STACKING 
+   ========================================= */
+
+/* 1. Lock the parent container strictly to a horizontal row */
+.wp-block-uagb-container.action-icons-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    /* Forces the container to respect the physical width of the icons + gaps */
+    min-width: max-content !important; 
+}
+
+/* --- Custom Navigation Breakpoint (Trigger Hamburger at 1145px) --- */
+
+@media (max-width: 1144px) {
+    .wp-block-template-part .wp-block-site-logo img {
+        max-width: 160px;
+    }
+
+    .wp-block-group.swt-block-row.header-secondary-row{
+        gap: 40px;
+    }
+
+    /* 1. FORCE THE HAMBURGER BUTTON TO SHOW */
+    /* Normally hidden above 600px, we force it visible up to 1145px */
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: flex !important;
+    }
+
+    /* 2. HIDE THE DESKTOP MENU LINKS */
+    /* Normally shown as a row above 600px, we force them hidden unless the menu is toggled open */
+    .wp-block-navigation__responsive-container:not(.is-menu-open) {
+        display: none !important;
+    }
+
+    /* 3. STYLE THE "OPEN" DRAWER (The Mobile Menu) */
+    /* Between 600px-1145px, WP tries to make this a static bar. We force it back to a fixed drawer/modal. */
+    .wp-block-navigation__responsive-container.is-menu-open {
+        display: flex !important;
+        flex-direction: column !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100vh !important;
+        z-index: 100000 !important;
+        background-color: #ffffff !important; /* Ensures the background is solid white */
+        padding: 0 !important;
+        overflow: auto !important;
+    }
+
+    /* 4. LAYOUT THE LINKS VERTICALLY */
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+        padding: 20px !important;
+        width: 100% !important;
+    }
+
+    .wp-block-navigation__responsive-container.is-menu-open ul.wp-block-navigation__container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important; /* Adds space between menu items */
+        align-items: flex-start !important;
+    }
+
+    /* 5. ENSURE THE CLOSE BUTTON IS VISIBLE */
+    .wp-block-navigation__responsive-close {
+        display: flex !important;
+        justify-content: flex-start;
+        width: 100% !important;
+        padding: 20px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .wp-block-group.swt-block-row.header-main-row{
+        gap: 25px;
+    }
+}
+
+@media (max-width: 445px) {
+    .wp-block-uagb-container.action-icons-container.uagb-is-root-container {
+        column-gap: 30px;
+    }
+
+    .wp-block-group.swt-block-row.header-main-row{
+        gap: 25px;
+    }
+
+    .wp-block-group.swt-block-row.header-secondary-row{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 415px) {
+    .wp-block-template-part .wp-block-site-logo img {
+        min-width: 130px;
+        max-width: 130px;
+    }
+}
+
+@media (max-width: 385px) {
+    .header-group {
+        padding-left: .5em;
+    }
+}
+
+/* =========================================
+   STARKE STICKY HEADER
+   ========================================= */
+
+/* 1. Target the main header container */
+header.wp-block-template-part {
+    position: sticky;
+    position: -webkit-sticky; /* Safari support */
+    top: 0;
+    
+    /* Ensure it sits above page content but below your drawers */
+    z-index: 999; 
+    
+    /* Ensure full width */
+    width: 100%;
+}
+
+/* 2. Admin Bar Adjustment (Optional) */
+/* If you are logged in, this stops the header from hiding under the WP Admin Bar */
+body.admin-bar header.wp-block-template-part {
+    top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+    body.admin-bar header.wp-block-template-part {
+        top: 46px;
+    }
+}
+
+/* --- PAGE HEADER --- END */
+
+/* --- HAMBURGER DRAWER SLIDER --- START */
+
+/* =========================================
+   STARKE HAMBURGER DRAWER (Stable "Sticky" Expand)
+   ========================================= */
+
+/* 1. Active State */
+body.starke-hamburger-open #starke-hamburger-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+body.starke-hamburger-open #starke-hamburger-drawer {
+    transform: translateX(0); 
+    visibility: visible;
+}
+
+/* 2. THE LOCK (Standard No-Shift) */
+body.starke-hamburger-open {
+    overflow: hidden !important;
+    padding-right: var(--starke-sb-width, 0px) !important;
+}
+
+/* 3. Hide Default Menu */
+.wp-block-navigation__responsive-container.is-menu-open {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* 4. Layering */
+#starke-hamburger-overlay { z-index: 1000000; }
+#starke-hamburger-drawer { z-index: 1000001; }
+
+
+/* --- MENU STYLING --- */
+.starke-menu-group {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0; 
+    /* Smooth transition for background color */
+    transition: background-color 0.2s ease;
+}
+
+/* CHANGE: Force remove border from the very last item (Open or Closed) */
+.starke-menu-group:last-child,
+.starke-menu-group.starke-menu-open:last-child {
+    border-bottom: none !important;
+}
+
+.starke-menu-group .starke-drawer-link.parent-link {
+    border-bottom: none; 
+}
+
+/* 5. SUBMENU CONTAINER (Base / Closing State) */
+.starke-drawer-submenu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    
+    /* FASTER CLOSING: 0.2s feels snappy and responsive */
+    transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    
+    background-color: #fcfcfc; 
+}
+
+/* 6. EXPANDED STATE (Opening State) */
+.starke-menu-group.starke-menu-open .starke-drawer-submenu {
+    max-height: 1000px; /* Large enough to fit any submenu */
+    opacity: 1;
+    
+    /* SMOOTH OPENING: Keep the original 0.5s speed here */
+    transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* Rotate icon when open */
+.starke-menu-group.starke-menu-open .plus-icon {
+    transform: rotate(45deg); 
+    transition: transform 0.3s ease;
+    color: #6431F6; 
+}
+
+/* 7. LINK STYLING */
+.starke-drawer-link.parent-link {
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.starke-drawer-link.sub-link {
+    padding-left: 50px !important; 
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0,0,0,0.05); 
+}
+.starke-drawer-link.sub-link:last-child {
+    border-bottom: none;
+}
+
+.starke-link-arrow svg {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* --- HAMBURGER DRAWER SLIDER --- END */
+
+/* =========================================
+   STARKE EYEBROW BAR STYLES
+   ========================================= */
+
+.starke-eyebrow-bar {
+    background-color: #000000; /* Deep Black background */
+    color: #ffffff;
+    height: 40px; /* Fixed height */
+    width: 100%;
+    position: relative; /* Scrolls away naturally */
+    z-index: 1000; /* High z-index just in case */
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.starke-eyebrow-container {
+    width: 100%;
+    max-width: 1164px; /* Match your main container width */
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    gap: 65px;
+}
+
+/* --- PHONE LINK --- */
+.starke-eyebrow-phone {
+    color: #cccccc;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.starke-eyebrow-phone i {
+    color: #FFC107; /* Starke Gold Icon */
+    font-size: 0.8rem;
+}
+
+.starke-eyebrow-phone:hover {
+    color: #ffffff;
+}
+
+/* --- 3D CONFIGURATOR BUTTON (Updated) --- */
+.starke-eyebrow-btn {
+    background-color: #FFC107; /* Starke Gold */
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 12px; /* Slightly taller for icon balance */
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between Icon and Text */
+    transition: all 0.2s ease;
+    line-height: 1;
+}
+
+/* Style the Cube Icon */
+.starke-eyebrow-btn i {
+    font-size: 0.85rem; /* Icon size */
+    color: #000000;     /* Icon is black */
+}
+
+.starke-eyebrow-btn:hover {
+    background-color: #ffffff; /* White on hover */
+    color: #000000;
+    transform: translateY(-1px);
+}
+
+/* Mobile Tweak: Hide on very small screens if needed, or stack */
+@media (max-width: 405px) {
+    .starke-eyebrow-phone span {
+        display: none; /* Hide phone number text, show icon only on tiny screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .starke-eyebrow-container {
+        gap: 40px;
+    }
+}
+
+/* =========================================
+   STARKE STICKY HEADER ANIMATION (Dynamic & Smooth)
+   ========================================= */
+
+/* 1. DEFAULT STATE */
+.header-group {
+    display: flex;
+    align-items: center;
+    
+    /* DYNAMIC START POINT:
+       We use the JS-calculated variable to set the max-height 
+       to the EXACT pixel height of the header.
+       Fallback is 90px just in case JS is slow.
+    */
+    max-height: var(--starke-header-natural-height, 90px);
+    
+    /* Smooth Ease-Out Transition */
+    transition: max-height 0.3s ease-out; 
+}
+
+/* 2. INNER ROW FIX */
+.wp-block-group.swt-block-row.header-main-row {
+    width: 100%;
+}
+
+/* 3. STUCK STATE */
+header.wp-block-template-part.starke-header-stuck .header-group {
+    /* The Target Height */
+    max-height: 64px !important; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Starke Architect Request Checkbox --- */
+.starke-architect-request {
+    display: flex;
+    align-items: flex-start; /* CHANGE: Aligns items to the top, not center */
+    gap: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+    width: 100%;
+    user-select: none;
+    position: relative;
+}
+
+/* Optional: Nudge the text down slightly so the first line aligns perfectly with the box */
+.starke-req-text { 
+    line-height: 1.4;
+}
+
+/* Custom Checkbox Appearance (Ensure no existing margins interfere) */
+.starke-architect-request input[type="checkbox"] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: 1px 0 0 0;
+}
+
+/* Checked State - Purple */
+.starke-architect-request input[type="checkbox"]:checked {
+    background-color: #6431F6;
+    border-color: #6431F6;
+}
+
+/* The Checkmark */
+.starke-architect-request input[type="checkbox"]:checked::after {
+    content: '';
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+
+/* --- Starke Architect Access Notification (Drawer) --- */
+.starke-dxf-denial-notice {
+    background-color: #fab83e; /* Starke Gold */
+    color: #000000;            /* Black Text */
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border: 1px solid #e5a838;
+    text-align: center;
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* The Black Button inside the Gold Box */
+.starke-black-pill-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.starke-black-pill-btn:hover {
+    background-color: #333333;
+    transform: translateY(-1px);
+    color: #fff;
+}
+
+/* Success Message Icon */
+#starke-dxf-success-content i {
+    color: #000000; /* Black icon on gold background */
+}
+
+/* --- Account Details Architect Section --- */
+.starke-account-access-section {
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* Modifier to make the gold box look good inside the form */
+.starke-dxf-denial-notice.account-context {
+    margin: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: none;
+    border: 1px solid #e5a838;
+}
+
+.starke-dxf-denial-notice.account-context .starke-black-pill-btn {
+    margin-top: 0; /* Align with text */
+    white-space: nowrap;
+}
+
+/* Mobile: Stack it back up */
+@media (max-width: 600px) {
+    .starke-dxf-denial-notice.account-context {
+        flex-direction: column;
+        text-align: center;
+    }
+    .starke-dxf-denial-notice.account-context .starke-black-pill-btn {
+        margin-top: 10px;
+    }
+}
+
+/* =========================================
+   STARKE PREMIUM PASSWORD METER (Midnight & Gold)
+   ========================================= */
+
+/* Shared Meter Container Style */
+.woocommerce-password-strength {
+    /* PREMIUM THEME: Midnight Purple Background, Gold Border */
+    background-color: #1c1235 !important;
+    border: 1px solid #FFC107 !important;
+    color: #FFC107 !important;
+    
+    /* Typography */
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.5px !important;
+    
+    /* Layout */
+    padding: 12px 20px !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    margin-top: 5px !important;
+    
+    /* Flexbox to align Text and Stars */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between text and stars */
+    line-height: 1 !important;
+    
+    /* Hide by default (JS toggles this) */
+    display: none; 
+}
+
+/* Force Flex when visible (Overrides jQuery's default 'block') */
+.woocommerce-password-strength[style*="display: block"] {
+    display: flex !important;
+}
+
+/* Star Container */
+.starke-password-stars {
+    display: inline-flex;
+    gap: 4px; /* Gap between stars */
+    color: #FFC107;
+}
+
+/* The Stars Themselves */
+.starke-password-stars i {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* Remove default Woo colors to ensure our Gold theme sticks */
+.woocommerce-password-strength.short,
+.woocommerce-password-strength.bad,
+.woocommerce-password-strength.good,
+.woocommerce-password-strength.strong {
+    background-color: #1c1235 !important;
+    color: #FFC107 !important;
+    border-color: #FFC107 !important;
+}
+
+/* =========================================
+   STARKE PASSWORD ERROR BOX (Matches Strength Meter Layout)
+   ========================================= */
+.starke-password-error {
+    /* BASE: Midnight Background (Same as Meter) */
+    background-color: #1c1235 !important;
+    
+    /* ERROR THEME: Red Border & Text */
+    border: 1px solid #e2401c !important;
+    color: #e2401c !important;
+    
+    /* TYPOGRAPHY: Matches 'WEAK/STRONG' labels */
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.5px !important;
+    
+    /* LAYOUT */
+    padding: 12px 20px !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    margin-top: 5px !important;
+    line-height: 1 !important;
+    
+    /* Flexbox for Icon alignment */
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Force Flex when JS shows it */
+.starke-password-error[style*="display: block"] {
+    display: flex !important;
+}
+
+.wp-site-blocks .wp-block-uagb-container.shop-molding-product-container {
+    margin-bottom: 50px !important;
+}
+
+/* DISABLE STICKY HEADER ON SINGLE PRODUCT & CHECKOUT */
+/* UPDATED: We use :not(.woocommerce-order-received) so the Order Confirmation page 
+   is EXCLUDED from this rule. This allows the header to stay sticky and animate 
+   normally on the "Thank You" page, just like the homepage. */
+
+body.single-product header,
+body.single-product header.wp-block-template-part,
+body.single-product .header-group,
+body.woocommerce-checkout:not(.woocommerce-order-received) header,
+body.woocommerce-checkout:not(.woocommerce-order-received) header.wp-block-template-part,
+body.woocommerce-checkout:not(.woocommerce-order-received) .header-group {
+    position: relative !important; 
+    top: auto !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+main .wc-block-store-notices {
+    margin-top: 0;
+}
+
+/* =========================================
+   Starke Floating Compare Button
+   ========================================= */
+.starke-floating-compare {
+    position: fixed;
+    bottom: 20px; /* 20px from Bottom */
+    
+    /* THE FIX: Increased offset to 40px to account for the scrollbar width (~17px) + Gap (~20px) */
+    left: calc(100vw - 25px); 
+    
+    right: auto; 
+    transform: translateX(-100%); /* Shift back by its own width */
+    z-index: 10;
+}
+
+/* Inherit styles from .starke-compare-btn */
+.starke-floating-compare .starke-compare-btn {
+    padding: 12px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    
+    /* Reset flex direction */
+    flex-direction: row; 
+    justify-content: center;
+    
+    /* THE FIX: Prevent text from wrapping to a second line */
+    white-space: nowrap; 
+    
+    /* Animation */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover Effect */
+.starke-floating-compare .starke-compare-btn:hover {
+    transform: translateY(-3px);
+    background-color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .starke-floating-compare {
+        bottom: 20px;
+        /* On mobile (overlay scrollbars), we don't need the extra buffer, so 20px is perfect */
+        left: calc(100vw - 20px); 
+    }
+}
+
+/* =========================================
+   Order Confirmation/View Order Image Styles
+   ========================================= */
+.starke-order-conf-img {
+    /* Make image larger */
+    width: 100px; 
+    height: auto;
+    
+    /* Ensure no borders */
+    border: none;
+    border-radius: 0;
+    
+    /* Layout: Keep on same line as text, vertically centered */
+    display: inline-block;
+    vertical-align: middle;
+    
+    /* Space between image and product name */
+    margin-right: 20px;
+    
+    /* Ensure it doesn't touch line above it */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Ensure the product name text next to it is also vertically aligned */
+.woocommerce-order-received .product-name,
+.woocommerce-view-order .product-name {
+     vertical-align: middle;
+}
+
+/* =========================================
+   Order Details (WooCommerce BLOCKS Version)
+   Matches "My Account > Orders" Card Styling
+   ** UPDATED: Fixed Zebra Striping Pattern **
+   ========================================= */
+
+/* 1. The Container (Card Look) */
+.wp-block-woocommerce-order-confirmation-totals,
+.wc-block-order-confirmation-totals {
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
+    background-color: #fff !important;
+    margin-bottom: 40px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+/* 2. The Table Reset */
+table.wc-block-order-confirmation-totals__table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+/* 3. Header Styling (White Background) */
+table.wc-block-order-confirmation-totals__table thead th {
+    background-color: #ffffff !important; /* Header is WHITE */
+    color: var(--wp--preset--color--primary, #6431F6) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 0.9rem !important;
+    padding: 20px 15px !important;
+    border-bottom: 2px solid #eee !important;
+    text-align: left;
+}
+table.wc-block-order-confirmation-totals__table thead th.wc-block-order-confirmation-totals__total {
+    text-align: right;
+}
+
+/* 4. Strict Zebra Striping (Handled by JS to prevent collisions) */
+.wc-block-order-confirmation-totals__table tr.starke-row-gray,
+.wc-block-order-confirmation-totals__table tr.starke-row-gray td,
+.wc-block-order-confirmation-totals__table tr.starke-row-gray th {
+    background-color: #f9f9f9 !important; 
+}
+
+.wc-block-order-confirmation-totals__table tr.starke-row-white,
+.wc-block-order-confirmation-totals__table tr.starke-row-white td,
+.wc-block-order-confirmation-totals__table tr.starke-row-white th {
+    background-color: #ffffff !important;
+}
+
+/* 6. Cell Spacing & Typography */
+table.wc-block-order-confirmation-totals__table td,
+table.wc-block-order-confirmation-totals__table th {
+    padding: 20px 15px !important;
+    vertical-align: middle;
+    border: none !important;
+    border-top: 1px solid #f0f0f0 !important;
+}
+
+table.wc-block-order-confirmation-totals__table .wc-block-order-confirmation-totals__total,
+table.wc-block-order-confirmation-totals__table tfoot td {
+    text-align: right !important;
+}
+
+/* 7. Image Fixes */
+.starke-order-conf-img {
+    vertical-align: middle;
+    margin-right: 15px;
+    display: inline-block;
+    mix-blend-mode: multiply;
+}
+
+/* =========================================
+   Order Confirmation Addresses (Shipping, Billing, Samples)
+   Matches Order Details Card Styling
+   ========================================= */
+
+/* 1. Address Cards (Shipping, Billing & Samples) */
+/* This targets the wrapper blocks to create the card effect */
+.wp-block-woocommerce-order-confirmation-shipping-wrapper,
+.wp-block-woocommerce-order-confirmation-billing-wrapper,
+#wc-order-confirmation-samples-address-block .wp-block-woocommerce-order-confirmation-shipping-wrapper {
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.2) !important;
+    padding: 30px !important; /* Adds breathing room inside the box */
+    height: 100% !important;  /* Forces side-by-side boxes to be equal height */
+}
+
+/* 2. Header Adjustments */
+/* Remove top margin from headers so they sit tight against the top padding */
+.wp-block-woocommerce-order-confirmation-shipping-wrapper h2,
+.wp-block-woocommerce-order-confirmation-billing-wrapper h2,
+#wc-order-confirmation-samples-address-block h3 {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    font-size: 1.2rem !important; /* Optional: Matches your other card headers */
+    text-transform: uppercase;
+    color: var(--wp--preset--color--primary, #6431F6) !important;
+    font-weight: 700 !important;
+}
+
+/* 3. Address Text Styling */
+/* Makes the address text look clean inside the card */
+.wp-block-woocommerce-order-confirmation-shipping-address address,
+.wp-block-woocommerce-order-confirmation-billing-address address {
+    font-style: normal !important;
+    line-height: 1.6 !important;
+    color: #555 !important;
+    font-size: 0.95rem !important;
+}
+
+/* 4. Increase Gap Between Shipping & Billing Columns */
+.woocommerce-order-confirmation-address-wrapper {
+    gap: 40px !important; /* Increases horizontal space between the two boxes */
+}
+
+/* 5. Spacing for Samples Section */
+/* Adds vertical space so it doesn't touch the boxes above it */
+#wc-order-confirmation-samples-address-block {
+    margin-top: 40px !important;
+}
+
+#wc-order-confirmation-samples-address-block .wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+   gap: 40px !important; 
+}
+
+.wp-block-woocommerce-order-confirmation-additional-information.wc-block-order-confirmation-additional-information {
+    font-weight: 700;
+    margin-top: 50px !important;
+}
+/* =========================================
+   Order Confirmation Page Layout Fixes
+   ========================================= */
+
+/* Add breathing room between the order details and the footer */
+body.woocommerce-order-received .starke-footer-section {
+    margin-top: 100px !important;
+}
+
+/* =========================================
+   Compare Popup Alignment Fixes
+   ========================================= */
+
+/* 1. Fix Header Alignment (Title & Image) */
+/* Previously 'flex-end' pushed everything down. 
+   'flex-start' keeps Title and Image anchored to the top. */
+.starke-header-content {
+    justify-content: flex-start !important;
+}
+
+/* 2. Fix Button/Pill Container */
+.starke-compare-actions-col {
+    /* Push to bottom of the cell */
+    margin-top: auto !important;
+    
+    /* ALIGNMENT: 
+       Align items to the TOP of this container.
+       This ensures the Pill and Button start at the same vertical point 
+       for every product, regardless of button height. */
+    justify-content: flex-start !important;
+    
+    /* RESERVED HEIGHT: 
+       Pill (~25px) + Gap (15px) + Tall Button (~68px) ≈ 108px.
+       We set 110px to guarantee the 'Request Sample' button fits 
+       without pushing the image up. */
+    min-height: 110px !important;
+}
+
+/* 1. Target the specific Showroom Container */
+.starke-showroom-stamp {
+    position: relative !important; /* anchor for the stamp */
+    overflow: hidden !important;   /* clips the banner edges */
+}
+
+/* 2. Create the "Mini" Stamp */
+.starke-showroom-stamp::after {
+    /* The Content */
+    content: "Temporarily Closed\A For Remodeling"; /* \A creates the line break */
+    white-space: pre; /* Tells browser to respect the line break */
+    
+    /* Positioning (Centered & Rotated) */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    
+    /* Visual Styles (Matched to Map, but Scaled Down) */
+    background-color: rgba(255, 193, 7, 0.95); /* Theme Gold */
+    color: #000;
+    
+    /* Typography (Smaller for this section) */
+    font-family: 'Lora', serif;
+    font-weight: 800;
+    font-size: 13px; /* Smaller font for text block */
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    
+    /* Sizing (Narrower) */
+    width: 140%;      /* Wide enough to cover corners */
+    padding: 6px 0;   /* Slimmer padding */
+    
+    /* The "Stamp" Borders & Shadow */
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    
+    /* Ensure it sits on top but allows text selection if needed */
+    z-index: 10;
+    pointer-events: none; 
+}
+
+.woocommerce-MyAccount-content .wc-block-components-notice-banner {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* =========================================================
+   Custom Pop-up Styling (With Stacked Buttons)
+   ========================================================= */
+
+.infoPopUp2 {
+    position: fixed !important;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 9999;
+    
+    background-color: #fab83e; /* Theme Gold */
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 3px rgba(0,0,0,0.5);
+    
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px 11px 11px 11px;
+    
+    min-width: 280px; 
+    max-width: 550px;
+    width: fit-content;
+    
+    font-family: "Muli", "Inter", sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+/* Header */
+.infoPopUp2 #infoHeader_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-bottom: 8px;
+}
+
+.infoPopUp2 #infoPopUpTitle_label {
+    font-size: 26px !important;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.infoPopUp2 #starke-popup-close {
+    background: transparent;
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    color: #000;
+}
+
+/* Content Box (White Rectangle) */
+.infoPopUp2 #infoContent_div {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+}
+
+.infoPopUp2 #starke-popup-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* --- BUTTONS --- */
+.infoPopUp2 .popup-actions {
+    display: flex;
+    flex-direction: column; /* Stacked */
+    gap: 12px;
+    width: 100%;
+    align-items: center; /* Centers the buttons */
+}
+
+/* 1. Save & Open (Primary - NOW PURPLE) */
+button#starke-popup-save-btn,
+button#starke-expired-ok-btn, 
+button#starke-lost-lock-ok-btn {
+    /* CHANGE: Theme Purple */
+    background-color: #6431F6; 
+    border: 1px solid #6431F6;
+    color: #fff;
+    
+    /* Layout Fixes */
+    padding: 12px 24px;
+    width: fit-content; /* Shrink to text */
+    min-height: 42px;   /* Force exact height match */
+    box-sizing: border-box;
+    line-height: 1.2;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+button#starke-popup-save-btn:hover,
+button#starke-expired-ok-btn:hover, 
+button#starke-lost-lock-ok-btn:hover {
+    /* CHANGE: Darker Purple Hover */
+    background-color: #4f26c9; 
+    border-color: #4f26c9;
+}
+
+/* 2. Overwrite (Secondary - Black/White) */
+a#starke-popup-confirm-btn {
+    background-color: #fff;
+    color: #000 !important;
+    border: 1px solid #000;
+    
+    /* Layout Fixes (Matches Save Button Exactly) */
+    padding: 12px 24px;
+    width: fit-content;
+    min-height: 42px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+a#starke-popup-confirm-btn:hover {
+    background-color: #f2f2f2;
+}
+
+/* 3. Cancel (Tertiary) */
+button#starke-popup-cancel-btn {
+    background-color: transparent;
+    color: #667;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 5px;
+}
+button#starke-popup-cancel-btn:hover {
+    color: #000;
+    text-decoration: underline;
+    background-color: transparent !important; 
+}
+
+/* Overlay */
+.starke-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9998;
+    display: none;
+    backdrop-filter: blur(2px);
+}
+
+/* =========================================================
+   Order Pay Page Table & Payment Section Styling
+     (Matches Order Confirmation "Card" Aesthetic)
+   ========================================================= */
+
+/* Add box shadow and rounded corners to the Order Pay table */
+form#order_review table.shop_table {
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+    border-radius: 8px;
+    border-collapse: separate; /* Required for border-radius to work on tables */
+    border-spacing: 0;
+    overflow: hidden; /* Keeps the inner rows from poking outside the rounded corners */
+    border: none; /* Removes any default hard borders that might clash with the shadow */
+    margin-bottom: 30px; /* Gives it a little breathing room above the payment methods */
+}
+
+/* Removes the border from the very last row so it looks clean inside the shadow box */
+form#order_review table.shop_table tfoot tr:last-child th,
+form#order_review table.shop_table tfoot tr:last-child td {
+    border-bottom: none;
+}
+
+/* Force alternating zebra stripes on the Order Pay table cells */
+form#order_review table.shop_table tr.starke-row-white th,
+form#order_review table.shop_table tr.starke-row-white td {
+    background-color: #ffffff !important;
+}
+
+form#order_review table.shop_table tr.starke-row-gray th,
+form#order_review table.shop_table tr.starke-row-gray td {
+    background-color: #f9f9f9 !important; /* Change this hex if your gray is slightly different */
+}
+
+/* Ensure the top header row stays white */
+form#order_review table.shop_table thead th {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #eee; /* Adds a nice separator below the header */
+}
+
+/* =========================================================
+   Hybrid Payment Section Styling (Nested Cards)
+   ========================================================= */
+
+/* Main payment container: soft gray background for contrast against the white page */
+form#order_review #payment {
+    background: #f4f4f4 !important;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 25px; 
+}
+
+/* The list of payment methods: turned into a white card with a border and radius */
+form#order_review #payment ul.payment_methods {
+    background-color: #ffffff !important;
+    border: 1px solid #dfdfdf !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    margin-bottom: 25px !important;
+}
+
+/* Adds a little breathing room between the radio buttons */
+form#order_review #payment ul.payment_methods li {
+    margin-bottom: 15px;
+}
+form#order_review #payment ul.payment_methods li:last-child {
+    margin-bottom: 0;
+}
+
+/* Expanded payment details (credit card inputs, check address): distinctly floating above the white UL */
+form#order_review #payment div.payment_box {
+    background-color: #ffffff !important;
+    border: 1px solid #eaeaea !important; /* Sharpens the edge to separate it from the white background */
+    border-radius: 6px !important;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.18) !important; /* Stronger drop shadow for a "floating" effect */
+    padding: 18px !important;
+    margin-top: 12px !important;
+    color: #333 !important;
+}
+
+/* Fixes the tiny pointer triangle WooCommerce adds to payment boxes to match the new border */
+form#order_review #payment div.payment_box::before {
+    border-bottom-color: #eaeaea !important; 
+}
+
+/* Style the "Pay for order" button to match the Starke purple aesthetic */
+form#order_review #payment #place_order {
+    background-color: #6431F6 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 5px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    padding: 15px 30px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2) !important;
+    width: 100%; /* Makes the button full width to match your checkout layouts */
+    margin-top: 10px;
+}
+
+form#order_review #payment #place_order:hover {
+    background-color: #4f26c9 !important;
+    /*transform: translateY(-2px);*/
+}
+
+/* --- Responsive Hero Slider Buttons --- */
+
+/* For tablets and smaller screens (768px and below) */
+@media screen and (max-width: 768px) {
+    .starke-hero-slider .hero-buttons {
+        display: flex;
+        flex-wrap: wrap; /* Allows buttons to stay side-by-side until they run out of room */
+        justify-content: center; /* Keeps them perfectly centered horizontally */
+        align-items: center;
+        gap: 12px; /* Clean gap whether they are side-by-side or stacked */
+        width: 100%;
+    }
+
+    .starke-hero-slider .starke-hero-btn.large-hero-cta {
+        font-size: 15px; /* Slightly smaller text */
+        padding: 14px 24px; /* Tighter padding */
+        width: auto; /* Lets the button shrink-wrap its text so they can sit side-by-side */
+        text-align: center;
+    }
+}
+
+/* For small mobile phones (480px and below) */
+@media screen and (max-width: 480px) {
+    .starke-hero-slider .starke-hero-btn.large-hero-cta {
+        font-size: 14px; /* Even smaller text for narrow screens */
+        padding: 12px 20px;
+        width: 100%; /* Forces them to stack on very small screens */
+        max-width: 320px; /* Keeps them from stretching too wide when stacked */
+    }
+}

@@ -1,0 +1,18 @@
+.wp-block-vern_shipping_block-payment-terms-block {
+    
+    // Ensure the container fills the width
+    .wc-block-components-radio-control {
+        width: 100%;
+    }
+
+    // Target the label element directly using its class
+    .wc-block-components-radio-control__option {
+        margin-bottom: 0 !important;   /* <--- The fix you requested */
+        margin-top: -1px !important;   /* Merges the borders */
+    }
+
+    // Reset the first item so it doesn't shift up
+    .wc-block-components-radio-control__option:first-child {
+        margin-top: 0 !important;
+    }
+}

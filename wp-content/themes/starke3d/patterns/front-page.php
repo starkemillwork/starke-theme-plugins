@@ -1,0 +1,496 @@
+<?php
+/**
+ * Title: front-page
+ * Slug: /front-page
+ * Inserter: no
+ */
+?>
+<!-- wp:template-part {"slug":"header","tagName":"header","SWTTransparentHeader":true} /-->
+
+<!-- wp:group {"align":"wide","style":{"color":{"gradient":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dgradient\u002d\u002dprimary)"},"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-background" style="background:var(--wp--preset--gradient--primary);margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:0"><!-- wp:heading {"textAlign":"center","level":1,"className":"wp-block-heading","style":{"typography":{"letterSpacing":"-1px"},"spacing":{"margin":{"top":"var:preset|spacing|large"}}},"textColor":"white"} -->
+<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--large);letter-spacing:-1px">Launch My Website Today!</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","textColor":"white"} -->
+<p class="has-text-align-center has-white-color has-text-color">Create a functional and visually appealing website</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|large"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--medium);margin-bottom:var(--wp--preset--spacing--large)"><!-- wp:button {"className":"is-style-swt-button-inverse"} -->
+<div class="wp-block-button is-style-swt-button-inverse"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"textColor":"white","className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-white-color has-text-color wp-element-button">Learn More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/hero-img.png" alt="" class=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"swt-duotone-primary","style":{"color":{"duotone":"var:preset|duotone|primary"}}} -->
+<figure class="wp-block-image size-large swt-duotone-primary"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/featured-1.svg" alt="" class=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":5,"className":"wp-block-heading","style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading"} -->
+<h5 class="wp-block-heading has-heading-color has-text-color" style="margin-top:var(--wp--preset--spacing--small)">Easily Customizable</h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Tailor your website to your liking with endless options to personalize the design and functionality.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"swt-duotone-primary","style":{"color":{"duotone":"var:preset|duotone|primary"}}} -->
+<figure class="wp-block-image size-large swt-duotone-primary"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/featured-2.svg" alt="" class=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":5,"className":"wp-block-heading","style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading"} -->
+<h5 class="wp-block-heading has-heading-color has-text-color" style="margin-top:var(--wp--preset--spacing--small)">Blazing Fast</h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Experience lightning-fast page load speeds for optimal user experience and SEO ranking.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"swt-duotone-primary","style":{"color":{"duotone":"var:preset|duotone|primary"}}} -->
+<figure class="wp-block-image size-large swt-duotone-primary"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/featured-3.svg" alt="" class=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":5,"className":"wp-block-heading","style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading"} -->
+<h5 class="wp-block-heading has-heading-color has-text-color" style="margin-top:var(--wp--preset--spacing--small)">SEO Optimized</h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Built with search engines in mind, achieve higher rankings and more traffic with optimized code.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"blockGap":"var:preset|spacing|x-large"}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"align":"wide","layout":{"type":"constrained","contentSize":""}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"center","className":"wp-block-heading","textColor":"heading"} -->
+<h2 class="wp-block-heading has-text-align-center has-heading-color has-text-color">Discover a new way to build website</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Get online quickly with easy-to-use Full Site Editor builder</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":[]}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/content-1.png" alt="" class="" style="border-radius:8px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|medium","right":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"style":{"typography":{"letterSpacing":"2px"}},"fontSize":"x-small"} -->
+<p class="has-x-small-font-size" style="letter-spacing:2px">01</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4,"className":"wp-block-heading","textColor":"heading"} -->
+<h4 class="wp-block-heading has-heading-color has-text-color">Visual editing experience</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Customize the entire website layout, including the header, footer, and all other template parts. With FSE, we can create and edit templates for their entire website, including single posts, archive pages, and custom post types.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"typography":{"fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"fontSize":"small"} -->
+<p class="has-link-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--small);font-style:normal;font-weight:500"><a href="#">Learn More</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small","left":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"style":{"typography":{"letterSpacing":"2px"}},"fontSize":"x-small"} -->
+<p class="has-x-small-font-size" style="letter-spacing:2px">02</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4,"className":"wp-block-heading","textColor":"heading"} -->
+<h4 class="wp-block-heading has-heading-color has-text-color">Innovative block patterns</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Block patterns are pre-designed block layouts that we can easily insert into their content. These patterns can help to save time and create visually appealing designs. Allows us to create custom themes using the block-based template.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"typography":{"fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"fontSize":"small"} -->
+<p class="has-link-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--small);font-style:normal;font-weight:500"><a href="#">Learn More</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/content-2.png" alt="" class="" style="border-radius:8px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":[]}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/content-3.png" alt="" class="" style="border-radius:8px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|medium","right":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"style":{"typography":{"letterSpacing":"2px"}},"fontSize":"x-small"} -->
+<p class="has-x-small-font-size" style="letter-spacing:2px">03</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4,"className":"wp-block-heading","textColor":"heading"} -->
+<h4 class="wp-block-heading has-heading-color has-text-color">Beautiful global styles</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Global styles enable us to create and apply consistent design elements across the entire website, including typography, colors, and spacing. Providing us with more control over our website's look and feel.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"typography":{"fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"fontSize":"small"} -->
+<p class="has-link-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--small);font-style:normal;font-weight:500"><a href="#">Learn More</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"typography":{"letterSpacing":"2px","textTransform":"uppercase"}},"textColor":"primary","fontSize":"x-small"} -->
+<p class="has-text-align-center has-primary-color has-text-color has-x-small-font-size" style="letter-spacing:2px;text-transform:uppercase">Testimonials</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">See what people have to say about us</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|xx-small"},"border":{"radius":"16px","width":"1px"},"dimensions":{"minHeight":"100%"}},"borderColor":"outline","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-outline-border-color" style="border-width:1px;border-radius:16px;min-height:100%;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"20px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/avatar-1.png" alt="" class="" style="border-radius:20px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Darlene Robertson</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
+<p class="has-neutral-color has-text-color has-x-small-font-size">Web designer</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":6,"className":"wp-block-heading","style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading"} -->
+<h6 class="wp-block-heading has-heading-color has-text-color" style="margin-top:var(--wp--preset--spacing--small)">Highly recommended!</h6>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This theme made the process of building my website a breeze. The drag-and-drop interface was easy to use and the templates were customizable.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|xx-small"},"border":{"radius":"16px","width":"1px"},"dimensions":{"minHeight":"100%"}},"borderColor":"outline","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-outline-border-color" style="border-width:1px;border-radius:16px;min-height:100%;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"20px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/avatar-2.png" alt="" class="" style="border-radius:20px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Jacob Jones</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
+<p class="has-neutral-color has-text-color has-x-small-font-size">Freelancer</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":6,"className":"wp-block-heading","style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading"} -->
+<h6 class="wp-block-heading has-heading-color has-text-color" style="margin-top:var(--wp--preset--spacing--small)">Endless customization</h6>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Endless customization options and responsive design, plus great customer support. Highly recommend!</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|xx-small"},"border":{"radius":"16px","width":"1px"},"dimensions":{"minHeight":"100%"}},"borderColor":"outline","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-outline-border-color" style="border-width:1px;border-radius:16px;min-height:100%;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"20px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/avatar-3.png" alt="" class="" style="border-radius:20px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Ralph Edwards</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
+<p class="has-neutral-color has-text-color has-x-small-font-size">Marketing Coordinator</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":6,"className":"wp-block-heading","style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading"} -->
+<h6 class="wp-block-heading has-heading-color has-text-color" style="margin-top:var(--wp--preset--spacing--small)">Great on any device</h6>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>I've used a few different website builders over the years, and this one is by far the best. The responsive design ensures that my website looks great on any device.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|xx-small"},"border":{"radius":"16px","width":"1px"},"dimensions":{"minHeight":"100%"}},"borderColor":"outline","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-outline-border-color" style="border-width:1px;border-radius:16px;min-height:100%;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"20px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/avatar-4.png" alt="" class="" style="border-radius:20px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Leslie Alexander</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
+<p class="has-neutral-color has-text-color has-x-small-font-size">Business owner</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":6,"className":"wp-block-heading","style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading"} -->
+<h6 class="wp-block-heading has-heading-color has-text-color" style="margin-top:var(--wp--preset--spacing--small)">Easy to use</h6>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>As a small business owner, I needed a website that was affordable. I was able to create a beautiful website that represented my brand.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"2px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
+<p class="has-text-align-center has-heading-color has-text-color has-x-small-font-size" style="font-style:normal;font-weight:500;letter-spacing:2px;text-transform:uppercase">Brought to you by the creators of</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":""} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"center","className":"swt-duotone-secondary","style":{"color":{"duotone":"var:preset|duotone|secondary"}}} -->
+<figure class="wp-block-image aligncenter size-full swt-duotone-secondary"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/featured-logo-1.svg" alt="" class=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"center","className":"swt-duotone-secondary","style":{"color":{"duotone":"var:preset|duotone|secondary"}}} -->
+<figure class="wp-block-image aligncenter size-full swt-duotone-secondary"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/featured-logo-2.svg" alt="" class=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-columns is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":""} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"center","className":"swt-duotone-secondary","style":{"color":{"duotone":"var:preset|duotone|secondary"}}} -->
+<figure class="wp-block-image aligncenter size-full swt-duotone-secondary"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/featured-logo-3.svg" alt="" class=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"center","className":"swt-duotone-secondary","style":{"color":{"duotone":"var:preset|duotone|secondary"}}} -->
+<figure class="wp-block-image aligncenter size-full swt-duotone-secondary"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/featured-logo-4.svg" alt="" class=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":""} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"center","className":"swt-duotone-secondary","style":{"color":{"duotone":"var:preset|duotone|secondary"}}} -->
+<figure class="wp-block-image aligncenter size-full swt-duotone-secondary"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/featured-logo-5.svg" alt="" class=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"center","className":"swt-duotone-secondary","style":{"color":{"duotone":"var:preset|duotone|secondary"}}} -->
+<figure class="wp-block-image aligncenter size-full swt-duotone-secondary"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/featured-logo-6.svg" alt="" class=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large","padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|large","left":"var:preset|spacing|large"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|small"}}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"className":"wp-block-heading"} -->
+<h2 class="wp-block-heading">Everything you need to create amazing websites</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Interactive design tools and its many customization options to customize anything and everything needed to build the fully-functional website of your dreams.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">Learn More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/split-content.png" alt="" class="" style="border-radius:8px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|medium"}},"backgroundColor":"quaternary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-quaternary-background-color has-background" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:heading -->
+<h2 class="wp-block-heading">Frequently Asked Questions</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">What is Full Site Editing?</h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Full Site Editing (FSE) is a feature in WordPress that allows users to visually design and customize their entire website, including the header, footer, and other template parts.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:separator {"className":"is-style-swt-separator-wide-thin-line","backgroundColor":"outline"} -->
+<hr class="wp-block-separator has-text-color has-outline-color has-alpha-channel-opacity has-outline-background-color has-background is-style-swt-separator-wide-thin-line"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">What are some benefits of using Full Site Editing?</h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Full Site Editing provides a more user-friendly, streamlined approach to website design and customization. It allows users to see changes in real-time, provides more control over design elements, and enables developers to create more custom blocks and templates.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:separator {"className":"is-style-swt-separator-wide-thin-line","backgroundColor":"outline"} -->
+<hr class="wp-block-separator has-text-color has-outline-color has-alpha-channel-opacity has-outline-background-color has-background is-style-swt-separator-wide-thin-line"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">Can I use Full Site Editing on my existing WordPress website?</h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Yes, you can use Full Site Editing on an existing WordPress website by installing a compatible theme that supports the feature.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:separator {"className":"is-style-swt-separator-wide-thin-line","backgroundColor":"outline"} -->
+<hr class="wp-block-separator has-text-color has-outline-color has-alpha-channel-opacity has-outline-background-color has-background is-style-swt-separator-wide-thin-line"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">Do I need to know how to code to use Full Site Editing?</h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No, Full Site Editing does not require knowledge of coding or web development. The drag-and-drop interface and pre-designed templates make it easy for users to create a professional-looking website without any coding experience.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large","padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:heading {"textAlign":"left","align":"wide","className":"wp-block-heading","textColor":"heading"} -->
+<h2 class="wp-block-heading alignwide has-text-align-left has-heading-color has-text-color">Latest from the blog</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":42,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"align":"wide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:post-featured-image {"isLink":true,"height":"400px","style":{"border":{"radius":"8px"}}} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small","padding":{"top":"var:preset|spacing|xx-small","bottom":"var:preset|spacing|medium"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--xx-small);padding-bottom:var(--wp--preset--spacing--medium)"><!-- wp:post-terms {"term":"category","className":"is-style-swt-post-terms-pill","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"x-small"} /-->
+
+<!-- wp:post-title {"level":4,"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|xx-small","bottom":"var:preset|spacing|xx-small"}}},"textColor":"heading"} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:post-author {"avatarSize":24,"showAvatar":false,"fontSize":"x-small"} /-->
+
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size">·</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-date {"format":"M j, Y","fontSize":"x-small"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results."} -->
+<p class="has-text-align-center"></p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","right":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"}},"color":{"gradient":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dgradient\u002d\u002dprimary)"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group has-background" style="background:var(--wp--preset--gradient--primary);padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--x-large)"><!-- wp:heading {"textAlign":"center","className":"wp-block-heading","style":{"typography":{"letterSpacing":"-1px"}},"textColor":"white"} -->
+<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" style="letter-spacing:-1px">Build your own website</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","textColor":"white"} -->
+<p class="has-text-align-center has-white-color has-text-color">Take your website to the next level!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-swt-button-inverse"} -->
+<div class="wp-block-button is-style-swt-button-inverse"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

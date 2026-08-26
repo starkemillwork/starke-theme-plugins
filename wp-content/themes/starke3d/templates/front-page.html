@@ -1,0 +1,427 @@
+<!-- wp:template-part {"slug":"starke-header","area":"header"} /-->
+
+<div class="swiper starke-hero-slider starke-startup">
+    <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+            <div class="hero-bg" style="background-image: url('https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2025/12/05151925/UNADJUSTEDNONRAW_thumb_112e6.jpg');"></div>
+            
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <span class="hero-eyebrow">EST. 1978 • NAZARETH, PA</span>
+                <h1 class="heading-text-shadow">MASTERY FROM FOREST TO FINISH.</h1>
+                <p class="hero-subtext">Manufacturing high-end architectural molding and doors for over 45 years. We control the quality from our own sawmills to your doorstep.</p>
+                
+                <div class="hero-buttons">
+    <a href="/shop" class="starke-hero-btn primary large-hero-cta">
+        SHOP MOLDING <i class="fa fa-arrow-right" style="margin-left: 8px;"></i>
+    </a>
+    
+    <a href="/doors-molding-wainscoting-catalog-pdf/" class="starke-hero-btn secondary large-hero-cta">
+        DOWNLOAD CATALOG
+    </a>
+</div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="hero-bg" style="background-image: url('https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2025/11/08190934/IMG_1273-scaled.jpeg');"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <span class="hero-eyebrow">CUSTOM DOOR EXPERTS</span>
+                <h1 class="heading-text-shadow">MONUMENTAL ENTRIES. BESPOKE INTERIORS.</h1>
+                
+                <p class="hero-subtext">Specializing in high-end exterior units, complex radius work, and detailed carvings. We engineer complete door systems that define your architectural vision.</p>
+                
+                <div class="hero-buttons">
+    <a href="/door-details" class="starke-hero-btn primary large-hero-cta">
+        VIEW DOOR DETAILS
+    </a>
+
+    <a href="/contact-us" class="starke-hero-btn gold large-hero-cta">
+        CONTACT US
+    </a>
+</div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="swiper-pagination"></div>
+</div>
+
+<script>
+(function() {
+    const hero = document.querySelector('.starke-hero-slider');
+
+    function adjustHeroHeight() {
+        if (hero) {
+            // Get the absolute distance from the top of the page to the slider
+            const topOffset = hero.getBoundingClientRect().top + window.scrollY;
+
+            // Use clientHeight to prevent mobile browser UI scroll jumps.
+            // Use Math.ceil() to round UP any decimal pixels, eliminating sub-pixel gaps.
+            const calculatedHeight = Math.ceil(document.documentElement.clientHeight - topOffset);
+
+            // Apply the exact pixel height
+            hero.style.height = calculatedHeight + 'px';
+        }
+    }
+
+    // 1. Execute immediately to prevent initial layout shift
+    adjustHeroHeight();
+
+    // 2. Recalculate once the HTML is fully parsed
+    document.addEventListener('DOMContentLoaded', adjustHeroHeight);
+
+    // 3. Recalculate once all external assets (fonts, header logos) have finished loading.
+    window.addEventListener('load', adjustHeroHeight);
+
+    // 4. Recalculate if the user resizes the window
+    window.addEventListener('resize', adjustHeroHeight);
+
+    // 5. NEW: Specifically listen for mobile device rotation
+    window.addEventListener('orientationchange', function() {
+        // Give the browser 100ms to finish redrawing the screen before calculating height
+        setTimeout(adjustHeroHeight, 100); 
+    });
+})();
+
+document.addEventListener('DOMContentLoaded', function() {
+    const heroSwiper = new Swiper('.starke-hero-slider', {
+        // Fade Effect Settings
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        speed: 1500, // 1.5 second transition for smooth fade
+        loop: true,
+        autoplay: {
+            delay: 6000, // 6 seconds per slide
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        // NEW: Tell Swiper to watch for structural changes
+        observer: true,
+        observeParents: true,
+        // NEW: Force autoplay to wake up on resize/rotation
+        on: {
+            resize: function () {
+                this.autoplay.start();
+            },
+            orientationchange: function() {
+                this.autoplay.start();
+            }
+        }
+    });
+});
+</script>
+
+<div class="starke-3d-section">
+    <div class="starke-3d-container">
+        
+        <div class="starke-3d-content">
+            <span class="starke-label">REAL 3D CUSTOMIZATION</span>
+            <h2>CUSTOMIZE EVERY MOLDING. IN REAL-TIME 3D.</h2>
+            <p>View and customize any of our 2,200+ molding profiles in our STATE-OF-THE-ART 3D Molding Configurator to see your changes instantly.</p>
+            
+            <a href="https://www.starkemillwork.com/product/4304" class="starke-3d-btn">
+                <i class="fa fa-cube"></i> TRY 3D CONFIGURATOR
+            </a>
+        </div>
+
+        <div class="starke-3d-visual">
+            
+            <a href="https://www.starkemillwork.com/product/4304" class="main-anchor-wrapper layer-back">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2026/03/18120938/ImageFor3DConfigurator_4304.png" alt="Starke 3D Configurator Main View">
+            </a>
+            
+            <a href="https://www.starkemillwork.com/product/4304" class="teaser-card layer-mid">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2025/12/29233221/3d1.png" alt="Dimensions Control">
+            </a>
+            
+            <a href="https://www.starkemillwork.com/product/4304" class="teaser-card layer-front">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2026/03/18121559/3d2.png" alt="Species Control">
+            </a>
+            
+            <div class="bg-blob"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="starke-section-container shop-molding-section">
+    
+    <div class="starke-section-header">
+        <h2>SHOP OUR 2,200+ MOLDING PROFILES</h2>
+        <div class="starke-header-line"></div>
+        <p class="starke-section-subtext">Browse the most comprehensive collection of architectural molding in the industry.</p>
+    </div>
+
+    <div class="starke-grid-4">
+        
+        <a href="/shop/?_molding_category=crowns" class="starke-shop-card">
+            <div class="card-image-wrapper">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2026/03/18120545/ImageForCrowns_1003.png" alt="Crown Molding">
+            </div>
+            <div class="card-details">
+                <h3>CROWNS</h3>
+                <p>Crowns, Solid Crowns, 2 Piece Crowns, & Much More</p>
+                <span class="shop-link">Shop Collection <i class="fa fa-arrow-right"></i></span>
+            </div>
+        </a>
+
+        <a href="/shop/?_molding_category=baseboards" class="starke-shop-card">
+            <div class="card-image-wrapper">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2026/03/18120550/ImageForBaseboards_4002.png" alt="Baseboards">
+            </div>
+            <div class="card-details">
+                <h3>BASEBOARDS</h3>
+                <p>Baseboards, Base Caps, Bolection & Much More</p>
+                <span class="shop-link">Shop Collection <i class="fa fa-arrow-right"></i></span>
+            </div>
+        </a>
+
+        <a href="/shop/?_molding_category=casings" class="starke-shop-card">
+            <div class="card-image-wrapper">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2026/03/18120541/ImageForCasings_2650.png" alt="Casings">
+            </div>
+            <div class="card-details">
+                <h3>CASINGS</h3>
+                <p>Casings, Backbands, Plinths & Much More</p>
+                <span class="shop-link">Shop Collection <i class="fa fa-arrow-right"></i></span>
+            </div>
+        </a>
+
+        <a href="/shop/?_molding_category=miscellaneous" class="starke-shop-card">
+            <div class="card-image-wrapper">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2026/03/18120554/ImageForMiscellaneous_5004.png" alt="Miscellaneous">
+            </div>
+            <div class="card-details">
+                <h3>MISCELLANEOUS</h3>
+                <p>Chair Rails, Applied Sticking, Pilasters, & Much Much More</p>
+                <span class="shop-link">Shop Collection <i class="fa fa-arrow-right"></i></span>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+
+<div class="starke-section-container new-arrivals-section">
+    
+    <div class="starke-section-header">
+        <span class="starke-label">JUST MILLED</span>
+        <h2>NEWEST DESIGNS</h2>
+        <div class="starke-header-line"></div>
+    </div>
+
+    <div class="starke-wpgb-wrapper">
+        [wpgb_grid id="2"] 
+    </div>
+
+    <div class="starke-center-btn">
+        <a href="/shop" class="starke-text-link">
+            VIEW ALL PROFILES <i class="fa fa-arrow-right"></i>
+        </a>
+    </div>
+
+</div>
+
+
+<div class="starke-section-container doors-section">
+    <div class="starke-split-layout">
+        
+        <div class="doors-visual-col">
+            <div class="door-hero-image">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2025/12/31012435/IMG_1028-scaled-1.jpeg" alt="Custom Architectural Door">
+            </div>
+            </div>
+
+        <div class="doors-content-col">
+            <div class="starke-section-header align-left">
+                <span class="starke-label">UNCOMPROMISING CUSTOMIZATION</span>
+                <h2>INTERIOR & EXTERIOR DOOR SYSTEMS</h2>
+                <div class="starke-header-line left"></div>
+            </div>
+
+            <p class="door-description">
+                Bring us your most ambitious vision. Starke Millwork manufactures high-end, fully custom door units of absolutely any complexity. From unique interior architectural slabs to complete, engineered exterior entry systems, we build exactly what you dream of.
+            </p>
+
+            <div class="door-features-grid">
+                
+                <div class="door-feature">
+                    <i class="fas fa-drafting-compass"></i>
+                    <span>ANY COMPLEXITY</span>
+                </div>
+
+                <div class="door-feature">
+                    <i class="fas fa-home"></i>
+                    <span>INTERIOR & EXTERIOR</span>
+                </div>
+
+                <div class="door-feature">
+                    <i class="fas fa-door-open"></i>
+                    <span>COMPLETE SYSTEMS</span>
+                </div>
+
+            </div>
+            <div class="door-actions">
+                <a href="/door-details" class="starke-hero-btn gold">
+                    VIEW DOOR DETAILS
+                </a>
+                <a href="/contact-us" class="starke-hero-btn ghost">
+                    REQUEST QUOTE
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="starke-section-container millwork-section">
+    <div class="starke-split-layout">
+        
+        <div class="doors-content-col">
+            <div class="starke-section-header align-left">
+                <span class="starke-label">LIMITLESS POSSIBILITIES</span>
+                <h2>HIGH-END CUSTOM MILLWORK</h2>
+                <div class="starke-header-line left"></div>
+            </div>
+
+            <p class="door-description dark-text">
+                If you can dream it, we can build it. Our shop produces high-end custom work of any scope—from bespoke cabinetry and solid wood furniture to intricate rope moldings and hand-carved ornamentation. Whether it is a custom table, a detailed bench, or a complex architectural carving, we execute anything under the sun to the highest standard of luxury.
+            </p>
+
+            <div class="door-features-grid dark-mode-fix">
+                
+                <div class="door-feature">
+                    <i class="fas fa-history"></i>
+                    <span>HISTORIC REPLICATION</span>
+                </div>
+
+                <div class="door-feature">
+                    <i class="fas fa-chair"></i>
+                    <span>CABINETRY & FURNITURE</span>
+                </div>
+
+                <div class="door-feature">
+                    <i class="fas fa-leaf"></i>
+                    <span>INTRICATE CARVINGS</span>
+                </div>
+
+            </div>
+
+            <div class="door-actions">
+                <a href="/about/contact-us" class="starke-hero-btn primary">
+                    START YOUR CUSTOM PROJECT
+                </a>
+            </div>
+        </div>
+
+        <div class="doors-visual-col">
+            <div class="door-hero-image">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2026/01/01164641/UNADJUSTEDNONRAW_thumb_120ea.jpg" alt="Custom Millwork & Carvings">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="starke-section-container gallery-section">
+    <div class="starke-split-layout">
+        
+        <div class="gallery-visual-col">
+    <div class="starke-collage-grid">
+        <a href="/photos" class="collage-item main">
+            <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2026/01/01195620/IMG_0535-scaled-1.jpeg" alt="Custom Entry Door">
+        </a>
+        <a href="/photos" class="collage-item sub1">
+            <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2025/10/17192205/UNADJUSTEDNONRAW_thumb_19314.jpg" alt="Architectural Molding">
+        </a>
+        <a href="/photos" class="collage-item sub2">
+            <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2025/10/21183329/UNADJUSTEDNONRAW_thumb_149ba.jpg" alt="Custom Millwork Project">
+        </a>
+    </div>
+</div>
+
+        <div class="gallery-content-col">
+            <div class="starke-section-header align-left">
+                <span class="starke-label">OUR PORTFOLIO</span>
+                <h2>SEE THE CRAFTSMANSHIP</h2>
+                <div class="starke-header-line left"></div>
+            </div>
+
+            <p class="door-description light-text">
+                Words and specifications can only convey so much. Explore our extensive project gallery to see the real-world impact of Starke Millwork. From grand entrance systems to subtle architectural details, browse hundreds of photos across all our specialties to find inspiration for your next project.
+            </p>
+
+            <div class="door-actions">
+                <a href="/photos" class="starke-hero-btn gold">
+                    BROWSE FULL GALLERY
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="starke-section-container story-section">
+    <div class="starke-split-layout">
+        
+        <div class="doors-content-col">
+            <div class="starke-section-header align-left">
+                <span class="starke-label">FROM FOREST TO FINISH</span>
+                
+                <h2>A LEGACY OF EXCELLENCE</h2>
+                
+                <div class="starke-header-line left"></div>
+            </div>
+
+            <p class="door-description dark-text">
+                Starke Millwork is a family-owned legacy built on over 40 years of uncompromising quality. Unlike others, we don’t just buy lumber—we control the source.
+                <br><br>
+                Through our established sawmill operations in Ghana, West Africa, and our manufacturing facility in Nazareth, PA, we oversee every step of the process. From the raw log to the finished architectural masterpiece, we ensure perfection at every stage.
+            </p>
+
+            <div class="door-actions">
+                <a href="/about-us" class="starke-hero-btn primary">
+                    READ OUR FULL STORY
+                </a>
+            </div>
+        </div>
+
+        <div class="doors-visual-col">
+            <div class="door-hero-image">
+                <img src="https://d260k5w9fy8qjz.cloudfront.net/wp-content/uploads/2026/01/08205959/UNADJUSTEDNONRAW_thumb_1a5ad.jpg" alt="Starke Millwork Facility History">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- wp:template-part {"slug":"starke-footer","area":"footer"} /-->

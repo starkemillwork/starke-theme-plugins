@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('lodash', 'react', 'wc-blocks-checkout', 'wc-blocks-components', 'wc-settings', 'wp-components', 'wp-data', 'wp-element', 'wp-notices'), 'version' => 'c387e453040a5a934dc6');

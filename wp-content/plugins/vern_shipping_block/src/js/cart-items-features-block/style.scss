@@ -1,0 +1,483 @@
+.wc-block-components-totals-shipping.wp-block-vern_shipping_block-cart-items-features-block {
+	.block-editor-rich-text__editable {
+		vertical-align: middle;
+		line-height: 24px;
+	}
+
+	.wc-block-components-shipping-address {
+		margin-top: 3px;
+	}
+
+	.wc-block-components-totals-item__description {
+		display: flex;
+		gap: 0px 8px;
+		align-items: center;
+	}
+
+	.shipping-totals-label-and-cost {
+		width: 100%;
+		display: flex;
+		gap: 0px 8px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.wc-block-components-totals-item__label {
+		font-weight: 600;
+	}
+}
+
+.editor-styles-wrapper {
+	.wp-block-vern_shipping_block-cart-items-features-block {
+		.wc-block-components-checkbox {
+			margin-right: 0;
+			margin-top: 0;
+		}
+	}
+}
+
+/*
+ * Hide the default mini-cart items tbody to prevent flicker before
+ * the React component takes over.
+ */
+.wc-block-mini-cart-items tbody {
+    visibility: hidden;
+}
+
+.wc-block-mini-cart-items.is-react-initialized tbody {
+    visibility: visible;
+}
+
+// --- NEW STYLES FOR CHECKOUT PAGE CART ITEMS ---
+
+/*
+ * 1. Flicker-Fix for Checkout Page:
+ * Hide the original order summary items before our React component loads.
+*/
+.wc-block-components-order-summary__content > .wc-block-components-order-summary-item {
+    display: none !important;
+}
+
+/*
+ * 2. Layout Styles for our Custom Component on the Checkout Page:
+ * These rules are a more accurate copy from the original mini-cart styles
+ * to ensure a consistent appearance on all screen sizes.
+*/
+.wp-block-woocommerce-checkout-order-summary-block .wc-block-cart-items {
+    display: table;
+    background: none !important;
+    width: 100%;
+    border: 0;
+    margin: 0;
+
+    .wc-block-components-product-name {
+        display: block;
+        line-height: 1.4;
+        max-width: max-content;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .wc-block-components-product-metadata {
+        font-size: .75em;
+        margin-bottom: 12px;
+    }
+
+    .wc-block-components-product-details {
+        margin-bottom: 0;
+        list-style: none;
+        margin: .5em 0;
+        padding: 0;
+    }
+
+    .wc-block-components-product-details.wc-block-components-product-details li {
+        margin-left: 0;
+    }
+
+    .wc-block-components-product-details__name, .wc-block-components-product-details__value {
+        display: inline-block;
+    }
+
+    .wc-block-components-product-details.wc-block-components-product-details {
+        list-style: none;
+    }
+    
+    .wc-block-cart-item__quantity {
+        -ms-grid-row-align: end;
+        align-self: end;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        padding-right: 16px;
+        padding-top: 0;
+        vertical-align: bottom;
+        margin-bottom: 0;
+    }
+
+    .wc-block-components-quantity-selector {
+        border-radius: 4px;
+        box-sizing: content-box;
+        display: flex;
+        margin-bottom: 12px;
+        margin: 0 0 .25em;
+        position: relative;
+        width: 107px;
+    }
+
+    .wc-block-components-quantity-selector input.wc-block-components-quantity-selector__input {
+        -moz-appearance: textfield;
+        appearance: textfield;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        color: currentColor;
+        flex: 1 1 auto;
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 1;
+        margin: 0;
+        min-width: 40px;
+        order: 2;
+        padding: .4em 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .wc-block-components-quantity-selector:after {
+        border: 1px solid hsla(0, 0%, 7%, .11);
+        border-radius: 4px;
+        bottom: 0;
+        content: "";
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .wc-block-cart-item__remove-link {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        color: inherit;
+        display: inline;
+        font-family: inherit;
+        font-size: .75em;
+        padding: 0;
+        text-decoration: underline;
+        white-space: nowrap;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .wc-block-cart-items__row {
+        // Each row becomes a grid container
+        display: grid;
+        grid-template-columns: 70px 250px; // Image column and content column
+        padding: 16px 0;
+    }
+
+    // Position grid items
+    .wc-block-cart-item__image {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        padding-right: 16px;
+        margin: 0;
+    }
+
+    .wc-block-cart-item__product {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        justify-self: stretch;
+        padding: 0;
+        margin: 0;
+        background: none !important;
+        border: 0;
+    }
+
+    .wc-block-cart-item__total {
+        grid-row-start: 1;
+        font-size: 1em;
+        line-height: 1.8;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        background: none !important;
+        border: 0;
+    }
+
+    .wc-block-components-product-price__value {
+        display: inline-block;
+    }
+
+    @media (max-width: 475px) {
+        .wc-block-cart-items__row {
+            grid-template-columns: 60px 224px;
+        }
+    }
+
+    @media (max-width: 448px) {
+        .wc-block-cart-items__row {
+            grid-template-columns: 60px 174px;
+        }
+    }
+}
+
+body.woocommerce-checkout {
+    .wp-block-woocommerce-checkout-order-summary-block {
+        /*border: 2px dashed rgb(210, 210, 210);*/
+        border-radius: 5px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
+    }
+
+    .wp-block-woocommerce-checkout-order-summary-totals-block {
+        border-top: 2px dashed rgb(210, 210, 210);
+    }
+    
+    .wc-block-components-sidebar-layout .wc-block-components-main {
+        width: 55%;
+    }
+
+    .wc-block-components-sidebar {
+        width: 45%;
+    }
+
+    .wc-block-components-panel__button {
+        cursor: auto;
+    }
+
+    .wc-block-components-sidebar-layout.is-large .wc-block-checkout__sidebar {
+        position: sticky;
+        top: 24px;
+    }
+
+    @media (max-width: 1080px) {
+        .wc-block-components-sidebar-layout:has(>:last-child.wp-block-woocommerce-checkout-fields-block) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wc-block-components-sidebar-layout .wc-block-components-main {
+            padding: 0;
+            width: 100%;
+            order: 0;
+            max-width: 655px;
+        }
+
+        .wc-block-components-sidebar {
+            padding: 0;
+            width: 100%;
+            margin-bottom: 24px;
+            order: 1;
+            max-width: 655px;
+            align-self: unset;
+        }
+    }
+}
+
+/* Restore left and right padding for the custom cart items wrapper 
+   now that it sits in the stable outer DOM node. */
+#custom-checkout-items-wrapper {
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media (max-width: 746px) {
+    #custom-checkout-items-wrapper {
+        padding: 0;
+    }
+}
+
+.wc-block-components-checkout-order-summary__content > .wc-block-components-totals-wrapper:last-child {
+    border-top: 2px dashed rgb(210, 210, 210) !important;
+}
+
+.wp-block-woocommerce-checkout-order-summary-cart-items-block.wc-block-components-totals-wrapper {
+    border-top: 0;
+}
+
+.wp-block-woocommerce-checkout-totals-block .wc-block-components-notices {
+   display: none !important;
+}
+
+#edit-profile-button {
+    display: block;
+    background-color: rgb(250, 184, 62);
+    color: black;
+    box-shadow: 1px 2px 8px #0009;
+    border-radius: 5px;
+    font-family: "Muli", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    width: fit-content;
+    height: 32px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: -8px;
+    line-height: 32px;
+    padding: 0 12px;
+    margin-bottom: 9px;
+    transition: all 0.2s ease !important;
+}
+
+.quote-buttons {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    background-color: #fab83e;
+    color: black;
+    box-shadow: 1px 2px 8px #0009;
+    border-radius: 5px;
+    border: none;
+    font-family: "Muli", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    pointer-events: auto;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease !important;
+}
+
+.guest-login-checkout-button {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    background-color: #fab83e;
+    color: black;
+    box-shadow: 1px 2px 8px #0009;
+    border-radius: 5px;
+    border: none;
+    font-family: "Muli", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    pointer-events: auto;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 37px;
+    transition: all 0.2s ease !important;
+}
+
+#edit-profile-button:not(:disabled):hover, .quote-buttons:not(:disabled):hover, .guest-login-checkout-button:not(:disabled):hover {
+    transform: translateY(-2px);
+}
+
+
+// Custom styles for the Spinner React component
+.custom-spinner-wrapper {
+    display: inline-block;
+
+    .wc-block-components-spinner {
+        position: relative;
+        font-size: 1em;
+        margin-inline-end: 11px;
+        margin-inline-start: 11px;
+
+        &::after {
+            border: .25em solid;
+            border-left-color: transparent;
+            margin: -.55em 0 0 -.5em;
+        }
+    }
+}
+
+.wp-block-woocommerce-checkout-totals-block .wp-block-woocommerce-checkout-actions-block .wc-block-checkout__actions_row .wc-block-components-checkout-place-order-button {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2);
+}
+
+.wc-block-mini-cart__footer .wc-block-mini-cart__footer-actions .wp-block-woocommerce-mini-cart-checkout-button-block {
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2);
+}
+
+.wp-block-woocommerce-mini-cart-shopping-button-block {
+    border-radius: 5px !important;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, .2) !important;
+}
+
+@media (max-width: 746px) { // 731px previously
+	.wc-block-checkout__actions .wp-block-woocommerce-checkout-order-summary-block {
+		display: none;
+	}
+
+	.wp-block-woocommerce-checkout .wp-block-woocommerce-checkout-order-summary-block .wc-block-components-checkout-order-summary__title {
+		border-top: none;
+		padding-top: 0;
+        border-bottom: none;
+	}
+
+	.wp-block-woocommerce-checkout-order-summary-block {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.wp-block-woocommerce-checkout .wp-block-woocommerce-checkout-order-summary-block .wc-block-components-checkout-order-summary__content.is-open {
+		border-bottom: none;
+	}
+}
+
+.wp-block-woocommerce-checkout-shipping-methods-block .wc-block-components-checkout-step__container .wc-block-components-shipping-rates-control .wc-block-components-shipping-rates-control__package .wc-block-components-radio-control__secondary-label {
+    flex: 0 0 30%;
+}
+
+// Custom image skeleton sizing to respect grid layouts
+.cart-item-image-skeleton {
+    aspect-ratio: 1 / 1;
+    max-width: 64px; 
+}
+
+/* Targets all WooCommerce block checkboxes */
+.wc-block-components-checkbox input[type="checkbox"].wc-block-components-checkbox__input {
+    appearance: none;
+    background-color: white;
+    border: 2px solid #6431f6; /* Purple border */
+    border-radius: 4px; /* Matches the existing Woo styling */
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    
+    /* Keeping WooCommerce's default sizing */
+    height: 1.5em;
+    width: 1.5em;
+    min-height: 1.5em;
+    min-width: 1.5em;
+    margin: 0 1em 0 0;
+}
+
+/* The custom checkmark */
+.wc-block-components-checkbox input[type="checkbox"].wc-block-components-checkbox__input::before {
+    content: "";
+    width: 0.9em; /* Scaled up slightly to fit the larger 1.5em box */
+    height: 0.9em;
+    clip-path: polygon(14% 44%, 0px 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: left bottom;
+    background-color: white;
+    box-shadow: none;
+    /* Transitions removed for an instant snap */
+}
+
+/* The selected state */
+.wc-block-components-checkbox input[type="checkbox"].wc-block-components-checkbox__input:checked {
+    background-color: #6431f6;
+    background-image: none; /* This is crucial: it hides WooCommerce's default SVG checkmark */
+}
+
+.wc-block-components-checkbox input[type="checkbox"].wc-block-components-checkbox__input:checked::before {
+    transform: scale(1);
+}
+
+.wc-block-components-checkbox .wc-block-components-checkbox__mark {
+    display: none !important; /* Hide the default checkmark element */
+}

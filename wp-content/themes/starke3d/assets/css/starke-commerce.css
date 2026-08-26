@@ -1,0 +1,63 @@
+.starke-commerce-wrap .form-table {
+    width: 100%;
+    max-width: 780px;
+}
+
+.starke-commerce-wrap .form-table th {
+    width: 40%;
+    font-weight: 600;
+}
+
+.starke-commerce-wrap .form-table td {
+    padding: 15px 10px;
+}
+
+.starke-commerce-wrap input[type="number"] {
+    width: 100%;
+    max-width: 25em;
+}
+
+#discounts-repeater {
+    margin-left: 14px;
+}
+
+#discounts-repeater .repeater-item {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+#discounts-repeater .repeater-item input {
+    width: 8em;
+}
+
+#discounts-repeater .add-discount {
+    margin-top: 10px;
+}
+
+.starke-number-input {
+    display: flex;
+    align-items: center;
+    max-width: 16em;
+    flex-grow: 1;
+}
+
+.starke-currency-symbol {
+    padding-right: 5px;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.starke-commerce-wrap .form-table th {
+    width: 258px; /* Adjust this value as needed */
+    font-weight: 600;
+}
+
+button.button.add-discount-row {
+    margin-left: 0px;
+}
+
+button.button.remove-discount-row {
+    margin-left: 0px;
+}

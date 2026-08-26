@@ -1,0 +1,5 @@
+node_modules/
+wp-content/themes/starke3d/dist/
+.vs/
+.env
+*.log

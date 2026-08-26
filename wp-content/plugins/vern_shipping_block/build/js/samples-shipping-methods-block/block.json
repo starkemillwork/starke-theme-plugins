@@ -1,0 +1,36 @@
+{
+  "apiVersion": 3,
+  "name": "vern_shipping_block/samples-shipping-methods-block",
+  "version": "2.0.0",
+  "title": "Samples Shipping Methods!",
+  "category": "woocommerce",
+  "description": "Adds shipping methods for samples to the checkout.",
+  "supports": {
+    "html": false,
+    "align": false,
+    "multiple": false,
+    "reusable": false
+  },
+  "parent": [
+    "woocommerce/checkout-fields-block"
+  ],
+  "attributes": {
+    "lock": {
+      "type": "object",
+      "default": {
+        "remove": true,
+        "move": true
+      }
+    },
+    "text": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-vern_shipping_block-samples-shipping-methods-block",
+      "default": ""
+    }
+  },
+  "textdomain": "vern_shipping_block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:../../../build/style-vern_shipping_block-samples-shipping-methods-block.css",
+  "style": "file:./style.css"
+}

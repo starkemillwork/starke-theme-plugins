@@ -1,0 +1,28 @@
+{
+	"name": "vern_shipping_block",
+	"version": "0.1.1",
+	"author": "Vern",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"postinstall": "npm i --D \"prettier@npm:wp-prettier@latest\" && npm i --D eslint-plugin-prettier@latest"
+	},
+	"devDependencies": {
+		"@woocommerce/components": "^12.3.0",
+		"@woocommerce/dependency-extraction-webpack-plugin": "^3.1.0",
+		"@woocommerce/eslint-plugin": "^2.3.0",
+		"@wordpress/prettier-config": "^2.18.2",
+		"@wordpress/scripts": "^30.10.0"
+	},
+	"dependencies": {
+		"lodash": "^4.17.21",
+		"typescript": "^5.1.0-dev.20230406"
+	}
+}

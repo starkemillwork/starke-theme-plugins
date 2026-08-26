@@ -1,0 +1,35 @@
+{
+	"apiVersion": 3,
+	"name": "vern_shipping_block/contact-features-block",
+	"version": "2.0.0",
+	"title": "Newsletter Subscription!",
+	"category": "woocommerce",
+	"description": "Adds a newsletter subscription checkbox to the checkout.",
+	"supports": {
+		"html": false,
+		"align": false,
+		"multiple": false,
+		"reusable": false,
+		"inserter": true
+	},
+	"parent": ["woocommerce/checkout-contact-information-block"],
+	"attributes": {
+		"lock": {
+			"type": "object",
+			"default": {
+				"remove": true,
+				"move": true
+			}
+		},
+		"text": {
+			"type": "string",
+			"source": "html",
+			"selector": ".wp-block-vern_shipping_block-contact-features-block",
+			"default": ""
+		}
+	},
+	"textdomain": "vern_shipping_block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:../../../build/style-vern_shipping_block-contact-features-block.css",
+	"style": "file:./style.css"
+}
