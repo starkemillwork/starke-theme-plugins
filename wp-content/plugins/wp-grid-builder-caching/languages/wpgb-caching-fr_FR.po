@@ -1,0 +1,252 @@
+# Loco Gettext template
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Grid Builder - Caching\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-grid-builder-"
+"caching\n"
+"POT-Creation-Date: 2024-04-02T08:39:03+00:00\n"
+"PO-Revision-Date: 2024-04-02 10:41+0200\n"
+"Last-Translator: \n"
+"Language-Team: Wp Trads <contact@wolforg.eu>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"POT-Revision-Date: Tue Apr 07 2020 16:45:50 GMT+0200 (heure d’été d’Europe "
+"centrale)\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Plugin Name of the plugin
+msgid "WP Grid Builder - Caching"
+msgstr "WP Grid Builder - Caching"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.wpgridbuilder.com"
+msgstr "https://www.wpgridbuilder.com"
+
+#. Description of the plugin
+msgid ""
+"Speed up loading time when filtering grids by caching content and facets."
+msgstr ""
+"Accélérez le temps de chargement lors du filtrage des grilles en mettant en "
+"cache le contenu et les facettes."
+
+#. Author of the plugin
+msgid "Loïc Blascos"
+msgstr "Loïc Blascos"
+
+#. translators: %d: time in day
+#: includes/class-cron.php:72
+msgid "Every day"
+msgstr "Tous les jours"
+
+#: includes/class-menu.php:77
+msgid "Gridbuilder ᵂᴾ"
+msgstr "Gridbuilder ᵂᴾ"
+
+#: includes/class-menu.php:85
+msgid "Clear cache (all)"
+msgstr "Vider le cache (tout)"
+
+#: includes/class-menu.php:105
+msgid "Clear cache (this page)"
+msgstr "Vider le cache (cette page)"
+
+#: includes/class-plugin.php:246
+msgid ""
+"<strong>Gridbuilder ᵂᴾ - Caching</strong> add-on requires at least "
+"<code>Gridbuilder ᵂᴾ v1.1.5</code>. Please update Gridbuilder ᵂᴾ to use "
+"Caching add-on."
+msgstr ""
+"Le module <strong>Gridbuilder ᵂᴾ - Caching</strong> nécessite au moins "
+"<code>Gridbuilder ᵂᴾ v1.1.5</code>. Veuillez mettre à jour Gridbuilder ᵂᴾ "
+"pour utiliser le module Caching."
+
+#: includes/class-rest.php:83
+msgid "You do not have enough permissions to complete the operation."
+msgstr ""
+"Vous ne disposez pas d'autorisations suffisantes pour effectuer l'opération."
+
+#: includes/class-rest.php:104
+msgid "Cache cleared."
+msgstr "Cache vidé."
+
+#: includes/class-settings.php:137 includes/class-settings.php:158
+#: includes/class-settings.php:159
+msgid "Caching"
+msgstr "Mise en cache"
+
+#: includes/class-settings.php:160
+msgid "Manage caching of your grids and facets."
+msgstr "Gérez la mise en cache de vos grilles et facettes."
+
+#. translators: %1$s Number of rows in cache table, %2$s cache table length.
+#: includes/class-settings.php:256
+msgid "Cache table: &#126;%1$d row (&#126;%2$.2fMB)"
+msgid_plural "Cache table: &#126;%1$d rows (&#126;%2$.2fMB)"
+msgstr[0] "Table du cache : &#126;%1$d ligne (&#126;%2$.2fMB)"
+msgstr[1] "Table du cache : &#126;%1$d lignes (&#126;%2$.2fMB)"
+
+#: includes/class-settings.php:274
+msgid "Cache cleared!"
+msgstr "Cache vidé !"
+
+#: includes/controls.php:19 includes/fields.php:76
+msgid "Caching Rules"
+msgstr "Règles de mise en cache"
+
+#: includes/controls.php:20
+msgid "Include and exclude content from cache."
+msgstr "Inclure et exclure du contenu du cache."
+
+#: includes/controls.php:24 includes/fields.php:81
+msgid "Exclude Grids"
+msgstr "Exclure des grilles"
+
+#: includes/controls.php:26 includes/fields.php:87
+msgctxt "Exclude Grids default value"
+msgid "None"
+msgstr "Aucune"
+
+#: includes/controls.php:32 includes/fields.php:93
+msgid "Exclude Facets"
+msgstr "Exclure des facettes"
+
+#: includes/controls.php:34 includes/fields.php:99
+msgctxt "Exclude Facets default value"
+msgid "None"
+msgstr "Aucune"
+
+#: includes/controls.php:42
+msgid "Behaviour"
+msgstr "Comportement"
+
+#: includes/controls.php:43
+msgid "Manage caching duration and actions."
+msgstr "Gérer la durée de la mise en cache et les actions."
+
+#: includes/controls.php:51 includes/fields.php:119
+msgid "Cache Lifespan"
+msgstr "Durée de vie du cache"
+
+#: includes/controls.php:57
+msgid "Cache Lifespan Unit"
+msgstr "Unité de la durée de vie du cache"
+
+#: includes/controls.php:63 includes/fields.php:136
+msgid "Minutes"
+msgstr "Minutes"
+
+#: includes/controls.php:67 includes/fields.php:137
+msgid "Hours"
+msgstr "Heures"
+
+#: includes/controls.php:71 includes/fields.php:138
+msgid "Days"
+msgstr "Jours"
+
+#: includes/controls.php:79 includes/fields.php:112
+msgid "Automatic Purge"
+msgstr "Purge automatique"
+
+#: includes/controls.php:80
+msgid "Purge cache automatically when updating content."
+msgstr "Purger automatiquement le cache lors de la mise à jour du contenu."
+
+#: includes/controls.php:84 includes/fields.php:66
+msgid "Admin Bar"
+msgstr "Barre d'administration"
+
+#: includes/controls.php:85
+msgid "Display a quick-action menu in the admin bar."
+msgstr "Afficher un menu d'action rapide dans la barre d'administration."
+
+#: includes/controls.php:96
+msgid ""
+"<strong>If you change cache lifespan</strong>, please clear the cache to "
+"prevent any issue. Otherwise, several cache versions from different "
+"lifespans can be mixed."
+msgstr ""
+"<strong>Si vous changez la durée de vie du cache</strong>, veuillez vider le "
+"cache pour éviter tout problème. Sinon, plusieurs versions de cache "
+"provenant de différentes durées de vie peuvent être mélangées."
+
+#: includes/fields.php:61
+msgid "Cache Menu"
+msgstr "Menu du cache"
+
+#: includes/fields.php:67
+msgid "Display a menu of quick actions in the admin bar to clear cache."
+msgstr ""
+"Affiche un menu d'actions rapides dans la barre d'administration pour vider "
+"le cache."
+
+#: includes/fields.php:107
+msgid "Cache Behaviour"
+msgstr "Comportement du cache"
+
+#: includes/fields.php:113
+msgid ""
+"Purge cache automatically when updating your posts, taxonomy terms, users "
+"and any related data."
+msgstr ""
+"Purge automatiquement le cache lors de la mise à jour de vos articles, des "
+"termes de taxonomie, des utilisateurs et de toute donnée associée."
+
+#: includes/fields.php:120
+msgid ""
+"The whole cache will be automatically cleared according to the time period "
+"you specified."
+msgstr ""
+"L’ensemble du cache sera automatiquement vidé selon la période que vous avez "
+"indiquée."
+
+#: includes/fields.php:146
+msgid "Cache Content"
+msgstr "Contenu du cache"
+
+#: includes/fields.php:152
+msgid "Processing..."
+msgstr "En cours..."
+
+#: includes/fields.php:153
+msgid "Clear cache"
+msgstr "Vider le cache"
+
+#: includes/fields.php:154
+msgid "Please refresh the page to get cache stats."
+msgstr "Veuillez rafraîchir la page pour obtenir les statistiques du cache."
+
+#: includes/fields.php:154
+msgid "Loading cache stats..."
+msgstr "Chargement des statistiques du cache..."
+
+#: includes/fields.php:160
+msgid ""
+"<strong>If you change cache lifespan</strong>, please clear the cache to "
+"prevent any issue.<br>Otherwise, several cache versions from different "
+"lifespans can be mixed."
+msgstr ""
+"<strong>Si vous changez la durée de vie du cache</strong>, veuillez vider le "
+"cache pour éviter tout problème.<br>Sinon, plusieurs versions de cache "
+"provenant de différentes durées de vie peuvent être mélangées."
+
+#: assets/js/admin.js:10
+msgid "Clearing..."
+msgstr "Effaçage…"
+
+#: assets/js/admin.js:10
+msgid "Clear Cache (%d row)"
+msgid_plural "Clear Cache (%d rows)"
+msgstr[0] "Vider le cache (%s ligne)"
+msgstr[1] "Vider le cache (%s lignes)"
