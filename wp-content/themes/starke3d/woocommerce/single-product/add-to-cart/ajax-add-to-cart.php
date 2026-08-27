@@ -169,7 +169,7 @@ function add_or_update_custom_fields_in_cart($cart_item_data, $product_id) {
             if ( ! $matched_key_after_edit ) {
                 $cart->set_session();
             }
-            wp_send_json_success(['message' => $edited_item_message, 'checkout_url' => 'https://www.starkemillwork.com/checkout']);
+            wp_send_json_success(['message' => $edited_item_message, 'checkout_url' => wc_get_checkout_url()]);
             wp_die();
         }
     }
@@ -251,7 +251,7 @@ function add_or_update_custom_fields_in_cart($cart_item_data, $product_id) {
         }
         
         $cart->set_session();
-        wp_send_json_success(['message' => 'cart_item_consolidated', 'checkout_url' => 'https://www.starkemillwork.com/checkout']);
+        wp_send_json_success(['message' => 'cart_item_consolidated', 'checkout_url' => wc_get_checkout_url()]);
         wp_die();
     }
     

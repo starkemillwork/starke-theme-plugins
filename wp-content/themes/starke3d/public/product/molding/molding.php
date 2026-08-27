@@ -1609,11 +1609,11 @@ add_action('wp_footer', function() {
                 var newVal = ids.join(',');
 
                 // A. Force Save to CORRECT Domain
-                var correctDomain = '.www.starkemillwork.com';
+                var correctDomain = '.' + window.location.hostname;
                 document.cookie = 'br_products_compare=' + newVal + '; Path=/; domain=' + correctDomain + '; Max-Age=' + (86400 * 7) + ';';
 
                 // B. Force Delete "Bad" Domain (.starkemillwork.com)
-                document.cookie = 'br_products_compare=; Path=/; domain=.starkemillwork.com; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+                document.cookie = 'br_products_compare=; Path=/; domain=.' + window.location.hostname.replace(/^www\./, '') + '; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
 
                 // C. Force Delete "Host Only" Duplicate (No domain set)
                 document.cookie = 'br_products_compare=; Path=/; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
@@ -1664,12 +1664,12 @@ add_action('wp_footer', function() {
 
             window.starkeClearAll = function() {
                 // 1. Clear the Cookie (CORRECT DOMAIN)
-                var correctDomain = '.www.starkemillwork.com';
+                var correctDomain = '.' + window.location.hostname;
                 document.cookie = 'br_products_compare=; Path=/; domain=' + correctDomain + '; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
                 
                 // 2. Clear Bad Domain (.starkemillwork.com)
                 // Explicitly removes the duplicate you identified
-                document.cookie = 'br_products_compare=; Path=/; domain=.starkemillwork.com; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+                document.cookie = 'br_products_compare=; Path=/; domain=.' + window.location.hostname.replace(/^www\./, '') + '; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
                 
                 // 3. Clear Duplicates (Host Only / No Domain)
                 document.cookie = 'br_products_compare=; Path=/; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
@@ -2796,7 +2796,6 @@ function starke_save_and_clear_compare_cookie_on_logout() {
     if ( ! isset($_COOKIE['original_admin_id']) ) {
         $domain = '.' . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '');
         setcookie('br_products_compare', '', time() - 3600, '/', $domain);
-        setcookie('br_products_compare', '', time() - 3600, '/', '.starkemillwork.com');
         setcookie('br_products_compare', '', time() - 3600, '/');
     }
     

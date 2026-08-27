@@ -1082,58 +1082,60 @@ function starke_render_hamburger_drawer() {
                 <div class="starke-drawer-scroll-content">
                     <?php
                     // --- UPDATED MENU ITEMS WITH UNIQUE ICONS ---
+                    // URLs built from home_url() rather than hardcoded, so this menu
+                    // still points at the right domain on any environment.
                     $menu_items = array(
-                        array( 
-                            'title' => 'Home', 
-                            'url'   => 'https://www.starkemillwork.com', 
-                            'icon'  => 'fas fa-home', 
-                            'children' => [] 
+                        array(
+                            'title' => 'Home',
+                            'url'   => home_url( '/' ),
+                            'icon'  => 'fas fa-home',
+                            'children' => []
                         ),
-                        array( 
-                            'title' => 'Shop Molding', 
-                            'url'   => 'https://www.starkemillwork.com/shop/', 
-                            'icon'  => 'fas fa-store', 
-                            'children' => [] 
+                        array(
+                            'title' => 'Shop Molding',
+                            'url'   => home_url( '/shop/' ),
+                            'icon'  => 'fas fa-store',
+                            'children' => []
                         ),
-                        array( 
-                            'title' => 'Doors', 
-                            'url'   => 'https://www.starkemillwork.com/door-details/', 
-                            'icon'  => 'fas fa-door-open', 
+                        array(
+                            'title' => 'Doors',
+                            'url'   => home_url( '/door-details/' ),
+                            'icon'  => 'fas fa-door-open',
                             'children' => array(
-                                array( 'title' => 'Sticking Profiles', 'url' => 'https://www.starkemillwork.com/door-details/#sticking' ),
-                                array( 'title' => 'Panel Profiles', 'url' => 'https://www.starkemillwork.com/door-details/#panel' ),
-                                array( 'title' => 'Groove Profiles', 'url' => 'https://www.starkemillwork.com/door-details/#groove' ),
-                                array( 'title' => 'Saddle Options', 'url' => 'https://www.starkemillwork.com/door-details/#saddle-options' ),
-                                array( 'title' => 'Finish Options', 'url' => 'https://www.starkemillwork.com/door-details/#finish-options' ),
+                                array( 'title' => 'Sticking Profiles', 'url' => home_url( '/door-details/#sticking' ) ),
+                                array( 'title' => 'Panel Profiles', 'url' => home_url( '/door-details/#panel' ) ),
+                                array( 'title' => 'Groove Profiles', 'url' => home_url( '/door-details/#groove' ) ),
+                                array( 'title' => 'Saddle Options', 'url' => home_url( '/door-details/#saddle-options' ) ),
+                                array( 'title' => 'Finish Options', 'url' => home_url( '/door-details/#finish-options' ) ),
                         )),
-                        array( 
-                            'title' => 'Photos', 
-                            'url'   => 'https://www.starkemillwork.com/photos', 
-                            'icon'  => 'fas fa-images', 
+                        array(
+                            'title' => 'Photos',
+                            'url'   => home_url( '/photos' ),
+                            'icon'  => 'fas fa-images',
                             'children' => array(
-                                array( 'title' => 'Interior Doors', 'url' => 'https://www.starkemillwork.com/photos/#interior-doors' ),
-                                array( 'title' => 'Exterior Doors', 'url' => 'https://www.starkemillwork.com/photos/#exterior-doors' ),
-                                array( 'title' => 'Molding', 'url' => 'https://www.starkemillwork.com/photos/#molding' ),
-                                array( 'title' => 'Wainscoting', 'url' => 'https://www.starkemillwork.com/photos/#wainscoting' ),
-                                array( 'title' => 'Commercial Jobs', 'url' => 'https://www.starkemillwork.com/photos/#commercial-jobs' ),
-                                array( 'title' => 'Odds and Ends', 'url' => 'https://www.starkemillwork.com/photos/#odds-and-ends' ),
-                                array( 'title' => 'Work In Progress', 'url' => 'https://www.starkemillwork.com/photos/#work-in-progress' ),
+                                array( 'title' => 'Interior Doors', 'url' => home_url( '/photos/#interior-doors' ) ),
+                                array( 'title' => 'Exterior Doors', 'url' => home_url( '/photos/#exterior-doors' ) ),
+                                array( 'title' => 'Molding', 'url' => home_url( '/photos/#molding' ) ),
+                                array( 'title' => 'Wainscoting', 'url' => home_url( '/photos/#wainscoting' ) ),
+                                array( 'title' => 'Commercial Jobs', 'url' => home_url( '/photos/#commercial-jobs' ) ),
+                                array( 'title' => 'Odds and Ends', 'url' => home_url( '/photos/#odds-and-ends' ) ),
+                                array( 'title' => 'Work In Progress', 'url' => home_url( '/photos/#work-in-progress' ) ),
                         )),
-                        array( 
-                            'title' => 'About', 
-                            'url'   => '/about-us', 
-                            'icon'  => 'fas fa-users', 
+                        array(
+                            'title' => 'About',
+                            'url'   => '/about-us',
+                            'icon'  => 'fas fa-users',
                             'children' => array(
-                                array( 'title' => 'Policies', 'url' => 'https://www.starkemillwork.com/policies/' ),
-                                array( 'title' => 'Delivery', 'url' => 'https://www.starkemillwork.com/delivery/' ),
-                                array( 'title' => 'FAQs', 'url' => 'https://www.starkemillwork.com/faqs/' ),
-                                array( 'title' => 'Our Story', 'url' => 'https://www.starkemillwork.com/about-us/' ),
+                                array( 'title' => 'Policies', 'url' => home_url( '/policies/' ) ),
+                                array( 'title' => 'Delivery', 'url' => home_url( '/delivery/' ) ),
+                                array( 'title' => 'FAQs', 'url' => home_url( '/faqs/' ) ),
+                                array( 'title' => 'Our Story', 'url' => home_url( '/about-us/' ) ),
                         )),
-                        array( 
-                            'title' => 'Contact Us', 
-                            'url'   => 'https://www.starkemillwork.com/contact-us/', 
-                            'icon'  => 'fas fa-envelope', 
-                            'children' => [] 
+                        array(
+                            'title' => 'Contact Us',
+                            'url'   => home_url( '/contact-us/' ),
+                            'icon'  => 'fas fa-envelope',
+                            'children' => []
                         ),
                     );
 
@@ -1316,7 +1318,7 @@ function starke_render_eyebrow_bar() {
                 <i class="fas fa-phone-alt"></i> <span>(610) 759-1753</span>
             </a>
 
-            <a href="https://www.starkemillwork.com/product/4304" class="starke-eyebrow-btn">
+            <a href="<?php echo esc_url( home_url( '/product/4304' ) ); ?>" class="starke-eyebrow-btn">
                 <i class="fas fa-cube"></i> <span>Try 3D Configurator</span>
             </a>
 
