@@ -9,10 +9,11 @@ class Starke_TaxJar_API {
 
     public function __construct() {
         // Was hardcoded directly in source (a live key committed in plaintext).
-        // Now read from the environment, set TAXJAR_API_KEY on each environment
-        // (local/staging/production) instead of editing this file.
-        $this->api_key = getenv( 'TAXJAR_API_KEY' ) ?: '';
-        $this->api_url = getenv( 'TAXJAR_API_URL' ) ?: 'https://api.taxjar.com/v2/';
+        // Now read per-environment: prefer a wp-config.php define() (some hosts, like
+        // Cloudways, disable putenv() and offer no env-var panel, so getenv() alone
+        // isn't reliable there), fall back to a real env var if one is set instead.
+        $this->api_key = defined( 'TAXJAR_API_KEY' ) ? TAXJAR_API_KEY : ( getenv( 'TAXJAR_API_KEY' ) ?: '' );
+        $this->api_url = defined( 'TAXJAR_API_URL' ) ? TAXJAR_API_URL : ( getenv( 'TAXJAR_API_URL' ) ?: 'https://api.taxjar.com/v2/' );
     }
 
     /**
