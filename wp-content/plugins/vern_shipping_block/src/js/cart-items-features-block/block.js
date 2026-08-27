@@ -1393,8 +1393,8 @@ const Block = ({}) => {
 							processingText={profilesNeededNumber ? 'CHECKING ORDER...' : 'CHECKING CART...'}
 							redirectURL={
 								profilesNeededNumber
-									? 'https://www.starkemillwork.com/my-account/orders/'
-									: 'https://www.starkemillwork.com/my-account/quotes/'
+									? window.location.origin + '/my-account/orders/'
+									: window.location.origin + '/my-account/quotes/'
 							}
 							restApiCallFunction="save-cart-as-quote"
 							errorMessage="Error saving cart/quote:"
@@ -1417,7 +1417,7 @@ const Block = ({}) => {
 								parentStyle={{}}
 								startingText="EMAIL CART / QUOTE"
 								processingText="PROCESSING..."
-								redirectURL="https://www.starkemillwork.com/my-account/quotes/"
+								redirectURL={window.location.origin + '/my-account/quotes/'}
 								restApiCallFunction="save-cart-as-quote"
 								errorMessage="Error sending quote:"
 								isUpdatingLtlCost={isUpdatingLtlCost}
@@ -1485,7 +1485,7 @@ const Block = ({}) => {
 						startingText="REQUEST FREIGHT QUOTE"
 						processingText="SENDING..."
 						finishedText="FREIGHT REQUEST SENT!"
-						redirectURL="https://www.starkemillwork.com/my-account/quotes/"
+						redirectURL={window.location.origin + '/my-account/quotes/'}
 						restApiCallFunction="save-cart-as-quote"
 						errorMessage="Error saving freight quote:"
 						isUpdatingSamplesAddress={isUpdatingSamplesAddress}
