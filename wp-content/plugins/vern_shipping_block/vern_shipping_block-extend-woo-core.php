@@ -2405,6 +2405,22 @@ class VernShippingBlock_Extend_Woo_Core
 		add_action('wp_ajax_nopriv_generate_3d_pdf_and_send_email_for_order_quote', [$this, 'generate_3d_pdf_and_send_email_for_order_quote']);
 	}
 	public function generate_3d_pdf_and_send_email_for_order_quote() {
+		// CRITICAL: the request that triggers this (handle_generate_3d_pdf_and_send_email_for_order_quote)
+		// deliberately sends 'Connection: close' and uses blocking=>false with a
+		// near-zero timeout, so its client-side connection disconnects within
+		// milliseconds by design, checkout isn't meant to wait on this. Without
+		// ignore_user_abort(true), PHP-FPM will kill THIS script the moment it
+		// notices that client is gone, often within the same second, regardless
+		// of set_time_limit() or any wp_remote_post timeout further down the call
+		// chain. This was the real reason generation could appear to succeed on
+		// the PDF droplet (which has no idea WordPress's side already gave up)
+		// while the order's _pdf_s3ObjectKey meta never got saved. Added
+		// 2026-08-29 after confirming via droplet logs that generation itself was
+		// completing successfully while the order page kept failing regardless.
+		if ( function_exists( 'ignore_user_abort' ) ) {
+			ignore_user_abort( true );
+		}
+
 		// Log the received nonce
 		$received_nonce = isset($_POST['_wpnonce']) ? $_POST['_wpnonce'] : 'NONCE_NOT_SET';
 
