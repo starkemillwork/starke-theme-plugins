@@ -101,20 +101,35 @@ function get_order_quote_pdf_from_s3_as_temp_file($order_id) {
     }
 
     // --- S3 Client Initialization ---
-    // Make sure $s3Client and $bucketName are initialized correctly here.
-    // Example (your existing code):
-    $s3Client = new S3Client([
-        'region' => getenv('AWS_REGION') ?: 'us-east-1', // Fallback to a default if not set
-        'version' => 'latest',
-        // Credentials will automatically be picked up from IAM Role or environment variables
-    ]);
-
-    $bucketName = getenv('S3_PDF_BUCKET_NAME'); // Ensure this env var is set on WordPress EB
+    // Was relying on getenv('AWS_REGION')/getenv('S3_PDF_BUCKET_NAME') plus the AWS
+    // SDK's default credential chain (an IAM instance role or real env vars), which
+    // only ever worked on Vern's EB server. Cloudways has neither: no IAM role, and
+    // putenv()/real env vars aren't reliably usable here (see the TAXJAR_API_KEY
+    // putenv() outage, 2026-08-27). Prefer defined() wp-config.php constants first,
+    // matching that same established pattern, falling back to getenv() for any
+    // other environment where it still works.
+    $bucketName = defined('STARKE_S3_PDF_BUCKET_NAME') ? STARKE_S3_PDF_BUCKET_NAME : getenv('S3_PDF_BUCKET_NAME');
+    $s3Region   = defined('STARKE_S3_PDF_REGION') ? STARKE_S3_PDF_REGION : (getenv('AWS_REGION') ?: 'us-east-1');
 
     if (!$bucketName) {
-        error_log(__FUNCTION__ . ': S3_PDF_BUCKET_NAME environment variable not set.');
+        error_log(__FUNCTION__ . ': no S3 PDF bucket configured (STARKE_S3_PDF_BUCKET_NAME not defined and S3_PDF_BUCKET_NAME env var not set).');
         return false;
     }
+
+    $s3ClientArgs = [
+        'region'  => $s3Region,
+        'version' => 'latest',
+    ];
+    // Only pass explicit credentials if configured (defined() constants below),
+    // otherwise fall through to the SDK's default chain (IAM role/env vars), which
+    // is what actually worked on the original EB server.
+    if ( defined('STARKE_S3_PDF_ACCESS_KEY_ID') && defined('STARKE_S3_PDF_SECRET_ACCESS_KEY') ) {
+        $s3ClientArgs['credentials'] = [
+            'key'    => STARKE_S3_PDF_ACCESS_KEY_ID,
+            'secret' => STARKE_S3_PDF_SECRET_ACCESS_KEY,
+        ];
+    }
+    $s3Client = new S3Client($s3ClientArgs);
 
     // Step 1: Determine the desired display filename for the email attachment.
     // This will typically be like '12345.pdf' or 'quote_67890.pdf'.

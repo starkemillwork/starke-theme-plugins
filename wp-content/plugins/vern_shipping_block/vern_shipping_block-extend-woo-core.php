@@ -1858,6 +1858,18 @@ class VernShippingBlock_Extend_Woo_Core
 	*/
 	//add_action('woocommerce_new_order', 'trigger_pdf_generator_on_new_order', 10, 1);
 	public function generate_order_quote_3d_pdf($order_id, $email_customer = false, $email_class = null) {
+		// This runs inside an admin-ajax request the checkout flow fires and
+		// forgets (see handle_generate_3d_pdf_and_send_email_for_order_quote), so
+		// it's not bound by a normal page-load's time budget, but PHP's own
+		// max_execution_time still applies and can kill this script before the
+		// wp_remote_post call below (170s timeout) ever gets a chance to time out
+		// itself. Override explicitly rather than assume the host's default is
+		// high enough, safe here since this is a background job, not a request a
+		// browser is blocking on.
+		if ( function_exists( 'set_time_limit' ) ) {
+			@set_time_limit( 180 );
+		}
+
 		// --- FIX: Force clear cache to ensure we get the absolute latest Order Status ---
         clean_post_cache( $order_id );
 		
@@ -2286,7 +2298,19 @@ class VernShippingBlock_Extend_Woo_Core
 			'headers' => array(
 				'Content-Type' => 'application/json',
 			),
-			'timeout' => 60, // Adjust timeout as needed (in seconds)
+			// This call BLOCKS waiting for the droplet to finish rendering and
+			// uploading before it returns, and _pdf_s3ObjectKey is only saved to
+			// the order below if this call succeeds. Real generation time on the
+			// current DigitalOcean droplet (software-rendered WebGL, no real GPU,
+			// occasional memory swapping) has been observed at 30-90+ seconds.
+			// The old 60s value meant WordPress itself would give up and error
+			// out before slower renders finished, even though the droplet kept
+			// working and uploaded the PDF successfully moments later, the order
+			// meta was just never updated to point at it. Raised 2026-08-29 to
+			// stay safely above the quote-pdf/order-pdf download page's own
+			// 150-second poll window (see quote-order.php), so that page's wait
+			// is always the shorter, blocking one, not the reverse.
+			'timeout' => 170,
 			'method'  => 'POST',
 			'data_format' => 'body',
 		);

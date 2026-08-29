@@ -2630,6 +2630,49 @@ function starke_render_expired_quote_popup_checkout() {
     <?php
 }
 
+/**
+ * Renders a styled full-page message matching the "Creating PDF..." page's look
+ * (dark background, centered, large text), instead of a bare unstyled die()
+ * string that reads as a broken page. Used for every failure path in
+ * handle_pdf_download_request() below.
+ *
+ * @param string $message     Plain-text message to display (escaped automatically).
+ * @param string $title       Optional page/heading title, defaults to a generic error heading.
+ */
+function render_pdf_status_error_page( $message, $title = 'Unable to Load PDF' ) {
+	header('Content-Type: text/html; charset=utf-8');
+	echo '<!DOCTYPE html><html><head><title>' . esc_html( $title ) . '</title>';
+	echo '<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background: black;
+		}
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+			padding: 0 24px;
+			color: white;
+			background: black;
+			font-family: sans-serif;
+		}
+		h1 { font-size: 1.8rem; margin-bottom: 0.5em; }
+		p { font-size: 1.1rem; max-width: 600px; line-height: 1.5; }
+		@media (min-width: 768px) {
+			h1 { font-size: 2.6rem; }
+			p { font-size: 1.5rem; }
+		}
+	</style></head><body>';
+	echo '<h1>' . esc_html( $title ) . '</h1>';
+	echo '<p>' . esc_html( $message ) . '</p>';
+	echo '</body></html>';
+	exit;
+}
+
 // Handle PDF Download Request for Quotes and Orders 3D PDF buttons (gets called by rewrite rules in location.conf)
 add_action('wp_ajax_download_order_quote_pdf', 'handle_pdf_download_request'); // For logged-in users
 function handle_pdf_download_request() {
@@ -2639,17 +2682,17 @@ function handle_pdf_download_request() {
 
 	// Example: Basic nonce check
 	if ( !isset($_GET['nonce']) || !wp_verify_nonce( $_GET['nonce'], 'download_pdf_order_quote_nonce' ) ) {
-		die('Security check failed.');
+		render_pdf_status_error_page('Security check failed. Please go back and try again.');
 	}
 
 	// Get the Order ID from the URL (no longer receiving S3 key from frontend)
 	if (!isset($_GET['order_id'])) {
-		die('Invalid request: Missing Order ID.');
+		render_pdf_status_error_page('Invalid request: missing order ID.');
 	}
 	$order_id = intval(sanitize_text_field($_GET['order_id']));
 
 	if (!$order_id) {
-		die('Invalid Order ID provided.');
+		render_pdf_status_error_page('Invalid order ID provided.');
 	}
 
 	// --- IMPORTANT: Authorize the user for THIS SPECIFIC PDF ---
@@ -2657,19 +2700,19 @@ function handle_pdf_download_request() {
 
 	// 1. Ensure user is logged in
 	if ( !is_user_logged_in() ) {
-		die('Access denied. Please log in to download this file.');
+		render_pdf_status_error_page('Please log in to download this file.', 'Access Denied');
 	}
 
 	// 2. Retrieve the WooCommerce Order
 	// We need WooCommerce's wc_get_order() function, ensure WooCommerce is active.
 	if ( ! function_exists( 'wc_get_order' ) ) {
-		die('WooCommerce is not active. Cannot verify order details.');
+		render_pdf_status_error_page('WooCommerce is not active. Cannot verify order details.');
 	}
 	$order = wc_get_order($order_id);
 
 	// 3. Validate Order existence and ownership
 	if (!$order) {
-		die('Order not found for the provided ID.');
+		render_pdf_status_error_page('Order not found for the provided ID.');
 	}
 
 	$order_customer_id = $order->get_customer_id(); // This is the ID of the user who placed the order
@@ -2691,7 +2734,7 @@ function handle_pdf_download_request() {
 	}
 	//    d. If neither, deny access
 	else {
-		die('Access denied. You do not have permission to download this PDF.');
+		render_pdf_status_error_page('You do not have permission to download this PDF.', 'Access Denied');
 	}
 
 	// --- Retrieve S3 Object Key from Order Metadata ---
@@ -2705,17 +2748,34 @@ function handle_pdf_download_request() {
 
 
 		// --- S3 Client Initialization ---
-		// or IAM Roles if configured correctly on Elastic Beanstalk.
-		$s3Client = new S3Client([
-			'region' => getenv('AWS_REGION') ?: 'us-east-1', // Fallback to a default if not set
-			'version' => 'latest',
-		]);
-
-		$bucketName = getenv('S3_PDF_BUCKET_NAME'); // Ensure this env var is set on WordPress EB
+		// Was relying on getenv('AWS_REGION')/getenv('S3_PDF_BUCKET_NAME') plus the
+		// AWS SDK's default credential chain (an IAM instance role or real env
+		// vars), which only ever worked on Vern's EB server. Cloudways has neither:
+		// no IAM role, and putenv()/real env vars aren't reliably usable here (see
+		// the TAXJAR_API_KEY putenv() outage, 2026-08-27). Prefer defined()
+		// wp-config.php constants first, matching that same established pattern,
+		// falling back to getenv() for any other environment where it still works.
+		$bucketName = defined('STARKE_S3_PDF_BUCKET_NAME') ? STARKE_S3_PDF_BUCKET_NAME : getenv('S3_PDF_BUCKET_NAME');
+		$s3Region   = defined('STARKE_S3_PDF_REGION') ? STARKE_S3_PDF_REGION : (getenv('AWS_REGION') ?: 'us-east-1');
 
 		if (!$bucketName) {
-			die('S3_PDF_BUCKET_NAME environment variable not set.');
+			render_pdf_status_error_page('This environment is not configured to serve quote/order PDFs (missing bucket name).');
 		}
+
+		$s3ClientArgs = [
+			'region'  => $s3Region,
+			'version' => 'latest',
+		];
+		// Only pass explicit credentials if configured (defined() constants below),
+		// otherwise fall through to the SDK's default chain (IAM role/env vars),
+		// which is what actually worked on the original EB server.
+		if ( defined('STARKE_S3_PDF_ACCESS_KEY_ID') && defined('STARKE_S3_PDF_SECRET_ACCESS_KEY') ) {
+			$s3ClientArgs['credentials'] = [
+				'key'    => STARKE_S3_PDF_ACCESS_KEY_ID,
+				'secret' => STARKE_S3_PDF_SECRET_ACCESS_KEY,
+			];
+		}
+		$s3Client = new S3Client($s3ClientArgs);
 
 		try {
 			// Get the object from S3
@@ -2737,13 +2797,13 @@ function handle_pdf_download_request() {
 			// Log the error (e.g., to WordPress error logs or a custom log)
 			error_log('S3 PDF download error: ' . $e->getMessage());
 			if ($e->getAwsErrorCode() === 'NoSuchKey') {
-				die('File not found or no longer exists in S3.');
+				render_pdf_status_error_page('This PDF could not be found. It may still be generating, please try again in a minute.');
 			} else {
-				die('Error downloading PDF: ' . $e->getAwsErrorCode());
+				render_pdf_status_error_page('There was a problem downloading this PDF (' . $e->getAwsErrorCode() . '). Please try again shortly.');
 			}
 		} catch (Exception $e) {
 			error_log('General PDF download error: ' . $e->getMessage());
-			die('An unexpected error occurred during download.');
+			render_pdf_status_error_page('An unexpected error occurred while downloading this PDF. Please try again shortly.');
 		}
 	}
 
@@ -2760,7 +2820,7 @@ function handle_pdf_download_request() {
 	// had already given up and shown a dead-end error to the customer/admin.
 	$check_count = isset($_GET['check']) ? intval($_GET['check']) : 0;
 	if ($check_count >= 150) {
-		die('The PDF is taking longer than expected. It will still complete in the background, please check back in a minute, or refresh this page.');
+		render_pdf_status_error_page('The PDF is taking longer than expected. It will still complete in the background, please check back in a minute, or refresh this page.', 'Still Working On It');
 	}
 
 
