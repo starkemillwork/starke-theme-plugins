@@ -2747,10 +2747,20 @@ function handle_pdf_download_request() {
 		}
 	}
 
-	// Refresh PDF page every second until the PDF is ready
+	// Refresh PDF page every second until the PDF is ready.
+	// The trigger side (handle_generate_3d_pdf_and_send_email_for_order_quote) fires
+	// this as a non-blocking background AJAX call, WordPress does not wait for it,
+	// so this page is the only thing actually waiting for generation to finish.
+	// Real generation time on the current infrastructure (a small DigitalOcean
+	// droplet doing headless/software-rendered WebGL) has been observed at
+	// 30-90+ seconds, well past the old 15-second limit this used to have (a
+	// holdover from when this ran on Vern's EB server with a real GPU, presumably
+	// faster). Bumped to 150 (2.5 minutes) 2026-08-29 after confirming via a real
+	// test order that generation succeeds and uploads to S3 well after 15 seconds
+	// had already given up and shown a dead-end error to the customer/admin.
 	$check_count = isset($_GET['check']) ? intval($_GET['check']) : 0;
-	if ($check_count >= 15) {
-		die('The PDF is not yet available. Please try again shortly.');
+	if ($check_count >= 150) {
+		die('The PDF is taking longer than expected. It will still complete in the background, please check back in a minute, or refresh this page.');
 	}
 
 
